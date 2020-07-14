@@ -1,13 +1,9 @@
 ---
 layout: page
-title: About Me
+title: A Propos
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="laurent-prudhon"><a class="LI-simple-link" href='https://fr.linkedin.com/in/laurent-prudhon?trk=profile-badge'>Laurent Prud'hon</a></div>
