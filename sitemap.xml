@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://www.cognitivefactory.fr/cognitivefactory-blog/markdown/2020/01/14/test-markdown-post.html</loc>
+<loc>https://www.cognitivefactory.fr/markdown/2020/01/14/test-markdown-post.html</loc>
 <lastmod>2020-01-14T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://www.cognitivefactory.fr/cognitivefactory-blog/jupyter/2020/02/20/test.html</loc>
+<loc>https://www.cognitivefactory.fr/jupyter/2020/02/20/test.html</loc>
 <lastmod>2020-02-20T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://www.cognitivefactory.fr/cognitivefactory-blog/about/</loc>
+<loc>https://www.cognitivefactory.fr/about/</loc>
 </url>
 <url>
-<loc>https://www.cognitivefactory.fr/cognitivefactory-blog/</loc>
+<loc>https://www.cognitivefactory.fr/</loc>
 </url>
 <url>
-<loc>https://www.cognitivefactory.fr/cognitivefactory-blog/search/</loc>
+<loc>https://www.cognitivefactory.fr/search/</loc>
 </url>
 <url>
-<loc>https://www.cognitivefactory.fr/cognitivefactory-blog/categories/</loc>
+<loc>https://www.cognitivefactory.fr/categories/</loc>
 </url>
 </urlset>

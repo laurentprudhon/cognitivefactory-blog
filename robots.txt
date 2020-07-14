@@ -1,1 +1,1 @@
-Sitemap: https://www.cognitivefactory.fr/cognitivefactory-blog/sitemap.xml
+Sitemap: https://www.cognitivefactory.fr/sitemap.xml
