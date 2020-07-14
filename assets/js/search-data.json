@@ -2,6 +2,116 @@
   
     
         "post0": {
+            "title": "Deep Learning 2020 #10 - Détection d'objets",
+            "content": "Aller au-delà des applications intégrées à la librairie fastai : . détection d’un objet dans une scène de la vie courante | comment charger de nouveaux type de données | comment créer une nouvelle architecture | comment écrire une fonction de coût complexe | détection d’objets multiples et état de l’art | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets.html",
+            "relUrl": "/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets.html",
+            "date": " • Jun 23, 2020"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Deep Learning 2020 #09 - Convolutions - Resnet",
+            "content": "Vision - Comprendre les réseaux de neurones convolutifs : . La magie des convolutions | Créer un CNN : receptive fields, channels | Stabilité de l’entrainement : batch size, 1cycle, BatchNorm | Resnets : connexions résiduelles | Un Resnet à l’état de l’art : bottleneck layer | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/02/Deep-Learning-2020-09-Convolutions-Resnet.html",
+            "relUrl": "/fastai/deeplearning/video/2020/06/02/Deep-Learning-2020-09-Convolutions-Resnet.html",
+            "date": " • Jun 2, 2020"
+        }
+        
+    
+  
+    
+        ,"post2": {
+            "title": "Deep Learning 2020 #08 - Langage naturel (NLP)",
+            "content": "Introduction au traitement du langage naturel (NLP) avec fastai2 : . Tokenisation et pré-processing | Modèles de séquence : Réseaux de Neurones Récurrents | Chargement des données en batchs | Entrainement d’un langage model | Classification de revues de films | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/05/26/Deep-Learning-2020-08-Langage-naturel-NLP.html",
+            "relUrl": "/fastai/deeplearning/video/2020/05/26/Deep-Learning-2020-08-Langage-naturel-NLP.html",
+            "date": " • May 26, 2020"
+        }
+        
+    
+  
+    
+        ,"post3": {
+            "title": "Deep Learning 2020 #07 - Données structurées (ML)",
+            "content": "Tout ce qu’il faut savoir à propos du machine learning sur les données structurées (tabulaires) : . préparation de données structurées | arbres de décision et forêts aléatoires | feature engineering : caractéristiques importantes, redondantes, dépendance partielle, fuites de données, extrapolation | interprétation : confiance, explication des prédictions | ensembles : bagging, boosting, gradient boosting machines | réseaux de neurones, réutilisation des embeddings | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/05/19/Deep-Learning-2020-07-Donn%C3%A9es-structur%C3%A9es-ML.html",
+            "relUrl": "/fastai/deeplearning/video/2020/05/19/Deep-Learning-2020-07-Donn%C3%A9es-structur%C3%A9es-ML.html",
+            "date": " • May 19, 2020"
+        }
+        
+    
+  
+    
+        ,"post4": {
+            "title": "Deep Learning 2020 #06 - Recommandation - collaborative filtering",
+            "content": "Partie 1 - Analyse d’images - suite et fin 1er passage . classification multi-label : reconnaissance de 20 objets courants | régression : localisation du centre du visage sur des images | entrainer un modèle à l’état de l’art : normalisation, progressive resizing, test time augmentation, Mixup, label smoothing | . Partie 2 - Recommandation - collaborative filtering . embeddings | implémentation “from scratch” | interprétation | fastai.collab | “cold start” problem | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/05/12/Deep-Learning-2020-06-Recommandation-collaborative-filtering.html",
+            "relUrl": "/fastai/deeplearning/video/2020/05/12/Deep-Learning-2020-06-Recommandation-collaborative-filtering.html",
+            "date": " • May 12, 2020"
+        }
+        
+    
+  
+    
+        ,"post5": {
+            "title": "Deep Learning 2020 #05 - Images - Classification & régression",
+            "content": "Plan de la session #05 : . reconnaissance de 40 espèces de chiens et chats | utilisation de l’API fastai2 DataBlock pour préparer les données | classification : one hot encoding, softmax, cross-entropy | métriques et interprétation des résultats d’un classifier | learning rate finder, transfer learning, discriminative learning rates | . Non traité - reporté vidéo suivante : . classification multi-label : reconnaissance de 20 objets courants | régression : localisation du centre du visage sur des images | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/05/05/Deep-Learning-2020-05-Images-Classification-r%C3%A9gression.html",
+            "relUrl": "/fastai/deeplearning/video/2020/05/05/Deep-Learning-2020-05-Images-Classification-r%C3%A9gression.html",
+            "date": " • May 5, 2020"
+        }
+        
+    
+  
+    
+        ,"post6": {
+            "title": "Deep Learning 2020 #04 - Les fondamentaux (partie 2)",
+            "content": "Plan de la session #04 : . entrainement d’un classifier d’images de chiffres manuscrits (suite) | résumé thématique de toutes les étapes de la session #03 | fonction de coût et métriques de performance | optimiseur et boucle d’entrainement | implémentation PyTorch et fastai de ces concepts | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/04/28/Deep-Learning-2020-04-Les-fondamentaux-partie-2.html",
+            "relUrl": "/fastai/deeplearning/video/2020/04/28/Deep-Learning-2020-04-Les-fondamentaux-partie-2.html",
+            "date": " • Apr 28, 2020"
+        }
+        
+    
+  
+    
+        ,"post7": {
+            "title": "Deep Learning 2020 #03 - Les fondamentaux PyTorch fastai",
+            "content": "Plan de la session #03 : . entrainement d’un classifier d’images de chiffres manuscrits | développement manuel de toutes les étapes en pur Python | manipulation de tensors PyTorch, broadcasting | notion de dérivée, calcul automatique de gradient | fonction de coût et métriques de performance | optimiseur et boucle d’entrainement | implémentation PyTorch et fastai de ces concepts | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/04/21/Deep-Learning-2020-03-Les-fondamentaux-PyTorch-fastai.html",
+            "relUrl": "/fastai/deeplearning/video/2020/04/21/Deep-Learning-2020-03-Les-fondamentaux-PyTorch-fastai.html",
+            "date": " • Apr 21, 2020"
+        }
+        
+    
+  
+    
+        ,"post8": {
+            "title": "Deep Learning 2020 #02 - De la conception à la production",
+            "content": "Plan de la session #02 : . qu’est-ce qu’un réseau de neurones ? | concevoir un projet de deep learning | collecter, nettoyer, annoter des données | préparer un jeu d’entrainement | entrainer un modèle | analyser les erreurs et améliorer le modèle | mettre le modèle en production | surveiller et maintenir le modèle déployé | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/04/14/Deep-Learning-2020-02-De-la-conception-%C3%A0-la-production.html",
+            "relUrl": "/fastai/deeplearning/video/2020/04/14/Deep-Learning-2020-02-De-la-conception-%C3%A0-la-production.html",
+            "date": " • Apr 14, 2020"
+        }
+        
+    
+  
+    
+        ,"post9": {
+            "title": "Deep Learning 2020 #01 - Introduction au Deep Learning",
+            "content": "Plan de la session #01 : . présentation de la formation et contexte | utiliser Jupyter Notebook et Python | entrainer un 1er modèle de reconnaissance d’animaux | les principaux concepts du machine learning | . Lien vidéo YouTube : . .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/04/07/Deep-Learning-2020-01-Introduction-au-Deep-Learning.html",
+            "relUrl": "/fastai/deeplearning/video/2020/04/07/Deep-Learning-2020-01-Introduction-au-Deep-Learning.html",
+            "date": " • Apr 7, 2020"
+        }
+        
+    
+  
+    
+        ,"post10": {
             "title": "Deep Learning 2020 #00 - Préparer un environnement de travail",
             "content": "Lien vidéo YouTube : . .",
             "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/04/06/Deep-Learning-2020-00-Pr%C3%A9parer-un-environnement-de-travail.html",
