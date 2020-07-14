@@ -1,11 +1,22 @@
 {
   
+    
+        "post0": {
+            "title": "Deep Learning 2020 #00 - Préparer un environnement de travail",
+            "content": "Deep Learning 2020 #00 - Préparer un environnement de travail . https://www.youtube.com/watch?v=tJYAnHJsChE . Instructions pratiques pour préparer un environnement de travail pour la formation Deep Learning par la pratique 2020. .",
+            "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/04/06/Deep-Learning-2020-00-Pr%C3%A9parer-un-environnement-de-travail.html",
+            "relUrl": "/fastai/deeplearning/video/2020/04/06/Deep-Learning-2020-00-Pr%C3%A9parer-un-environnement-de-travail.html",
+            "date": " • Apr 6, 2020"
+        }
+        
+    
+  
 
   
   
 
   
-      "page1": {
+      ,"page1": {
           "title": "About Me",
           "content": "This is where you put the contents of your About page. Like all your pages, it’s in Markdown format. . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://www.cognitivefactory.fr/about/",
