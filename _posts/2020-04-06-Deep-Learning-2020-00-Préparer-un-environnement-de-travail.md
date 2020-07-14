@@ -10,8 +10,6 @@ search_exclude: false
 categories: [fastai, deeplearning, video]
 ---
 
-# Deep Learning 2020 #00 - Préparer un environnement de travail
+Lien vidéo YouTube :
 
-> https://www.youtube.com/watch?v=tJYAnHJsChE
-
-Instructions pratiques pour préparer un environnement de travail pour la formation Deep Learning par la pratique 2020.
+[![Vidéo session #00](https://img.youtube.com/vi/tJYAnHJsChE/0.jpg)](https://www.youtube.com/watch?v=tJYAnHJsChE)
