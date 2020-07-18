@@ -2,6 +2,7 @@
 title: "Deep Learning 2020 #06 - Recommandation - collaborative filtering"
 description: "Sixième session de la formation Deep Learning par la pratique 2020."
 layout: post
+sticky_rank: 7
 toc: false
 comments: true
 image: images/cours-deeplearning-2020/Fastai_course_06.png
@@ -21,6 +22,10 @@ Partie 2 - Recommandation - collaborative filtering
 - interprétation
 - fastai.collab
 - "cold start" problem
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_06.png
 
 Lien vidéo YouTube :
 
