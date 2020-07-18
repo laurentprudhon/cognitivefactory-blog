@@ -2,6 +2,7 @@
 title: "Deep Learning 2020 #02 - De la conception à la production"
 description: "Deuxième session de la formation Deep Learning par la pratique 2020."
 layout: post
+sticky_rank: 3
 toc: false
 comments: true
 image: images/cours-deeplearning-2020/Fastai_course_02.png
@@ -9,6 +10,14 @@ hide: false
 search_exclude: false
 categories: [fastai, deeplearning, video]
 ---
+
+Slides :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/02_production.pptx
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_02.png
 
 Plan de la session #02 :
 - qu'est-ce qu'un réseau de neurones ?
