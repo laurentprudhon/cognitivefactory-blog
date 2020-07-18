@@ -2,6 +2,7 @@
 title: "Deep Learning 2020 #09 - Convolutions - Resnet"
 description: "Neuvième session de la formation Deep Learning par la pratique 2020."
 layout: post
+sticky_rank: 10
 toc: false
 comments: true
 image: images/cours-deeplearning-2020/Fastai_course_09.png
@@ -16,6 +17,10 @@ Vision - Comprendre les réseaux de neurones convolutifs :
 - Stabilité de l'entrainement : batch size, 1cycle, BatchNorm
 - Resnets : connexions résiduelles
 - Un Resnet à l'état de l'art : bottleneck layer
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_09.png
 
 Lien vidéo YouTube :
 
