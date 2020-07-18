@@ -11,14 +11,6 @@ search_exclude: false
 categories: [fastai, deeplearning, video]
 ---
 
-Slides :
-
-https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/02_production.pptx
-
-Tableau :
-
-https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_02.png
-
 Plan de la session #02 :
 - qu'est-ce qu'un réseau de neurones ?
 - concevoir un projet de deep learning
@@ -28,6 +20,14 @@ Plan de la session #02 :
 - analyser les erreurs et améliorer le modèle
 - mettre le modèle en production
 - surveiller et maintenir le modèle déployé
+
+Slides :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/02_production.pptx
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_02.png
 
 Lien vidéo YouTube :
 
