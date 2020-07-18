@@ -2,6 +2,7 @@
 title: "Deep Learning 2020 #03 - Les fondamentaux PyTorch fastai"
 description: "Troisième session de la formation Deep Learning par la pratique 2020."
 layout: post
+sticky_rank: 4
 toc: false
 comments: true
 image: images/cours-deeplearning-2020/Fastai_course_03.png
@@ -9,6 +10,14 @@ hide: false
 search_exclude: false
 categories: [fastai, deeplearning, video]
 ---
+
+Slides :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/03_04_mnist_basics.pptx
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_03.png
 
 Plan de la session #03 :
 - entrainement d'un classifier d'images de chiffres manuscrits
