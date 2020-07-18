@@ -17,6 +17,10 @@ Plan de la session #01 :
 - entrainer un 1er modèle de reconnaissance d'animaux
 - les principaux concepts du machine learning
 
+Notebook :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/01_intro.ipynb
+
 Slides :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/01_introduction.pptx
