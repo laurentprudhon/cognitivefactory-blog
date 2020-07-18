@@ -19,6 +19,10 @@ Tout ce qu'il faut savoir à propos du machine learning sur les données structu
 - ensembles : bagging, boosting, gradient boosting machines
 - réseaux de neurones, réutilisation des embeddings
 
+Notebook :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/07_tabular.ipynb
+
 Tableau :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_07.png
