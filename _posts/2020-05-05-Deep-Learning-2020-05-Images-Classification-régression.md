@@ -2,6 +2,7 @@
 title: "Deep Learning 2020 #05 - Images - Classification & régression"
 description: "Cinquième session de la formation Deep Learning par la pratique 2020."
 layout: post
+sticky_rank: 6
 toc: false
 comments: true
 image: images/cours-deeplearning-2020/Fastai_course_05.png
@@ -20,6 +21,16 @@ Plan de la session #05 :
 Non traité - reporté vidéo suivante :
 - classification multi-label : reconnaissance de 20 objets courants
 - régression : localisation du centre du visage sur des images
+
+Slides / Excel :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/05_pet_breeds_multicat.pptx
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/05_pet_breeds_multicat.xlsx
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_05.png
 
 Lien vidéo YouTube :
 
