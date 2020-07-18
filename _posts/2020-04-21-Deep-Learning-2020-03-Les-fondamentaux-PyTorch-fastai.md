@@ -20,6 +20,10 @@ Plan de la session #03 :
 - optimiseur et boucle d'entrainement
 - implémentation PyTorch et fastai de ces concepts
 
+Notebook :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/03_mnist_basics.ipynb
+
 Slides :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/03_04_mnist_basics.pptx
