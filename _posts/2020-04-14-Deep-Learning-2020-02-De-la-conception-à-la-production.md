@@ -21,6 +21,20 @@ Plan de la session #02 :
 - mettre le modèle en production
 - surveiller et maintenir le modèle déployé
 
+Notebook :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/02_production.ipynb
+
+Production sample code :
+
+- https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/bears.py
+- https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/bearsapi.py
+- https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/bearsUI.ipynb
+
+Docker files :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/tree/master/docker
+
 Slides :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/02_production.pptx
