@@ -2,6 +2,7 @@
 title: "Deep Learning 2020 #08 - Langage naturel (NLP)"
 description: "Huitième session de la formation Deep Learning par la pratique 2020."
 layout: post
+sticky_rank: 9
 toc: false
 comments: true
 image: images/cours-deeplearning-2020/Fastai_course_08.png
@@ -16,6 +17,10 @@ Introduction au traitement du langage naturel (NLP) avec fastai2 :
 - Chargement des données en batchs
 - Entrainement d'un langage model
 - Classification de revues de films
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_08.png
 
 Lien vidéo YouTube :
 
