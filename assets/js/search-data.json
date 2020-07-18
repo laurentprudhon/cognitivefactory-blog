@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Deep Learning 2020 #08 - Langage naturel (NLP)",
-            "content": "Introduction au traitement du langage naturel (NLP) avec fastai2 : . Tokenisation et pré-processing | Modèles de séquence : Réseaux de Neurones Récurrents | Chargement des données en batchs | Entrainement d’un langage model | Classification de revues de films | . Lien vidéo YouTube : . .",
+            "content": "Introduction au traitement du langage naturel (NLP) avec fastai2 : . Tokenisation et pré-processing | Modèles de séquence : Réseaux de Neurones Récurrents | Chargement des données en batchs | Entrainement d’un langage model | Classification de revues de films | . Tableau : . https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_08.png . Lien vidéo YouTube : . .",
             "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/05/26/Deep-Learning-2020-08-Langage-naturel-NLP.html",
             "relUrl": "/fastai/deeplearning/video/2020/05/26/Deep-Learning-2020-08-Langage-naturel-NLP.html",
             "date": " • May 26, 2020"
