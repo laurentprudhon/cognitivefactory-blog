@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.cognitivefactory.fr/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cognitivefactory.fr/" rel="alternate" type="text/html" /><updated>2020-07-18T04:57:52-05:00</updated><id>https://www.cognitivefactory.fr/feed.xml</id><title type="html">Cognitive Factory</title><subtitle>Solutions Cognitives pour les entreprises - en français.</subtitle><entry><title type="html">Deep Learning 2020 #10 - Détection d’objets</title><link href="https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets.html" rel="alternate" type="text/html" title="Deep Learning 2020 #10 - Détection d'objets" /><published>2020-06-23T00:00:00-05:00</published><updated>2020-06-23T00:00:00-05:00</updated><id>https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets</id><content type="html" xml:base="https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets.html">&lt;p&gt;Aller au-delà des applications intégrées à la librairie fastai :&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.cognitivefactory.fr/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.cognitivefactory.fr/" rel="alternate" type="text/html" /><updated>2020-07-18T05:00:03-05:00</updated><id>https://www.cognitivefactory.fr/feed.xml</id><title type="html">Cognitive Factory</title><subtitle>Solutions Cognitives pour les entreprises - en français.</subtitle><entry><title type="html">Deep Learning 2020 #10 - Détection d’objets</title><link href="https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets.html" rel="alternate" type="text/html" title="Deep Learning 2020 #10 - Détection d'objets" /><published>2020-06-23T00:00:00-05:00</published><updated>2020-06-23T00:00:00-05:00</updated><id>https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets</id><content type="html" xml:base="https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets.html">&lt;p&gt;Aller au-delà des applications intégrées à la librairie fastai :&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;détection d’un objet dans une scène de la vie courante&lt;/li&gt;
   &lt;li&gt;comment charger de nouveaux type de données&lt;/li&gt;
@@ -75,6 +75,16 @@
   &lt;li&gt;classification multi-label : reconnaissance de 20 objets courants&lt;/li&gt;
   &lt;li&gt;régression : localisation du centre du visage sur des images&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Slides / Excel :&lt;/p&gt;
+
+&lt;p&gt;https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/05_pet_breeds_multicat.pptx&lt;/p&gt;
+
+&lt;p&gt;https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/05_pet_breeds_multicat.xlsx&lt;/p&gt;
+
+&lt;p&gt;Tableau :&lt;/p&gt;
+
+&lt;p&gt;https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_05.png&lt;/p&gt;
 
 &lt;p&gt;Lien vidéo YouTube :&lt;/p&gt;
 
