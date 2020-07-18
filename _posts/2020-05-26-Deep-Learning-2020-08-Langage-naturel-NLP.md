@@ -18,6 +18,10 @@ Introduction au traitement du langage naturel (NLP) avec fastai2 :
 - Entrainement d'un langage model
 - Classification de revues de films
 
+Notebook :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/08_nlp.ipynb
+
 Tableau :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_08.png
