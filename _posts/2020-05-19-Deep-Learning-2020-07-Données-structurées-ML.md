@@ -2,6 +2,7 @@
 title: "Deep Learning 2020 #07 - Données structurées (ML)"
 description: "Septième session de la formation Deep Learning par la pratique 2020."
 layout: post
+sticky_rank: 8
 toc: false
 comments: true
 image: images/cours-deeplearning-2020/Fastai_course_07.png
@@ -17,6 +18,10 @@ Tout ce qu'il faut savoir à propos du machine learning sur les données structu
 -  interprétation : confiance, explication des prédictions
 - ensembles : bagging, boosting, gradient boosting machines
 - réseaux de neurones, réutilisation des embeddings
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_07.png
 
 Lien vidéo YouTube :
 
