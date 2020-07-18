@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Deep Learning 2020 #09 - Convolutions - Resnet",
-            "content": "Vision - Comprendre les réseaux de neurones convolutifs : . La magie des convolutions | Créer un CNN : receptive fields, channels | Stabilité de l’entrainement : batch size, 1cycle, BatchNorm | Resnets : connexions résiduelles | Un Resnet à l’état de l’art : bottleneck layer | . Tableau : . https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_09.png . Lien vidéo YouTube : . .",
+            "content": "Vision - Comprendre les réseaux de neurones convolutifs : . La magie des convolutions | Créer un CNN : receptive fields, channels | Stabilité de l’entrainement : batch size, 1cycle, BatchNorm | Resnets : connexions résiduelles | Un Resnet à l’état de l’art : bottleneck layer | . Notebook : . https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/09_convolutions_resnet.ipynb . Tableau : . https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_09.png . Lien vidéo YouTube : . .",
             "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/02/Deep-Learning-2020-09-Convolutions-Resnet.html",
             "relUrl": "/fastai/deeplearning/video/2020/06/02/Deep-Learning-2020-09-Convolutions-Resnet.html",
             "date": " • Jun 2, 2020"
