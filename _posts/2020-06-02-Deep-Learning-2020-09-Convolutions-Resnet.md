@@ -18,6 +18,10 @@ Vision - Comprendre les réseaux de neurones convolutifs :
 - Resnets : connexions résiduelles
 - Un Resnet à l'état de l'art : bottleneck layer
 
+Notebook :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/09_convolutions_resnet.ipynb
+
 Tableau :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_09.png
