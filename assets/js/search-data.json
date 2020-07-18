@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Deep Learning 2020 #10 - Détection d'objets",
-            "content": "Aller au-delà des applications intégrées à la librairie fastai : . détection d’un objet dans une scène de la vie courante | comment charger de nouveaux type de données | comment créer une nouvelle architecture | comment écrire une fonction de coût complexe | détection d’objets multiples et état de l’art | . Lien vidéo YouTube : . .",
+            "content": "Aller au-delà des applications intégrées à la librairie fastai : . détection d’un objet dans une scène de la vie courante | comment charger de nouveaux type de données | comment créer une nouvelle architecture | comment écrire une fonction de coût complexe | détection d’objets multiples et état de l’art | . Notebook : . https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/10_object_detection.ipynb . Tableau : . https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_10.png . Lien vidéo YouTube : . .",
             "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets.html",
             "relUrl": "/fastai/deeplearning/video/2020/06/23/Deep-Learning-2020-10-D%C3%A9tection-objets.html",
             "date": " • Jun 23, 2020"
