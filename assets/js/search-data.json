@@ -102,7 +102,7 @@
     
         ,"post9": {
             "title": "Deep Learning 2020 #01 - Introduction au Deep Learning",
-            "content": "Plan de la session #01 : . présentation de la formation et contexte | utiliser Jupyter Notebook et Python | entrainer un 1er modèle de reconnaissance d’animaux | les principaux concepts du machine learning | . Lien vidéo YouTube : . .",
+            "content": "Plan de la session #01 : . présentation de la formation et contexte | utiliser Jupyter Notebook et Python | entrainer un 1er modèle de reconnaissance d’animaux | les principaux concepts du machine learning | . Slides : . https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/01_introduction.pptx . Tableau : . https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_01.png . Lien vidéo YouTube : . .",
             "url": "https://www.cognitivefactory.fr/fastai/deeplearning/video/2020/04/07/Deep-Learning-2020-01-Introduction-au-Deep-Learning.html",
             "relUrl": "/fastai/deeplearning/video/2020/04/07/Deep-Learning-2020-01-Introduction-au-Deep-Learning.html",
             "date": " • Apr 7, 2020"
