@@ -11,9 +11,13 @@ search_exclude: false
 categories: [fastai, deeplearning, video]
 ---
 
-Notebook :
+Introduction à Jupyter Notebooks :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/00_jupyter%20notebooks.ipynb
+
+Introduction au langage Python :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/tree/master/notebooks/python
 
 Slides :
 
