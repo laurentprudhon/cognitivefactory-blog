@@ -23,6 +23,12 @@ Partie 2 - Recommandation - collaborative filtering
 - fastai.collab
 - "cold start" problem
 
+Notebooks :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/06_multicat_sizing_tta.ipynb
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/06b_collab.ipynb
+
 Tableau :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_06.png
