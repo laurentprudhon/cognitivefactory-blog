@@ -11,6 +11,10 @@ search_exclude: false
 categories: [fastai, deeplearning, video]
 ---
 
+Notebook :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/00_jupyter%20notebooks.ipynb
+
 Slides :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/00_environnement.pptx
