@@ -22,6 +22,10 @@ Non traité - reporté vidéo suivante :
 - classification multi-label : reconnaissance de 20 objets courants
 - régression : localisation du centre du visage sur des images
 
+Notebook :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/notebooks/05_pet_breeds.ipynb
+
 Slides / Excel :
 
 https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/05_pet_breeds_multicat.pptx
