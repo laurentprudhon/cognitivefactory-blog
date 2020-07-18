@@ -11,14 +11,6 @@ search_exclude: false
 categories: [fastai, deeplearning, video]
 ---
 
-Slides :
-
-https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/03_04_mnist_basics.pptx
-
-Tableau :
-
-https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_03.png
-
 Plan de la session #03 :
 - entrainement d'un classifier d'images de chiffres manuscrits
 - développement manuel de toutes les étapes en pur Python
@@ -27,6 +19,14 @@ Plan de la session #03 :
 - fonction de coût et métriques de performance
 - optimiseur et boucle d'entrainement
 - implémentation PyTorch et fastai de ces concepts
+
+Slides :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/raw/master/slides/03_04_mnist_basics.pptx
+
+Tableau :
+
+https://github.com/laurentprudhon/cours-deeplearning-2020/blob/master/whiteboard/tableau_03.png
 
 Lien vidéo YouTube :
 
