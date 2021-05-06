@@ -1,0 +1,75 @@
+1;Concepts;Concepts - Data loading
+2;Concepts;Concepts - Model training
+3;Concepts;Concepts - Learner lifecycle
+4;Learner;Learner - Factory methods to create an instance
+5;Learner;Learner - Init & Attributes
+6;Learner;Learner - Training methods
+7;Learner;Learner - Inference methods
+8;Visualize;Diagnostics - How to debug
+9;Visualize;Show - Inputs, targets and predictions
+10;Visualize;Show - Images
+11;Visualize;Show - Text, points, boxes, tables
+12;Visualize;Plot - Training loop
+13;Evaluate;Model evaluation - Interpretation
+14;Evaluate;Metrics - 1/2
+15;Evaluate;Metrics - 2/2
+16;Training;Learner - Training loop 1/2
+17;Training;Learner - Training loop 2/2
+18;Training;Learner - Customize training loop
+19;Training;Learner - Callbacks 1/2
+20;Training;Learner - Callbacks 2/2
+21;Training;Learner - Context managers
+22;Inference;Learner - Public methods call tree
+23;Inference;Learner - validate and Recorder
+24;Inference;Learner - get_preds and Loss function
+25;Inference;Learner - predict and DataLoader
+26;Inference;Learner - show_results and DataLoader
+27;DataLoader;DataLoaders -  Create an instance
+28;DataLoader;DataLoaders - Interface
+29;DataLoader;DataLoader - Interface
+30;DataLoader;DataLoader - Init
+31;DataLoader;DataLoader - iter() / next()
+32;DataLoader;DataLoader - TfmDL
+33;DataLoader;DataLoader - TfmDL subclasses
+34;Dataset;Dataset - Interface
+35;Dataset;Dataset - Option 1 : TfmdLists
+36;Dataset;Dataset - Option 2 : Datasets
+37;Dataset;Dataset - Tabular datasets
+38;DataBlock;DataBlock
+39;DataBlock;DataBlock - Init data pipeline
+40;DataBlock;TransformBlocks - Classification & Regression
+41;DataBlock;TransformBlocks - Vision
+42;DataBlock;TransformBlocks - Text
+43;Download;Download datasets and models
+44;Download;Download datasets and models - Directories config
+45;Load;Dataset, Model, Learner - Directories used
+46;Load;Get items
+47;Load;Splitters
+48;Load;Getters
+49;Transform;Transforms for labels - Classification & Regression
+50;Vision;Type Transforms - Vision
+51;Vision;Item Transforms - Vision
+52;Vision;Data augmentation - Vision 1/4
+53;Vision;Data augmentation - Vision 2/4
+54;Vision;Data augmentation - Vision 3/4
+55;Vision;Data augmentation - Vision 4/4
+56;Text;Type Transforms - Text
+57;Text;Item Transforms - Text
+58;Tabular;Tabular datasets & transforms
+59;Optimizer;Optimizer
+60;Optimizer;Optimizers
+61;Optimizer;Optimizer - Hyperparameters scheduling
+62;Model;Create model - Vision
+63;Model;Create Model - Text, GAN
+64;Module;Pytorch Modules - Functions, Shapes & Pooling
+65;Module;Pytorch Modules - Combine layers, In & Out
+66;Module;Pytorch Modules - Activations & Norms
+67;Module;Pytorch Modules - Convolutions & Attention
+68;Module;Pytorch Modules - Text sequences & Dropout
+69;Module;Pytorch Modules - Unet, GAN & Tabular
+70;Loss;Loss function - Interface
+71;Loss;Loss functions - Classification & Regression
+72;Summary;Summary - DataBlock
+73;Summary;Summary - DataLoaders
+74;Summary;Summary - Learner
+75;Summary;Implementation notes
