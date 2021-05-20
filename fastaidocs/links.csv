@@ -1,0 +1,1532 @@
+﻿01_Concepts-Data_loading.svg;Dataset to load a single example;#34;OK
+01_Concepts-Data_loading.svg;Dataset on disk;#44;OK
+01_Concepts-Data_loading.svg;Download;#43;OK
+01_Concepts-Data_loading.svg;Get items;#46;OK
+01_Concepts-Data_loading.svg;Split;#47;OK
+01_Concepts-Data_loading.svg;Dataloader to create batches;#29;OK
+01_Concepts-Data_loading.svg;Shuffle;#31;OK
+01_Concepts-Data_loading.svg;Getters;#48;OK
+01_Concepts-Data_loading.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details;;OK
+01_Concepts-Data_loading.svg;One training example Concepts – Data loading;;OK
+01_Concepts-Data_loading.svg;input;;OK
+01_Concepts-Data_loading.svg;target (text, image,   boxes, classes);;OK
+01_Concepts-Data_loading.svg;Python tuple;;OK
+01_Concepts-Data_loading.svg;Python Path;;OK
+01_Concepts-Data_loading.svg;Keys to fetch;;OK
+01_Concepts-Data_loading.svg;examples;;OK
+01_Concepts-Data_loading.svg;Python list of keys;;OK
+01_Concepts-Data_loading.svg;[ filename1, filename2, … ];;OK
+01_Concepts-Data_loading.svg;Indexes for;;OK
+01_Concepts-Data_loading.svg;train / valid ( [0,2,4, …] , [2,3,5, …] );;OK
+01_Concepts-Data_loading.svg;Python tuple of lists of indexes;;OK
+01_Concepts-Data_loading.svg;fastai Datasets [key] next();;OK
+01_Concepts-Data_loading.svg;Load training examples in parallel;;OK
+01_Concepts-Data_loading.svg;Convert to numbers and Tensors;;OK
+01_Concepts-Data_loading.svg;Collate examples in batches;;OK
+01_Concepts-Data_loading.svg;Apply data augmentation;;OK
+01_Concepts-Data_loading.svg;Launch multiple worker processes iter ();;OK
+01_Concepts-Data_loading.svg;fastai DataLoaders;;OK
+01_Concepts-Data_loading.svg;next();;OK
+01_Concepts-Data_loading.svg;One batch of examples;;OK
+01_Concepts-Data_loading.svg;Python tuple of Tensors of batch size;;OK
+01_Concepts-Data_loading.svg;( TensorText , TensorImage , TensorBBox , TensorCategory );;OK
+01_Concepts-Data_loading.svg;target;;OK
+01_Concepts-Data_loading.svg;TensorImage.shape = batch_size x channels x width x height;;OK
+01_Concepts-Data_loading.svg;Ensure all examples are the same size;;OK
+02_Concepts-Model_training.svg;Model;#62;OK
+02_Concepts-Model_training.svg;Loss function;#70;OK
+02_Concepts-Model_training.svg;Optimizer;#59;OK
+02_Concepts-Model_training.svg;splitter;#47;OK
+02_Concepts-Model_training.svg;freeze( groups );#6;OK
+02_Concepts-Model_training.svg;ParamScheduler;#6;OK
+02_Concepts-Model_training.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Concepts – Model training;;OK
+02_Concepts-Model_training.svg;Pytorch Module;;OK
+02_Concepts-Model_training.svg;One batch of examples;;OK
+02_Concepts-Model_training.svg;Python tuple of Tensors of batch size;;OK
+02_Concepts-Model_training.svg;( TensorText , TensorImage , TensorBBox , TensorCategory );;OK
+02_Concepts-Model_training.svg;input;;OK
+02_Concepts-Model_training.svg;target;;OK
+02_Concepts-Model_training.svg;TensorImage.shape = batch_size x channels x width x height;;OK
+02_Concepts-Model_training.svg;Modules parameters;;OK
+02_Concepts-Model_training.svg;Pytorch Tensors stored in a tree of Pytorch Modules;;OK
+02_Concepts-Model_training.svg;Execute a graph of Pytorch operations;;OK
+02_Concepts-Model_training.svg;call;;OK
+02_Concepts-Model_training.svg;One batch of activations (Tensor, Tensor);;OK
+02_Concepts-Model_training.svg;Python tuple of Tensors;;OK
+02_Concepts-Model_training.svg;Pytorch Module + fastai methods;;OK
+02_Concepts-Model_training.svg;Decode activations to predictions;;OK
+02_Concepts-Model_training.svg;Compute the distance between activations and targets ( loss = prediction error);;OK
+02_Concepts-Model_training.svg;Decoded Predictions (boxes, classes);;OK
+02_Concepts-Model_training.svg;Python tuple;;OK
+02_Concepts-Model_training.svg;call decodes;;OK
+02_Concepts-Model_training.svg;Loss;;OK
+02_Concepts-Model_training.svg;Pytorch scalar Tensor;;OK
+02_Concepts-Model_training.svg;Compute the gradient of the loss with respect to the trainable parameters;;OK
+02_Concepts-Model_training.svg;Pytorch autograd;;OK
+02_Concepts-Model_training.svg;Gradients;;OK
+02_Concepts-Model_training.svg;Pytorch Tensors . grad;;OK
+02_Concepts-Model_training.svg;Hyperparams ( lr , wd , moms );;OK
+02_Concepts-Model_training.svg;Python numbers;;OK
+02_Concepts-Model_training.svg;fastai Optimizer;;OK
+02_Concepts-Model_training.svg;Python function;;OK
+02_Concepts-Model_training.svg;Trainable parameters groups;;OK
+02_Concepts-Model_training.svg;List of lists of Pytorch Tensors;;OK
+02_Concepts-Model_training.svg;fastai Callback Improve parameters;;OK
+03_Concepts-Learner_lifecycle.svg;Learner;#5;OK
+03_Concepts-Learner_lifecycle.svg;cbs : Callbacks;#19;OK
+03_Concepts-Learner_lifecycle.svg;dls : DataLoaders;#27;OK
+03_Concepts-Learner_lifecycle.svg;model : Pytorch Module;#62;OK
+03_Concepts-Learner_lifecycle.svg;loss_func : Pytorch Module;#70;OK
+03_Concepts-Learner_lifecycle.svg;opt_func : Optimizer;#59;OK
+03_Concepts-Learner_lifecycle.svg;metrics : Metric;#14;OK
+03_Concepts-Learner_lifecycle.svg;Download dataset;#43;OK
+03_Concepts-Learner_lifecycle.svg;Get list of examples;#46;OK
+03_Concepts-Learner_lifecycle.svg;Configure dataloaders;#29;OK
+03_Concepts-Learner_lifecycle.svg;Select model;#62;OK
+03_Concepts-Learner_lifecycle.svg;Select loss function;#71;OK
+03_Concepts-Learner_lifecycle.svg;Select optimizer;#60;OK
+03_Concepts-Learner_lifecycle.svg;Choose metrics;#15;OK
+03_Concepts-Learner_lifecycle.svg;Configure training loop;#19;OK
+03_Concepts-Learner_lifecycle.svg;Create Learner;#18;OK
+03_Concepts-Learner_lifecycle.svg;fit();#6;OK
+03_Concepts-Learner_lifecycle.svg;fine_tune ();#6;OK
+03_Concepts-Learner_lifecycle.svg;validate();#7;OK
+03_Concepts-Learner_lifecycle.svg;Debug;#8;OK
+03_Concepts-Learner_lifecycle.svg;Visualize;#9;OK
+03_Concepts-Learner_lifecycle.svg;Interpret;#13;OK
+03_Concepts-Learner_lifecycle.svg;Predict;#7;OK
+03_Concepts-Learner_lifecycle.svg;dls.test_dl () => get_preds ();#7;OK
+03_Concepts-Learner_lifecycle.svg;predict ();#7;OK
+03_Concepts-Learner_lifecycle.svg;Export / Import;#7;OK
+03_Concepts-Learner_lifecycle.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details;;OK
+03_Concepts-Learner_lifecycle.svg;Develop;;OK
+03_Concepts-Learner_lifecycle.svg;Validate;;OK
+03_Concepts-Learner_lifecycle.svg;Train;;OK
+03_Concepts-Learner_lifecycle.svg;Concepts – Learner lifecycle;;OK
+04_Learner-Create_an_instance.svg;collab_learner;https://docs.fast.ai/collab.html#collab_learner;OK
+04_Learner-Create_an_instance.svg;load_learner;https://docs.fast.ai/learner.html#load_learner;OK
+04_Learner-Create_an_instance.svg;tabular_learner;https://docs.fast.ai/tabular.learner.html#tabular_learner;OK
+04_Learner-Create_an_instance.svg;language_model_learner;https://docs.fast.ai/text.learner.html#language_model_learner;OK
+04_Learner-Create_an_instance.svg;text_classifier_learner;https://docs.fast.ai/text.learner.html#text_classifier_learner;OK
+04_Learner-Create_an_instance.svg;cnn_learner;https://docs.fast.ai/vision.learner.html#cnn_learner;OK
+04_Learner-Create_an_instance.svg;unet_learner;https://docs.fast.ai/vision.learner.html#unet_learner;OK
+04_Learner-Create_an_instance.svg;GANLearner;https://docs.fast.ai/vision.gan.html#GANLearner;OK
+04_Learner-Create_an_instance.svg;Learner;https://docs.fast.ai/learner.html#Learner;OK
+04_Learner-Create_an_instance.svg;TabularLearner;https://docs.fast.ai/tabular.learner.html#TabularLearner;OK
+04_Learner-Create_an_instance.svg;TextLearner;https://docs.fast.ai/text.learner.html#TextLearner;OK
+04_Learner-Create_an_instance.svg;LMLearner;https://docs.fast.ai/text.learner.html#LMLearner;OK
+04_Learner-Create_an_instance.svg;GANLearner.wgan;https://docs.fast.ai/vision.gan.html#GANLearner;OK
+04_Learner-Create_an_instance.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details;;OK
+04_Learner-Create_an_instance.svg;Learner Learner – Factory methods to create an instance;;OK
+04_Learner-Create_an_instance.svg;image;;OK
+04_Learner-Create_an_instance.svg;text;;OK
+04_Learner-Create_an_instance.svg;tabular;;OK
+04_Learner-Create_an_instance.svg;export;;OK
+04_Learner-Create_an_instance.svg;Return type;;OK
+05_Learner-Init_Attributes.svg;cbs;#19;OK
+05_Learner-Init_Attributes.svg;metrics;#15;OK
+05_Learner-Init_Attributes.svg;model;#62;OK
+05_Learner-Init_Attributes.svg;training;https://docs.fast.ai/learner.html#Learner;OK
+05_Learner-Init_Attributes.svg;logger;https://docs.fast.ai/learner.html#Learner;OK
+05_Learner-Init_Attributes.svg;n_epoch;https://docs.fast.ai/learner.html#Learner;OK
+05_Learner-Init_Attributes.svg;dls;#29;OK
+05_Learner-Init_Attributes.svg;create_mbar;https://docs.fast.ai/learner.html#Learner;OK
+05_Learner-Init_Attributes.svg;loss_func;#71;OK
+05_Learner-Init_Attributes.svg;splitter;#47;OK
+05_Learner-Init_Attributes.svg;lr;#60;OK
+05_Learner-Init_Attributes.svg;wd;#60;OK
+05_Learner-Init_Attributes.svg;wd_bn_bias;https://docs.fast.ai/learner.html#Learner;OK
+05_Learner-Init_Attributes.svg;train_bn;https://docs.fast.ai/learner.html#Learner;OK
+05_Learner-Init_Attributes.svg;moms;https://docs.fast.ai/callback.schedule.html#Learner.fit_one_cycle;OK
+05_Learner-Init_Attributes.svg;opt_func;#60;OK
+05_Learner-Init_Attributes.svg;after_create;https://docs.fast.ai/callback.core.html#Callback;OK
+05_Learner-Init_Attributes.svg;path;#45;OK
+05_Learner-Init_Attributes.svg;model_dir;#45;OK
+05_Learner-Init_Attributes.svg;defaults. callbacks = [ TrainEvalCallback , Recorder , ProgressCallback ];https://docs.fast.ai/callback.progress.html#ProgressCallback;OK
+05_Learner-Init_Attributes.svg;recorder;https://docs.fast.ai/learner.html#Recorder;OK
+05_Learner-Init_Attributes.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner – Init & Attributes;;OK
+05_Learner-Init_Attributes.svg;N x @cb.name;;OK
+05_Learner-Init_Attributes.svg;model & params;;OK
+05_Learner-Init_Attributes.svg;training loop;;OK
+05_Learner-Init_Attributes.svg;observability;;OK
+05_Learner-Init_Attributes.svg;input load & encode;;OK
+05_Learner-Init_Attributes.svg;output loss & decode;;OK
+05_Learner-Init_Attributes.svg;extensibility;;OK
+05_Learner-Init_Attributes.svg;optimizer;;OK
+05_Learner-Init_Attributes.svg;save;;OK
+05_Learner-Init_Attributes.svg;Path(@path) or @dls.path or Path(.);;OK
+05_Learner-Init_Attributes.svg;@loss_func or @dls.train_ds.loss_func;;OK
+05_Learner-Init_Attributes.svg;@dls;;OK
+05_Learner-Init_Attributes.svg;@model;;OK
+05_Learner-Init_Attributes.svg;add_cbs (L(@cbs) + L( defaults.callbacks ));;OK
+05_Learner-Init_Attributes.svg;True;;OK
+05_Learner-Init_Attributes.svg;False;;OK
+05_Learner-Init_Attributes.svg;print;;OK
+05_Learner-Init_Attributes.svg;@opt_func or Adam;;OK
+05_Learner-Init_Attributes.svg;@lr or defaults.lr;;OK
+05_Learner-Init_Attributes.svg;defaults. lr = 1e - 3;;OK
+05_Learner-Init_Attributes.svg;@wd or None;;OK
+05_Learner-Init_Attributes.svg;@splitter or trainable_params;;OK
+05_Learner-Init_Attributes.svg;@metrics or None;;OK
+05_Learner-Init_Attributes.svg;@model_dir or ‘ models ’;;OK
+05_Learner-Init_Attributes.svg;@wd_bn_bias or False;;OK
+05_Learner-Init_Attributes.svg;@train_bn or True;;OK
+05_Learner-Init_Attributes.svg;@moms or ( 0.95 , 0.85 , 0.95 );;OK
+05_Learner-Init_Attributes.svg;1;;OK
+05_Learner-Init_Attributes.svg;Recorder() Default value (@ = __init__ param) Default value (@ = __init__ param);;OK
+06_Learner-Training_methods.svg;learn.freeze();https://docs.fast.ai/learner.html#Learner.freeze;OK
+06_Learner-Training_methods.svg;learn.freeze_to ( n );https://docs.fast.ai/learner.html#Learner.freeze_to;OK
+06_Learner-Training_methods.svg;learn.lr_find ( start_lr =1e - 07, end_lr =10, num_it =100, stop_div =True, show_plot =True, suggestions=True );https://docs.fast.ai/callback.schedule.html#Learner.lr_find;OK
+06_Learner-Training_methods.svg;learn.fit ( n_epoch , lr=None, wd =None, cbs =None, reset_opt =False );https://docs.fast.ai/learner.html#Learner.fit;OK
+06_Learner-Training_methods.svg;fit_one_cycle ( n_epoch , lr_max =None, div=25., div_final =1e5, pct_start =0.25, wd =None, moms =None, cbs =None, reset_opt =False);https://docs.fast.ai/callback.schedule.html#Learner.fit_one_cycle;OK
+06_Learner-Training_methods.svg;fit_flat_cos ( n_epoch , lr=None, div_final =1e5, pct_start =0.75, wd =None, cbs =None, reset_opt =False);https://docs.fast.ai/callback.schedule.html#Learner.fit_flat_cos;OK
+06_Learner-Training_methods.svg;fit_sgdr ( n_cycles , cycle_len , lr_max =None, cycle_mult =2, cbs =None, reset_opt =False, wd =None);https://docs.fast.ai/callback.schedule.html#Learner.fit_sgdr;OK
+06_Learner-Training_methods.svg;learn.unfreeze ();https://docs.fast.ai/learner.html#Learner.unfreeze;OK
+06_Learner-Training_methods.svg;learn.fine_tune();https://docs.fast.ai/callback.schedule.html#Learner.fine_tune;OK
+06_Learner-Training_methods.svg;learn.save ( file, with_opt =True, pickle_protocol =2 );https://docs.fast.ai/learner.html#Learner.save;OK
+06_Learner-Training_methods.svg;learn.load( file, device=None, with_opt =True, strict=True );https://docs.fast.ai/learner.html#Learner.load;OK
+06_Learner-Training_methods.svg;SaveModel Callback;https://docs.fast.ai/callback.tracker.html#SaveModelCallback;OK
+06_Learner-Training_methods.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner – Training methods;;OK
+06_Learner-Training_methods.svg;Don’t train parameters – up to last parameter group ( - 1);;OK
+06_Learner-Training_methods.svg;Don’t train parameters – up to parameter group n ( excluded );;OK
+06_Learner-Training_methods.svg;Launch a mock training to find a good learning rate (saves on disk and restores the initial Learner state);;OK
+06_Learner-Training_methods.svg;Train and validate `self.model ` for ` n_epoch `, using ` cbs `. Optionally ` reset_opt `.;;OK
+06_Learner-Training_methods.svg;Fit ` self.model ` for ` n_epoch ` at flat ` lr ` before a cosine annealing.;;OK
+06_Learner-Training_methods.svg;Fit ` self.model ` for ` n_epoch ` using the 1cycle policy.;;OK
+06_Learner-Training_methods.svg;Fit ` self.model ` for ` n_cycles ` of ` cycle_len ` using SGDR.;;OK
+06_Learner-Training_methods.svg;Train all parameters groups;;OK
+06_Learner-Training_methods.svg;Save model and optimizer state (if `with_opt`) to ` self.path / self.model_dir /file`;;OK
+06_Learner-Training_methods.svg;Load model and optimizer state (if `with_opt`) from ` self.path / self.model_dir /file` using `device`;;OK
+06_Learner-Training_methods.svg;Used when you need to interrupt and restart training;;OK
+07_Learner-Inference_methods.svg;load_learner ( fname , cpu =True, pickle_module =pickle );https://docs.fast.ai/learner.html#load_learner;OK
+07_Learner-Inference_methods.svg;validate( ds_idx=1, dl=None, cbs=None );https://docs.fast.ai/learner.html#Learner.validate;OK
+07_Learner-Inference_methods.svg;predict ( item, rm_type_tfms =None, with_input =False );https://docs.fast.ai/learner.html#Learner.predict;OK
+07_Learner-Inference_methods.svg;get_preds ( ds_idx =1, dl=None, with_input =False, with_decoded =False, with_loss =False, act =None, inner=False, reorder = True , cbs =None, save_preds =None, save_targs =None, concat_dim =0 );https://docs.fast.ai/learner.html#Learner.get_preds;OK
+07_Learner-Inference_methods.svg;show_results( ds_idx =1, dl=None, max_n =9, shuffle = True , ** kwargs );https://docs.fast.ai/learner.html#Learner.show_results;OK
+07_Learner-Inference_methods.svg;tta ( ds_idx =1, dl=None, n=4, item_tfms =None, batch_tfms =None, beta=0.25, use_max =False );https://docs.fast.ai/learner.html#Learner.tta;OK
+07_Learner-Inference_methods.svg;summary();https://docs.fast.ai/callback.hook.html#Learner.summary;OK
+07_Learner-Inference_methods.svg;learn.export ( fname =' export.pkl ', pickle_module =pickle, pickle_protocol =2 );https://docs.fast.ai/learner.html#Learner.export;OK
+07_Learner-Inference_methods.svg;DataLoaders .test_dl ( test_ items );https://docs.fast.ai/data.core.html#DataLoaders.test_dl;OK
+07_Learner-Inference_methods.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner – Inference methods;;OK
+07_Learner-Inference_methods.svg;Load a `Learner` object from ` fname `, optionally on the ` cpu `;;OK
+07_Learner-Inference_methods.svg;Validate on `dl` with potential new ` cbs`;;OK
+07_Learner-Inference_methods.svg;Get the predictions and targets on the ` ds_idx ` dataset or `dl`, optionally ` with_input ` and ` with_loss `;;OK
+07_Learner-Inference_methods.svg;Prediction on `item`, fully decoded, loss function decoded and probabilities;;OK
+07_Learner-Inference_methods.svg;Return predictions on the ` ds_idx ` dataset or `dl` using Test Time Augmentation;;OK
+07_Learner-Inference_methods.svg;Show some predictions on ` ds_idx ` dataset or `dl`;;OK
+07_Learner-Inference_methods.svg;Print a summary of the model, optimizer and loss function.;;OK
+07_Learner-Inference_methods.svg;Export the content of `self` to ` self.path / fname ` without the items and the optimizer state for inference;;OK
+07_Learner-Inference_methods.svg;validate;;OK
+07_Learner-Inference_methods.svg;predict;;OK
+07_Learner-Inference_methods.svg;import;;OK
+07_Learner-Inference_methods.svg;Create a test dataloader from ` test_items` using validation transforms of `dls `;;OK
+08_Diagnostics-How_to_debug.svg;show_install ( show_nvidia_smi =False );https://docs.fast.ai/test_utils.html#show_install;OK
+08_Diagnostics-How_to_debug.svg;learner.summary ();https://docs.fast.ai/callback.hook.html#Learner.summary;OK
+08_Diagnostics-How_to_debug.svg;datablock.summary( source, bs =4 , show_batch =False );https://docs.fast.ai/data.block.html#DataBlock.summary;OK
+08_Diagnostics-How_to_debug.svg;learner.show_training_loop ();https://docs.fast.ai/learner.html#Learner.show_training_loop;OK
+08_Diagnostics-How_to_debug.svg;dataloader.show_batch ( b =None , max_n =9 , ctxs =None , show =True , unique =False );https://docs.fast.ai/data.core.html#TfmdDL.show_batch;OK
+08_Diagnostics-How_to_debug.svg;learner. show_results ( ds_idx =1 , dl =None , max_n =9 , shuffle = True );https://docs.fast.ai/learner.html#Learner.show_results;OK
+08_Diagnostics-How_to_debug.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Diagnostics – How to debug;;OK
+08_Diagnostics-How_to_debug.svg;Print user’s hardware, software, and environment setup information;;OK
+08_Diagnostics-How_to_debug.svg;Prints a summary of the model (model type, input shape, for each layer : layer type, output shape, params count, trainable status, and total number of params), type of the optimizer and loss function;;OK
+08_Diagnostics-How_to_debug.svg;Steps through the transform pipeline for one batch, and optionally calls ` show_batch (** kwargs )` on the transient `Dataloaders `;;OK
+08_Diagnostics-How_to_debug.svg;Show the callbacks called at each step in the training loop;;OK
+08_Diagnostics-How_to_debug.svg;Show `b` (defaults to ` one_batch `), a list of lists of pipeline outputs;;OK
+08_Diagnostics-How_to_debug.svg;Show some predictions on `ds_ idx ` - th dataset or `dl`;;OK
+09_Show-Inputs_targets_predictions.svg;show_batch ( x, y, samples , ctxs =None , max_n =9 , ** kwargs );https://docs.fast.ai/data.core.html;OK
+09_Show-Inputs_targets_predictions.svg;show_results( x, y, samples , outs , ctxs =None , max_n =9 , ** kwargs );https://docs.fast.ai/data.core.html;OK
+09_Show-Inputs_targets_predictions.svg;TfmDL.show_batch ( b =None , max_n =9 , ctxs =None , show =True , unique =False );https://docs.fast.ai/data.core.html#TfmdDL.show_batch;OK
+09_Show-Inputs_targets_predictions.svg;TfmDL.show_results ( b, out, max_n =9 , ctxs =None , show =True );https://github.com/fastai/fastai/blob/master/fastai/data/core.py#L105;OK
+09_Show-Inputs_targets_predictions.svg;TfmdLists | Datasets .show( o, ** kwargs );https://docs.fast.ai/data.core.html#Datasets.show;OK
+09_Show-Inputs_targets_predictions.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Show – Inputs, targets and predictions;;OK
+09_Show-Inputs_targets_predictions.svg;Internal implementation, x,y are used only for typedispatch;;OK
+09_Show-Inputs_targets_predictions.svg;Show the decoded samples of one batch;;OK
+09_Show-Inputs_targets_predictions.svg;Show the decoded samples and predictions;;OK
+09_Show-Inputs_targets_predictions.svg;Pipeline decode, then call show on each element;;OK
+09_Show-Inputs_targets_predictions.svg;x: TensorImage , y;;OK
+09_Show-Inputs_targets_predictions.svg;x: TensorImage , y: TensorCategory;;OK
+09_Show-Inputs_targets_predictions.svg;x: TensorImage , y:( TensorMask , TensorPoint , TensorBBox );;OK
+09_Show-Inputs_targets_predictions.svg;x: TensorImage , y: TensorImage;;OK
+09_Show-Inputs_targets_predictions.svg;x: InvisibleTensor , y: TensorImage;;OK
+09_Show-Inputs_targets_predictions.svg;x: TensorText , y;;OK
+09_Show-Inputs_targets_predictions.svg;x: LMTensorText , y;;OK
+09_Show-Inputs_targets_predictions.svg;x: Tabular , y: Tabular;;OK
+09_Show-Inputs_targets_predictions.svg;x: Tabular , y;;OK
+10_Show-Images.svg;show_image ( im, ax =None , figsize =None , title =None , ctx =None );https://docs.fast.ai/torch_core.html#show_image;OK
+10_Show-Images.svg;show_titled_image ( o, ** kwargs );https://docs.fast.ai/torch_core.html#show_titled_image;OK
+10_Show-Images.svg;show_images ( ims , nrows =1 , ncols =None , titles =None );https://docs.fast.ai/torch_core.html#show_images;OK
+10_Show-Images.svg;ArrayImage | ArrayImageBW | ArrayMask .show( ctx =None, ** kwargs );https://docs.fast.ai/torch_core.html#ArrayImage;OK
+10_Show-Images.svg;TensorImage | TensorImageBW | TensorMask .show( ctx =None, ** kwargs );https://docs.fast.ai/torch_core.html#TensorImage;OK
+10_Show-Images.svg;show_image_batch( b, show = show_titled_image , items =9 , cols =3 , figsize =None );https://docs.fast.ai/torch_core.html#show_image_batch;OK
+10_Show-Images.svg;PILImage | PILImageBW | PILMask .show( ctx =None, ** kwargs );https://docs.fast.ai/vision.core.html#PILImage;OK
+10_Show-Images.svg;InvisibleTensor.show ();https://docs.fast.ai/vision.gan.html#InvisibleTensor;OK
+10_Show-Images.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Show – Images;;OK
+10_Show-Images.svg;Show a PIL or PyTorch image on `ax`;;OK
+10_Show-Images.svg;Call ` show_image ` destructuring `o` to `( img,title)`;;OK
+10_Show-Images.svg;Show all images ` ims` as subplots with `rows` using `titles`;;OK
+10_Show-Images.svg;Classes based on numpy for arrays representing images;;OK
+10_Show-Images.svg;Classes based on Pytorch for tensors representing images;;OK
+10_Show-Images.svg;Display batch `b` in a grid of size `items` with `cols` width;;OK
+10_Show-Images.svg;Classes based on PIL for images objects;;OK
+10_Show-Images.svg;No display (used in GANs);;OK
+11_Show-Text_points_boxes_tables.svg;show_title ( o, ax =None , ctx =None , label =None , color ='black' );https://docs.fast.ai/torch_core.html#show_title;OK
+11_Show-Text_points_boxes_tables.svg;TitledInt | TitledFloat | TitledStr | TitledTuple | TitledTensorScalar | Category | MultiCategory .show( ctx =None, ** kwargs );https://docs.fast.ai/torch_core.html#TitledInt;OK
+11_Show-Text_points_boxes_tables.svg;display_df( df );https://docs.fast.ai/torch_core.html#display_df;OK
+11_Show-Text_points_boxes_tables.svg;TensorPoint .show( ctx =None, s =10 , marker ='.' , c ='r' );https://docs.fast.ai/vision.core.html#TensorPoint;OK
+11_Show-Text_points_boxes_tables.svg;TensorBBox .show( ctx =None, color ='white' , text =None , text_size =14 );https://docs.fast.ai/vision.core.html#TensorBBox;OK
+11_Show-Text_points_boxes_tables.svg;LabeledBBox .show( ctx =None, color ='white' , text =None , text_size =14 );https://docs.fast.ai/vision.core.html#LabeledBBox;OK
+11_Show-Text_points_boxes_tables.svg;TabularPandas.show ( max_n =10 , ** kwargs );https://docs.fast.ai/tabular.core.html#TabularPandas;OK
+11_Show-Text_points_boxes_tables.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Show – Text, points, boxes, tables;;OK
+11_Show-Text_points_boxes_tables.svg;Set title of `ax` to `o`, or print `o` if `ax` is `None`;;OK
+11_Show-Text_points_boxes_tables.svg;Display `df` in a notebook or defaults to print;;OK
+11_Show-Text_points_boxes_tables.svg;Adds a simple show() method which displays the number;;OK
+11_Show-Text_points_boxes_tables.svg;Displays points on an image;;OK
+11_Show-Text_points_boxes_tables.svg;Displays bounding boxes on an image;;OK
+11_Show-Text_points_boxes_tables.svg;Displays bounding boxes with labels on an image;;OK
+12_Plot-Training_loop.svg;learner.recorder.plot_sched(( keys=None, figsize =None );https://docs.fast.ai/callback.schedule.html#Recorder.plot_sched;OK
+12_Plot-Training_loop.svg;learner.activation_stats.plot_layer_stats( idx );https://docs.fast.ai/callback.hook.html#ActivationStats;OK
+12_Plot-Training_loop.svg;learner = Learner (…, cbs = ActivationStats ( with_hist = True ));https://docs.fast.ai/callback.hook.html#ActivationStats;OK
+12_Plot-Training_loop.svg;learner. fit_one_cycle () or learner.fit ( n_epoch , cbs = ParamScheduler ( scheds ) +L( cbs ), ...);https://docs.fast.ai/callback.schedule.html#Learner.fit_one_cycle;OK
+12_Plot-Training_loop.svg;learner.recorder . plot_loss ( skip_start =5 , with_valid =True );https://docs.fast.ai/learner.html#Recorder.plot_loss;OK
+12_Plot-Training_loop.svg;ShowGraphCallback ();https://docs.fast.ai/callback.progress.html#ShowGraphCallback;OK
+12_Plot-Training_loop.svg;WandbCallback (…);https://docs.fast.ai/callback.wandb.html;OK
+12_Plot-Training_loop.svg;TensorBoardCallback (…);https://docs.fast.ai/callback.tensorboard.html;OK
+12_Plot-Training_loop.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Plot - Training loop;;OK
+12_Plot-Training_loop.svg;Plot hyperparameters scheduled by ParamScheduler c allback;;OK
+12_Plot-Training_loop.svg;Plot the mean and std of activations at layer x, which were recorded by the ActivationStats c allback;;OK
+12_Plot-Training_loop.svg;Plot the losses after each epoch from ` skip_start ` epoch and onward;;OK
+12_Plot-Training_loop.svg;Add this callback to display a graph of training and validation loss;;OK
+12_Plot-Training_loop.svg;Saves model topology, losses & metrics for https://wandb.ai/;;OK
+12_Plot-Training_loop.svg;Saves model topology, losses & metrics for tensorboard & projector then then;;OK
+13_Model_evaluation-Interpretation.svg;Interpretation.from_learner ( learn, ds_idx =1 , dl =None , act =None );https://github.com/fastai/fastai/blob/master/fastai/interpret.py#L26;OK
+13_Model_evaluation-Interpretation.svg;top_losses ( k =None , largest =True );https://github.com/fastai/fastai/blob/master/fastai/interpret.py#L31;OK
+13_Model_evaluation-Interpretation.svg;plot_top_losses ( k, largest =True );https://github.com/fastai/fastai/blob/master/fastai/interpret.py#L35;OK
+13_Model_evaluation-Interpretation.svg;confusion_matrix ();https://github.com/fastai/fastai/blob/master/fastai/interpret.py#L59;OK
+13_Model_evaluation-Interpretation.svg;plot_confusion_matrix ( normalize=False, title='Confusion matrix', cmap =Blues, norm_dec =2, plot_txt =True );https://github.com/fastai/fastai/blob/master/fastai/interpret.py#L66;OK
+13_Model_evaluation-Interpretation.svg;most_confused ( min_val =1 );https://github.com/fastai/fastai/blob/master/fastai/interpret.py#L93;OK
+13_Model_evaluation-Interpretation.svg;print_classification_report ();https://github.com/fastai/fastai/blob/master/fastai/interpret.py#L101;OK
+13_Model_evaluation-Interpretation.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Model evaluation - Interpretation;;OK
+13_Model_evaluation-Interpretation.svg;ClassificationInterpretation;;OK
+13_Model_evaluation-Interpretation.svg;Construct interpretation object from a learner;;OK
+13_Model_evaluation-Interpretation.svg;`k` largest(/smallest) losses and indexes, defaulting to all losses (sorted by `largest`).;;OK
+13_Model_evaluation-Interpretation.svg;Type dispatched function to display top losses depending on the data types;;OK
+13_Model_evaluation-Interpretation.svg;Interpretation methods for classification models.;;OK
+13_Model_evaluation-Interpretation.svg;Confusion matrix as an `np.ndarray`.;;OK
+13_Model_evaluation-Interpretation.svg;Plot the confusion matrix, with `title` and using `cmap`.;;OK
+13_Model_evaluation-Interpretation.svg;Sorted descending list of largest non - diagonal entries of confusion matrix, presented as actual, predicted, number of occurrences.;;OK
+13_Model_evaluation-Interpretation.svg;Print scikit - learn classification report;;OK
+13_Model_evaluation-Interpretation.svg;x: TensorImage , y:TensorCategory;;OK
+13_Model_evaluation-Interpretation.svg;x: TensorImage, y:TensorMultiCategory;;OK
+13_Model_evaluation-Interpretation.svg;x:TensorImage, y:TensorMask;;OK
+13_Model_evaluation-Interpretation.svg;x: TensorText, y:TensorCategory;;OK
+14_Metrics-1_2.svg;reset ();https://docs.fast.ai/learner.html#Metric.reset;OK
+14_Metrics-1_2.svg;value ();https://docs.fast.ai/learner.html#Metric.value;OK
+14_Metrics-1_2.svg;accumulate ( learn );https://docs.fast.ai/learner.html#Metric.accumulate;OK
+14_Metrics-1_2.svg;Metric;https://docs.fast.ai/learner.html#Metric;OK
+14_Metrics-1_2.svg;AvgLoss ( Metric );https://docs.fast.ai/learner.html#AvgLoss;OK
+14_Metrics-1_2.svg;AvgMetric ( func );https://docs.fast.ai/learner.html#AvgMetric;OK
+14_Metrics-1_2.svg;AvgLoss ();https://docs.fast.ai/learner.html#AvgLoss;OK
+14_Metrics-1_2.svg;AvgSmoothLoss (beta =0.98 );https://docs.fast.ai/learner.html#AvgSmoothLoss;OK
+14_Metrics-1_2.svg;ValueMetric ( func , metric_name );https://docs.fast.ai/learner.html#ValueMetric;OK
+14_Metrics-1_2.svg;mk_metric (m);https://docs.fast.ai/learner.html#mk_metric;OK
+14_Metrics-1_2.svg;AccumMetric ( func , …);https://docs.fast.ai/metrics.html#AccumMetric;OK
+14_Metrics-1_2.svg;skm_to_fastai( func , …);https://docs.fast.ai/metrics.html#skm_to_fastai;OK
+14_Metrics-1_2.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Metrics – 1/2;;OK
+14_Metrics-1_2.svg;before_train / before_validate;;OK
+14_Metrics-1_2.svg;after_train / after_validate;;OK
+14_Metrics-1_2.svg;after_batch;;OK
+14_Metrics-1_2.svg;self.total = 0;;OK
+14_Metrics-1_2.svg;self.total += learn.loss. mean () * bs;;OK
+14_Metrics-1_2.svg;return self.total / self.count;;OK
+14_Metrics-1_2.svg;Average the values of `func ` taking into account potential different batch sizes;;OK
+14_Metrics-1_2.svg;Average the losses taking into account potential different batch sizes;;OK
+14_Metrics-1_2.svg;Smooth average of the losses (exponentially weighted with `beta`);;OK
+14_Metrics-1_2.svg;Use to include a pre - calculated metric value (in a `Callback`) returned by ` func `;;OK
+14_Metrics-1_2.svg;Convert `m` to an `AvgMetric`, unless it's already a `Metric`;;OK
+14_Metrics-1_2.svg;Stores predictions and targets to perform final calculations with `func `;;OK
+14_Metrics-1_2.svg;Convert ` func ` from sklearn.metrics to a fastai metric`;;OK
+15_Metrics-2_2.svg;accuracy;https://docs.fast.ai/metrics.html#accuracy;OK
+15_Metrics-2_2.svg;error_rate;https://docs.fast.ai/metrics.html#error_rate;OK
+15_Metrics-2_2.svg;top_k_accuracy;https://docs.fast.ai/metrics.html#top_k_accuracy;OK
+15_Metrics-2_2.svg;APScoreBinary;https://docs.fast.ai/metrics.html#APScoreBinary;OK
+15_Metrics-2_2.svg;BalancedAccuracy;https://docs.fast.ai/metrics.html#BalancedAccuracy;OK
+15_Metrics-2_2.svg;BrierScore;https://docs.fast.ai/metrics.html#BrierScore;OK
+15_Metrics-2_2.svg;CohenKappa;https://docs.fast.ai/metrics.html#CohenKappa;OK
+15_Metrics-2_2.svg;F1Score;https://docs.fast.ai/metrics.html#F1Score;OK
+15_Metrics-2_2.svg;FBeta;https://docs.fast.ai/metrics.html#FBeta;OK
+15_Metrics-2_2.svg;HammingLoss;https://docs.fast.ai/metrics.html#HammingLoss;OK
+15_Metrics-2_2.svg;Jaccard;https://docs.fast.ai/metrics.html#Jaccard;OK
+15_Metrics-2_2.svg;Precision;https://docs.fast.ai/metrics.html#Precision;OK
+15_Metrics-2_2.svg;Recall;https://docs.fast.ai/metrics.html#Recall;OK
+15_Metrics-2_2.svg;RocAuc;https://docs.fast.ai/metrics.html#RocAuc;OK
+15_Metrics-2_2.svg;RocAucBinary;https://docs.fast.ai/metrics.html#RocAucBinary;OK
+15_Metrics-2_2.svg;MatthewsCorrCoef;https://docs.fast.ai/metrics.html#MatthewsCorrCoef;OK
+15_Metrics-2_2.svg;Perplexity;https://docs.fast.ai/metrics.html#Perplexity;OK
+15_Metrics-2_2.svg;accuracy_multi;https://docs.fast.ai/metrics.html#accuracy_multi;OK
+15_Metrics-2_2.svg;APScoreMulti;https://docs.fast.ai/metrics.html#APScoreMulti;OK
+15_Metrics-2_2.svg;BrierScoreMulti;https://docs.fast.ai/metrics.html#BrierScoreMulti;OK
+15_Metrics-2_2.svg;F1ScoreMulti;https://docs.fast.ai/metrics.html#F1ScoreMulti;OK
+15_Metrics-2_2.svg;FBetaMulti;https://docs.fast.ai/metrics.html#FBetaMulti;OK
+15_Metrics-2_2.svg;HammingLossMulti;https://docs.fast.ai/metrics.html#HammingLossMulti;OK
+15_Metrics-2_2.svg;JaccardMulti;https://docs.fast.ai/metrics.html#JaccardMulti;OK
+15_Metrics-2_2.svg;PrecisionMulti;https://docs.fast.ai/metrics.html#PrecisionMulti;OK
+15_Metrics-2_2.svg;RecallMulti;https://docs.fast.ai/metrics.html#RecallMulti;OK
+15_Metrics-2_2.svg;RocAucMulti;https://docs.fast.ai/metrics.html#RocAucMulti;OK
+15_Metrics-2_2.svg;MatthewsCorrCoefMulti;https://docs.fast.ai/metrics.html#MatthewsCorrCoefMulti;OK
+15_Metrics-2_2.svg;mse;https://docs.fast.ai/metrics.html#mse;OK
+15_Metrics-2_2.svg;rmse;https://docs.fast.ai/metrics.html#rmse;OK
+15_Metrics-2_2.svg;mae;https://docs.fast.ai/metrics.html#mae;OK
+15_Metrics-2_2.svg;msle;https://docs.fast.ai/metrics.html#msle;OK
+15_Metrics-2_2.svg;exp_rmspe;https://docs.fast.ai/metrics.html#exp_rmspe;OK
+15_Metrics-2_2.svg;ExplainedVariance;https://docs.fast.ai/metrics.html#ExplainedVariance;OK
+15_Metrics-2_2.svg;R2Score;https://docs.fast.ai/metrics.html#R2Score;OK
+15_Metrics-2_2.svg;PearsonCorrCoef;https://docs.fast.ai/metrics.html#PearsonCorrCoef;OK
+15_Metrics-2_2.svg;SpearmanCorrCoef;https://docs.fast.ai/metrics.html#SpearmanCorrCoef;OK
+15_Metrics-2_2.svg;foreground_acc;https://docs.fast.ai/metrics.html#foreground_acc;OK
+15_Metrics-2_2.svg;JaccardCoeff;https://docs.fast.ai/metrics.html#JaccardCoeff;OK
+15_Metrics-2_2.svg;Dice;https://docs.fast.ai/metrics.html#Dice;OK
+15_Metrics-2_2.svg;DiceMulti;https://docs.fast.ai/metrics.html#DiceMulti;OK
+15_Metrics-2_2.svg;CorpusBLEUMetric;https://docs.fast.ai/metrics.html#CorpusBLEUMetric;OK
+15_Metrics-2_2.svg;LossMetrics;https://docs.fast.ai/metrics.html#LossMetrics;OK
+15_Metrics-2_2.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Metrics – 2/2;;OK
+15_Metrics-2_2.svg;Single - label classification;;OK
+15_Metrics-2_2.svg;Multi - label classification;;OK
+15_Metrics-2_2.svg;Regression;;OK
+15_Metrics-2_2.svg;Segmentation;;OK
+15_Metrics-2_2.svg;NLP;;OK
+16_Learner-Training_loop_1_2.svg;Fit;https://docs.fast.ai/learner.html#Learner.fit;OK
+16_Learner-Training_loop_1_2.svg;before_fit;https://docs.fast.ai/callback.core.html#Callback;OK
+16_Learner-Training_loop_1_2.svg;_ end_cleanup;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L220;OK
+16_Learner-Training_loop_1_2.svg;after_fit;https://docs.fast.ai/callback.core.html#Callback;OK
+16_Learner-Training_loop_1_2.svg;_ do_fit;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L206;OK
+16_Learner-Training_loop_1_2.svg;before_epoch;https://docs.fast.ai/callback.core.html#Callback;OK
+16_Learner-Training_loop_1_2.svg;after_epoch;https://docs.fast.ai/callback.core.html#Callback;OK
+16_Learner-Training_loop_1_2.svg;before_train;https://docs.fast.ai/callback.core.html#Callback;OK
+16_Learner-Training_loop_1_2.svg;_ do_epoch_train;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L193;OK
+16_Learner-Training_loop_1_2.svg;_ do_epoch_validate;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L197;OK
+16_Learner-Training_loop_1_2.svg;after_train;https://docs.fast.ai/callback.core.html#Callback;OK
+16_Learner-Training_loop_1_2.svg;before_validate;https://docs.fast.ai/callback.core.html#Callback;OK
+16_Learner-Training_loop_1_2.svg;after_validate;https://docs.fast.ai/callback.core.html#Callback;OK
+16_Learner-Training_loop_1_2.svg;all_batches;https://docs.fast.ai/learner.html#Learner.all_batches;OK
+16_Learner-Training_loop_1_2.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner – Training loop 1/2;;OK
+16_Learner-Training_loop_1_2.svg;for epoch in range ( self.n_epoch );;OK
+16_Learner-Training_loop_1_2.svg;self.opt = self. opt_func ( self. splitter ( self.model )). set_hypers ( lr & wd );;OK
+16_Learner-Training_loop_1_2.svg;self.n_epoch = n_epoch;;OK
+16_Learner-Training_loop_1_2.svg;self.epoch = epoch;;OK
+16_Learner-Training_loop_1_2.svg;self.dl = self.dls.train;;OK
+16_Learner-Training_loop_1_2.svg;self.dl = self.dls [1];;OK
+16_Learner-Training_loop_1_2.svg;with torch. no_grad ():;;OK
+16_Learner-Training_loop_1_2.svg;self.dl,self.xb,self.yb,self.pred,self.loss = None;;OK
+16_Learner-Training_loop_1_2.svg;self.final_record = Recorder .log;;OK
+16_Learner-Training_loop_1_2.svg;self.epoch = 0;;OK
+16_Learner-Training_loop_1_2.svg;self.loss = 0;;OK
+16_Learner-Training_loop_1_2.svg;self.train_iter = 0;;OK
+16_Learner-Training_loop_1_2.svg;self.pct_train = 0;;OK
+16_Learner-Training_loop_1_2.svg;self.model. to ( self.dls.device ).reset();;OK
+16_Learner-Training_loop_1_2.svg;self.pct_train = self.epoch / self.n_epoch;;OK
+16_Learner-Training_loop_1_2.svg;self.model.train ();;OK
+16_Learner-Training_loop_1_2.svg;self.training =True;;OK
+16_Learner-Training_loop_1_2.svg;self.model.eval ();;OK
+16_Learner-Training_loop_1_2.svg;self.training =False => see next slide => see next slide;;OK
+17_Learner-Training_loop_2_2.svg;before_batch;https://docs.fast.ai/callback.core.html#Callback;OK
+17_Learner-Training_loop_2_2.svg;all_batches;https://docs.fast.ai/learner.html#Learner.all_batches;OK
+17_Learner-Training_loop_2_2.svg;one_batch;https://docs.fast.ai/learner.html#Learner.one_batch;OK
+17_Learner-Training_loop_2_2.svg;after_batch;https://docs.fast.ai/callback.core.html#Callback;OK
+17_Learner-Training_loop_2_2.svg;_ do_one_batch;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L168;OK
+17_Learner-Training_loop_2_2.svg;after_pred;https://docs.fast.ai/callback.core.html#Callback;OK
+17_Learner-Training_loop_2_2.svg;after_loss;https://docs.fast.ai/callback.core.html#Callback;OK
+17_Learner-Training_loop_2_2.svg;before_backward;https://docs.fast.ai/callback.core.html#Callback;OK
+17_Learner-Training_loop_2_2.svg;before_step;https://docs.fast.ai/callback.core.html#Callback;OK
+17_Learner-Training_loop_2_2.svg;after_step;https://docs.fast.ai/callback.core.html#Callback;OK
+17_Learner-Training_loop_2_2.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner – Training loop 2/2;;OK
+17_Learner-Training_loop_2_2.svg;for i,b in enumerate ( self.dl );;OK
+17_Learner-Training_loop_2_2.svg;self.n_iter = len ( self.dl );;OK
+17_Learner-Training_loop_2_2.svg;self . iter = i;;OK
+17_Learner-Training_loop_2_2.svg;b. to ( device = self.dls.device );;OK
+17_Learner-Training_loop_2_2.svg;self.xb,self.yb = b[: n_inp ],b[ n_inp :];;OK
+17_Learner-Training_loop_2_2.svg;self.pred = self. model ( * self.xb );;OK
+17_Learner-Training_loop_2_2.svg;self.loss = self.loss_func ( self.pred , * self.yb );;OK
+17_Learner-Training_loop_2_2.svg;if s elf.training and len ( self.yb ):;;OK
+17_Learner-Training_loop_2_2.svg;self.loss_grad.backward ();;OK
+17_Learner-Training_loop_2_2.svg;self.opt.zero_grad ();;OK
+17_Learner-Training_loop_2_2.svg;self.opt.step();;OK
+17_Learner-Training_loop_2_2.svg;<= if len ( self.yb );;OK
+17_Learner-Training_loop_2_2.svg;self.smooth_loss = Recoder. smooth_loss.value;;OK
+17_Learner-Training_loop_2_2.svg;self.train_iter +=1;;OK
+17_Learner-Training_loop_2_2.svg;self.pct_train+= 1./ ( self.n_iter * self.n_epoch );;OK
+17_Learner-Training_loop_2_2.svg;!   t raining only   !;;OK
+18_Learner-Customize_training_loop.svg;add_cbs ( cbs );https://docs.fast.ai/learner.html#Learner.add_cbs;OK
+18_Learner-Customize_training_loop.svg;add_cb (cb);https://docs.fast.ai/learner.html#Learner.add_cb;OK
+18_Learner-Customize_training_loop.svg;remove_cb (cb);https://docs.fast.ai/learner.html#Learner.remove_cb;OK
+18_Learner-Customize_training_loop.svg;remove_cbs( cbs );https://docs.fast.ai/learner.html#Learner.remove_cbs;OK
+18_Learner-Customize_training_loop.svg;show_training_loop () • after_create • before_fit • before_epoch • before_train • before_batch • after_pred • after_loss • before_backwar d • before_step • after_cancel_ste p • after_step • after_cancel_batch • after_batch • after_cancel_train • after_train • before_validate • before_batch • after_pred • after_loss • after_cancel_batch • after_batch • after_cancel_validate • after_validate • after_cancel_epoch • after_epoch • after_cancel_fit • after_fit;https://docs.fast.ai/learner.html#Learner.show_training_loop;OK
+18_Learner-Customize_training_loop.svg;event;https://docs.fast.ai/callback.core.html#Callback;OK
+18_Learner-Customize_training_loop.svg;ordered_cbs ( event );https://docs.fast.ai/learner.html#Learner.ordered_cbs;OK
+18_Learner-Customize_training_loop.svg;to_fp16();https://docs.fast.ai/callback.fp16.html#A-little-bit-of-theory;OK
+18_Learner-Customize_training_loop.svg;to_fp32();https://docs.fast.ai/callback.fp16.html#Learner.to_fp32;OK
+18_Learner-Customize_training_loop.svg;to_distributed();https://docs.fast.ai/distributed.html#DistributedTrainer;OK
+18_Learner-Customize_training_loop.svg;detach_distributed ();https://docs.fast.ai/distributed.html#Learner.detach_distributed;OK
+18_Learner-Customize_training_loop.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner – Customize training loop;;OK
+18_Learner-Customize_training_loop.svg;Add `cbs` to the list of `Callback` and register `self` as their learner;;OK
+18_Learner-Customize_training_loop.svg;Remove `cbs` from the list of `Callback` and deregister `self` as their learner;;OK
+18_Learner-Customize_training_loop.svg;List of `Callback`s, in order, for an `event` in the training loop;;OK
+18_Learner-Customize_training_loop.svg;Show each step in the training loop;;OK
+18_Learner-Customize_training_loop.svg;Enable mixed precision training (native Pytorch impl .);;OK
+18_Learner-Customize_training_loop.svg;Disable mixed precision training;;OK
+18_Learner-Customize_training_loop.svg;Enable distributed training (DistributedDataParallel );;OK
+18_Learner-Customize_training_loop.svg;Disable distributed training;;OK
+19_Learner-Callbacks_1_2.svg;ParamScheduler;https://docs.fast.ai/callback.schedule.html#ParamScheduler;OK
+19_Learner-Callbacks_1_2.svg;LRFinder;https://docs.fast.ai/callback.schedule.html#LRFinder;OK
+19_Learner-Callbacks_1_2.svg;ShowGraphCallback;https://docs.fast.ai/callback.progress.html#ShowGraphCallback;OK
+19_Learner-Callbacks_1_2.svg;CSVLogger;https://docs.fast.ai/callback.progress.html#CSVLogger;OK
+19_Learner-Callbacks_1_2.svg;ShortEpochCallback;https://docs.fast.ai/callback.training.html#ShortEpochCallback;OK
+19_Learner-Callbacks_1_2.svg;GradientAccumulation;https://docs.fast.ai/callback.training.html#GradientAccumulation;OK
+19_Learner-Callbacks_1_2.svg;GradientClip;https://docs.fast.ai/callback.training.html#GradientClip;OK
+19_Learner-Callbacks_1_2.svg;BnFreeze;https://docs.fast.ai/callback.training.html#BnFreeze;OK
+19_Learner-Callbacks_1_2.svg;TerminateOnNaNCallback;https://docs.fast.ai/callback.tracker.html#TerminateOnNaNCallback;OK
+19_Learner-Callbacks_1_2.svg;TrackerCallback;https://docs.fast.ai/callback.tracker.html#TrackerCallback;OK
+19_Learner-Callbacks_1_2.svg;EarlyStoppingCallback;https://docs.fast.ai/callback.tracker.html#EarlyStoppingCallback;OK
+19_Learner-Callbacks_1_2.svg;SaveModelCallback;https://docs.fast.ai/callback.tracker.html#SaveModelCallback;OK
+19_Learner-Callbacks_1_2.svg;ReduceLROnPlateau;https://docs.fast.ai/callback.tracker.html#ReduceLROnPlateau;OK
+19_Learner-Callbacks_1_2.svg;GatherPredsCallback;https://docs.fast.ai/callback.core.html#GatherPredsCallback;OK
+19_Learner-Callbacks_1_2.svg;FetchPredsCallback;https://docs.fast.ai/callback.core.html#FetchPredsCallback;OK
+19_Learner-Callbacks_1_2.svg;MCDropoutCallback;https://docs.fast.ai/callback.preds.html#MCDropoutCallback;OK
+19_Learner-Callbacks_1_2.svg;WandbCallback;https://docs.fast.ai/callback.wandb.html;OK
+19_Learner-Callbacks_1_2.svg;TensorBoardCallback;https://docs.fast.ai/callback.tensorboard.html;OK
+19_Learner-Callbacks_1_2.svg;NeptuneCallback;https://docs.fast.ai/callback.neptune.html;OK
+19_Learner-Callbacks_1_2.svg;AzureMLCallback;https://github.com/fastai/fastai/blob/master/fastai/callback/azureml.py#L13;OK
+19_Learner-Callbacks_1_2.svg;CollectDataCallback;https://docs.fast.ai/callback.data.html#CollectDataCallback;OK
+19_Learner-Callbacks_1_2.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner - Callbacks 1/2;;OK
+19_Learner-Callbacks_1_2.svg;Hyperparams scheduling;;OK
+19_Learner-Callbacks_1_2.svg;Progress and logging;;OK
+19_Learner-Callbacks_1_2.svg;Training callbacks;;OK
+19_Learner-Callbacks_1_2.svg;Tracking callbacks;;OK
+19_Learner-Callbacks_1_2.svg;Prediction callbacks;;OK
+19_Learner-Callbacks_1_2.svg;Integrations;;OK
+19_Learner-Callbacks_1_2.svg;Data callbacks;;OK
+20_Learner-Callbacks_2_2.svg;HookCallback;https://docs.fast.ai/callback.hook.html#HookCallback;OK
+20_Learner-Callbacks_2_2.svg;ActivationStats;https://docs.fast.ai/callback.hook.html#ActivationStats;OK
+20_Learner-Callbacks_2_2.svg;MixedPrecision;https://docs.fast.ai/callback.fp16.html#MixedPrecision;OK
+20_Learner-Callbacks_2_2.svg;ParallelTrainer;https://docs.fast.ai/distributed.html#ParallelTrainer;OK
+20_Learner-Callbacks_2_2.svg;DistributedTrainer;https://docs.fast.ai/distributed.html#DistributedTrainer;OK
+20_Learner-Callbacks_2_2.svg;MixUp;https://docs.fast.ai/callback.mixup.html#MixUp;OK
+20_Learner-Callbacks_2_2.svg;CutMix;https://docs.fast.ai/callback.mixup.html#CutMix;OK
+20_Learner-Callbacks_2_2.svg;GANTrainer;https://docs.fast.ai/vision.gan.html#GANTrainer;OK
+20_Learner-Callbacks_2_2.svg;AdaptiveGANSwitcher;https://docs.fast.ai/vision.gan.html#AdaptiveGANSwitcher;OK
+20_Learner-Callbacks_2_2.svg;GANDiscriminativeLR;https://docs.fast.ai/vision.gan.html#GANDiscriminativeLR;OK
+20_Learner-Callbacks_2_2.svg;ModelResetter;https://docs.fast.ai/callback.rnn.html#ModelResetter;OK
+20_Learner-Callbacks_2_2.svg;RNNCallback;https://docs.fast.ai/callback.rnn.html#RNNCallback;OK
+20_Learner-Callbacks_2_2.svg;RNNRegularizer;https://docs.fast.ai/callback.rnn.html#RNNRegularizer;OK
+20_Learner-Callbacks_2_2.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner - Callbacks 2/2;;OK
+20_Learner-Callbacks_2_2.svg;Model hooks;;OK
+20_Learner-Callbacks_2_2.svg;Mixed precision training;;OK
+20_Learner-Callbacks_2_2.svg;Distributed training;;OK
+20_Learner-Callbacks_2_2.svg;Image data augmentation;;OK
+20_Learner-Callbacks_2_2.svg;GAN training;;OK
+20_Learner-Callbacks_2_2.svg;RNNtraining;;OK
+21_Learner-Context_managers.svg;with self. added_cbs ( cbs ):;https://docs.fast.ai/learner.html#Learner.added_cbs;OK
+21_Learner-Context_managers.svg;with self. loss_not_reduced ():;https://docs.fast.ai/learner.html#Learner.loss_not_reduced;OK
+21_Learner-Context_managers.svg;with self. no_bar ( cbs ):;https://docs.fast.ai/callback.progress.html#Learner.no_bar;OK
+21_Learner-Context_managers.svg;with self. no_mbar ( cbs ):;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L288;OK
+21_Learner-Context_managers.svg;with self. no_logging ( cbs ):;https://docs.fast.ai/learner.html#Learner.no_logging;OK
+21_Learner-Context_managers.svg;with self. removed_cbs ( cbs ):;https://docs.fast.ai/learner.html#Learner.removed_cbs;OK
+21_Learner-Context_managers.svg;with self. validation_context ( cbs,inner ):;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L224;OK
+21_Learner-Context_managers.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details Learner – Context managers;;OK
+21_Learner-Context_managers.svg;Temporarily add callbacks to the Learner;;OK
+21_Learner-Context_managers.svg;Learner.fit ();;OK
+21_Learner-Context_managers.svg;Temporarily set self.loss_func.reduction ='none';;OK
+21_Learner-Context_managers.svg;Learner.get_preds( with_loss = True );;OK
+21_Learner-Context_managers.svg;Temporarily remove ProgressCallback (progress bars);;OK
+21_Learner-Context_managers.svg;LMLearner.predict ( no_bar = True );;OK
+21_Learner-Context_managers.svg;Temporarily set self.create_mbar =False (master progress bar);;OK
+21_Learner-Context_managers.svg;Learner.validate() / get_preds ();;OK
+21_Learner-Context_managers.svg;Temporarily set self.logger = noop;;OK
+21_Learner-Context_managers.svg;Temporarily remove callbacks from the Learner;;OK
+21_Learner-Context_managers.svg;FetchPredsCallback – cb. remove_on_fetch;;OK
+21_Learner-Context_managers.svg;Combines no_logging (), no_mbar (), added_cbs ( cbs ), and if not inner self( before_epoch / after_epoch );;OK
+22_Learner-Public_methods_call_tree.svg;fine_tune;https://docs.fast.ai/callback.schedule.html#Learner.fine_tune;OK
+22_Learner-Public_methods_call_tree.svg;fit;https://docs.fast.ai/learner.html#Learner.fit;OK
+22_Learner-Public_methods_call_tree.svg;fit_flat_cos;https://docs.fast.ai/callback.schedule.html#Learner.fit_flat_cos;OK
+22_Learner-Public_methods_call_tree.svg;fit_one_cycle;https://docs.fast.ai/callback.schedule.html#Learner.fit_one_cycle;OK
+22_Learner-Public_methods_call_tree.svg;fit_sgdr;https://docs.fast.ai/callback.schedule.html#Learner.fit_sgdr;OK
+22_Learner-Public_methods_call_tree.svg;lr_find;https://docs.fast.ai/callback.schedule.html#Learner.lr_find;OK
+22_Learner-Public_methods_call_tree.svg;get_preds;https://docs.fast.ai/learner.html#Learner.get_preds;OK
+22_Learner-Public_methods_call_tree.svg;predict;https://docs.fast.ai/learner.html#Learner.predict;OK
+22_Learner-Public_methods_call_tree.svg;tta;https://docs.fast.ai/learner.html#Learner.tta;OK
+22_Learner-Public_methods_call_tree.svg;validate;https://docs.fast.ai/learner.html#Learner.validate;OK
+22_Learner-Public_methods_call_tree.svg;create_opt;https://docs.fast.ai/learner.html#Learner.create_opt;OK
+22_Learner-Public_methods_call_tree.svg;_ do_epoch_train;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L193;OK
+22_Learner-Public_methods_call_tree.svg;_ do_epoch_validate;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L197;OK
+22_Learner-Public_methods_call_tree.svg;all_batches;https://docs.fast.ai/learner.html#Learner.all_batches;OK
+22_Learner-Public_methods_call_tree.svg;one_batch;https://docs.fast.ai/learner.html#Learner.one_batch;OK
+22_Learner-Public_methods_call_tree.svg;show_results;https://docs.fast.ai/learner.html#Learner.show_results;OK
+22_Learner-Public_methods_call_tree.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details;;OK
+22_Learner-Public_methods_call_tree.svg;Training loop;;OK
+22_Learner-Public_methods_call_tree.svg;for epoch in range;;OK
+22_Learner-Public_methods_call_tree.svg;self.dl;;OK
+22_Learner-Public_methods_call_tree.svg;for b in self.dl;;OK
+22_Learner-Public_methods_call_tree.svg;Learner – Public methods call tree;;OK
+22_Learner-Public_methods_call_tree.svg;...;;OK
+23_Learner-validate_and_Recorder.svg;learner. validate( ds_idx=1, dl=None, cbs=None );https://docs.fast.ai/learner.html#Learner.validate;OK
+23_Learner-validate_and_Recorder.svg;_do_epoch_validate (ds_idx, dl);https://github.com/fastai/fastai/blob/master/fastai/learner.py#L197;OK
+23_Learner-validate_and_Recorder.svg;Recorder.after_epoch ();https://docs.fast.ai/learner.html#Recorder.after_epoch;OK
+23_Learner-validate_and_Recorder.svg;Recorder.after_train();https://github.com/fastai/fastai/blob/master/fastai/learner.py#L515;OK
+23_Learner-validate_and_Recorder.svg;Recorder.after_valid () During training, an exponential moving average of the loss is available in self.smooth_loss During validation, a running average of the loss is available in self.loss .;https://github.com/fastai/fastai/blob/master/fastai/learner.py#L516;OK
+23_Learner-validate_and_Recorder.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details;;OK
+23_Learner-validate_and_Recorder.svg;if dl is None: dl = self.dls[ ds_idx ];;OK
+23_Learner-validate_and_Recorder.svg;return getattr (self, ' final_record ' , None );;OK
+23_Learner-validate_and_Recorder.svg;self.learn.final_record = self.log[ 1 :]. copy ();;OK
+23_Learner-validate_and_Recorder.svg;self.log += L ( self.smooth_loss ) + ( self.metrics if self.train_metrics else L ());;OK
+23_Learner-validate_and_Recorder.svg;self.log += L ( self.loss ) + ( self.metrics if self.valid_metrics else L ());;OK
+23_Learner-validate_and_Recorder.svg;Learner – validate and Recorder;;OK
+24_Learner-get_preds_and_Loss_function.svg;learner. get_preds ( ds_idx =1, dl=None, with_input =False, with_decoded =False, with_loss =False, act=None );https://docs.fast.ai/learner.html#Learner.get_preds;OK
+24_Learner-get_preds_and_Loss_function.svg;res = GatherPredsCallback.all_tensors();https://docs.fast.ai/callback.core.html#GatherPredsCallback;OK
+24_Learner-get_preds_and_Loss_function.svg;_do_epoch_validate (dl = dl);https://github.com/fastai/fastai/blob/master/fastai/learner.py#L197;OK
+24_Learner-get_preds_and_Loss_function.svg;GatherPredsCallback;https://docs.fast.ai/callback.core.html#GatherPredsCallback;OK
+24_Learner-get_preds_and_Loss_function.svg;CrossEntropyLossFlat ( BaseLoss );https://docs.fast.ai/losses.html#CrossEntropyLossFlat;OK
+24_Learner-get_preds_and_Loss_function.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details;;OK
+24_Learner-get_preds_and_Loss_function.svg;if act is None : act = getattr ( self.loss_func , 'activation' , noop );;OK
+24_Learner-get_preds_and_Loss_function.svg;res [ pred_i ] = act ( res [ pred_i ]);;OK
+24_Learner-get_preds_and_Loss_function.svg;res. insert (pred_i +2 , getattr ( self.loss_func , ' decodes ' , noop )( res [ pred_i ])) if with_decoded pred_i = 1 if with_input else 0;;OK
+24_Learner-get_preds_and_Loss_function.svg;return tuple ( res );;OK
+24_Learner-get_preds_and_Loss_function.svg;after_batch inputs += learn.xb preds += learn.pred targets += learn.yb losses += learn.loss;;OK
+24_Learner-get_preds_and_Loss_function.svg;def activation (self, x): return F . softmax (x, dim = self.axis );;OK
+24_Learner-get_preds_and_Loss_function.svg;def decodes (self, x): return x. argmax ( dim = self.axis ) Learner – get_preds and Loss function;;OK
+24_Learner-get_preds_and_Loss_function.svg;if with_input if with_loss;;OK
+25_Learner-predict_and_DataLoader.svg;learner . predict ( item, rm_type_tfms =None, with_input =False );https://docs.fast.ai/learner.html#Learner.predict;OK
+25_Learner-predict_and_DataLoader.svg;dl = self.dls.test_dl ([item] , rm_type_tfms =rm_type_tfms , num_workers =0);https://docs.fast.ai/data.core.html#DataLoaders.test_dl;OK
+25_Learner-predict_and_DataLoader.svg;inp, preds ,_,dec_preds = self . get_preds ( dl = dl, with_input =True , with_decoded =True );https://docs.fast.ai/learner.html#Learner.get_preds;OK
+25_Learner-predict_and_DataLoader.svg;dec = self.dls. decode_batch ( inp + tuplify ( dec_preds ))[ 0 ];https://docs.fast.ai/data.core.html#TfmdDL.decode_batch;OK
+25_Learner-predict_and_DataLoader.svg;TfmDL.decode_batch;https://docs.fast.ai/data.core.html#TfmdDL.decode_batch;OK
+25_Learner-predict_and_DataLoader.svg;retain_types (b, typs = self._types );https://fastcore.fast.ai/dispatch.html#retain_types;OK
+25_Learner-predict_and_DataLoader.svg;batch_to_samples (b) Learner – predict and DataLoader;https://docs.fast.ai/torch_core.html#batch_to_samples;OK
+25_Learner-predict_and_DataLoader.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details;;OK
+25_Learner-predict_and_DataLoader.svg;i = getattr ( self.dls , ' n_inp ' , - 1 );;OK
+25_Learner-predict_and_DataLoader.svg;dec_inp,dec_targ = map ( detuplify , [dec[:i], dec [i:]]);;OK
+25_Learner-predict_and_DataLoader.svg;return dec_targ,dec_preds [ 0 ], preds [ 0 ];;OK
+25_Learner-predict_and_DataLoader.svg;self.after_batch.decode;;OK
+25_Learner-predict_and_DataLoader.svg;self.before_batch.decode;;OK
+25_Learner-predict_and_DataLoader.svg;self.after_item.decode;;OK
+25_Learner-predict_and_DataLoader.svg;self.dataset.decode [or noop];;OK
+26_Learner-show_results_and_DataLoader.svg;learner . show_results ( ds_idx =1, dl=None, max_n =9, shuffle = True );https://docs.fast.ai/learner.html#Learner.show_results;OK
+26_Learner-show_results_and_DataLoader.svg;b = dl. one_batch ();https://docs.fast.ai/data.core.html#DataLoader.one_batch;OK
+26_Learner-show_results_and_DataLoader.svg;_,_, dec_preds = self. get_preds ( dl=[b], with_decoded =True );https://docs.fast.ai/learner.html#Learner.get_preds;OK
+26_Learner-show_results_and_DataLoader.svg;self.dls. show_results (b, dec_preds );https://github.com/fastai/fastai/blob/master/fastai/data/core.py#L105;OK
+26_Learner-show_results_and_DataLoader.svg;x,y,its = self.show_batch(b, max_n=max_n, show=False);https://docs.fast.ai/data.core.html#TfmdDL.show_batch;OK
+26_Learner-show_results_and_DataLoader.svg;TfmDL.show_results;https://github.com/fastai/fastai/blob/master/fastai/data/core.py#L105;OK
+26_Learner-show_results_and_DataLoader.svg;x1,y1,outs = self. show_batch ( b_out , max_n = max_n , show =False );https://docs.fast.ai/data.core.html#TfmdDL.show_batch;OK
+26_Learner-show_results_and_DataLoader.svg;@typedispatch show_results ( * res, ctxs = ctxs, max_n = max_n) Learner – show_results and DataLoader;https://docs.fast.ai/data.core.html;OK
+26_Learner-show_results_and_DataLoader.svg;TfmDL.show_batch (b, show=False);https://docs.fast.ai/data.core.html#TfmdDL.show_batch;OK
+26_Learner-show_results_and_DataLoader.svg;b = self.after_batch. decode (b);https://docs.fast.ai/tutorial.pets.html#Pipeline;OK
+26_Learner-show_results_and_DataLoader.svg;its = before_batch.decode - > after_item.decode - > dataset . decode - > batch_to_samples (b);https://docs.fast.ai/tutorial.pets.html#Pipeline;OK
+26_Learner-show_results_and_DataLoader.svg;https://www.cognitivefactory.fr/fastaidocs Click elements for details;;OK
+26_Learner-show_results_and_DataLoader.svg;b_out = b[: self.n_inp ] + tuple (out);;OK
+26_Learner-show_results_and_DataLoader.svg;res = (x, y, its, outs - > [ self.n_inp :] );;OK
+26_Learner-show_results_and_DataLoader.svg;return detuplify (b[: self.n_inp ]), detuplify(b[ self.n_inp :]),its;;OK
+26_Learner-show_results_and_DataLoader.svg;• xb =res [0] , yb =res [1] are used only for type dispatch, to select the right show_results function • items = res [2] is a list of tuples containing the items : (input, target ) collated in the batch • outs = res [3] is a list of tuples, the fully decoded predictions ( pred ) corresponding to the inputs • show_results can iterate the list , and display each input, its label, and its corresponding prediction;;OK
+27_DataLoaders-Create_an_instance.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+27_DataLoaders-Create_an_instance.svg;DataLoaders.from_dsets ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_df () DataLoaders – Create an instance;?;OK
+27_DataLoaders-Create_an_instance.svg;DataLoaders;?;OK
+27_DataLoaders-Create_an_instance.svg;DataLoaders.from_dblock ();?;OK
+27_DataLoaders-Create_an_instance.svg;Datasets.dataloaders ();?;OK
+27_DataLoaders-Create_an_instance.svg;Datasets.weighted_dataloaders ();?;OK
+27_DataLoaders-Create_an_instance.svg;Datasets.partial_dataloaders ();?;OK
+27_DataLoaders-Create_an_instance.svg;Datasets;?;OK
+27_DataLoaders-Create_an_instance.svg;DataLoaders ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_csv ();?;OK
+27_DataLoaders-Create_an_instance.svg;CollabDataLoaders;?;OK
+27_DataLoaders-Create_an_instance.svg;ImageDataLoaders;?;OK
+27_DataLoaders-Create_an_instance.svg;from_folder ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_path_func ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_name_func ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_path_re ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_name_re();?;OK
+27_DataLoaders-Create_an_instance.svg;from_df ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_csv ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_lists ();?;OK
+27_DataLoaders-Create_an_instance.svg;SegmentationDataLoaders;?;OK
+27_DataLoaders-Create_an_instance.svg;from_label_func ();?;OK
+27_DataLoaders-Create_an_instance.svg;TabularDataLoaders;?;OK
+27_DataLoaders-Create_an_instance.svg;from_df ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_csv ();?;OK
+27_DataLoaders-Create_an_instance.svg;DataBlock.dataloaders ();?;OK
+27_DataLoaders-Create_an_instance.svg;DataBlock;?;OK
+27_DataLoaders-Create_an_instance.svg;Factory methods;?;OK
+27_DataLoaders-Create_an_instance.svg;TextDataLoaders;?;OK
+27_DataLoaders-Create_an_instance.svg;from_folder();?;OK
+27_DataLoaders-Create_an_instance.svg;from_df ();?;OK
+27_DataLoaders-Create_an_instance.svg;from_csv ();?;OK
+27_DataLoaders-Create_an_instance.svg;1;?;OK
+27_DataLoaders-Create_an_instance.svg;2;?;OK
+27_DataLoaders-Create_an_instance.svg;3;?;OK
+28_DataLoaders-Interface.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ DataLoaders - Interface;?;OK
+28_DataLoaders-Interface.svg;d evice {get};?;OK
+28_DataLoaders-Interface.svg;c pu ();?;OK
+28_DataLoaders-Interface.svg;one_batch | load before_fit;?;OK
+28_DataLoaders-Interface.svg;load_learner;?;OK
+28_DataLoaders-Interface.svg;cuda ();?;OK
+28_DataLoaders-Interface.svg;d evice {set};?;OK
+28_DataLoaders-Interface.svg;to( device );?;OK
+28_DataLoaders-Interface.svg;for dl in self.loaders : dl.to(d);?;OK
+28_DataLoaders-Interface.svg;path;?;OK
+28_DataLoaders-Interface.svg;__init__;?;OK
+28_DataLoaders-Interface.svg;loaders;?;OK
+28_DataLoaders-Interface.svg;DistributedTrainer;?;OK
+28_DataLoaders-Interface.svg;train;?;OK
+28_DataLoaders-Interface.svg;_ do_epoch_train;?;OK
+28_DataLoaders-Interface.svg;valid;?;OK
+28_DataLoaders-Interface.svg;Callbacks;?;OK
+28_DataLoaders-Interface.svg;[ds_idx];?;OK
+28_DataLoaders-Interface.svg;_ do_epoch_validate validate | get_preds show_results | tta;?;OK
+28_DataLoaders-Interface.svg;valid_ds;?;OK
+28_DataLoaders-Interface.svg;Callbacks;?;OK
+28_DataLoaders-Interface.svg;train_ds;?;OK
+28_DataLoaders-Interface.svg;__init__;?;OK
+28_DataLoaders-Interface.svg;a dd_tfms ( tfms , evt );?;OK
+28_DataLoaders-Interface.svg;cnn_learner;?;OK
+28_DataLoaders-Interface.svg;n ew_empty ();?;OK
+28_DataLoaders-Interface.svg;export;?;OK
+28_DataLoaders-Interface.svg;list(dl);?;OK
+28_DataLoaders-Interface.svg;loaders[ i ];?;OK
+28_DataLoaders-Interface.svg;loaders[0];?;OK
+28_DataLoaders-Interface.svg;loaders[1];?;OK
+28_DataLoaders-Interface.svg;loaders[0].dataset;?;OK
+28_DataLoaders-Interface.svg;loaders[1].dataset;?;OK
+28_DataLoaders-Interface.svg;dl.’event’.add( tfms );?;OK
+28_DataLoaders-Interface.svg;dl.new(dl.dataset.new_empty());?;OK
+28_DataLoaders-Interface.svg;All other calls delegated to dls.train;?;OK
+28_DataLoaders-Interface.svg;test_dl ( test_ items , rm_type_tfms , num_workers );?;OK
+28_DataLoaders-Interface.svg;predict Called in;?;OK
+29_DataLoader-Interface.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ DataLoader - Interface;?;OK
+29_DataLoader-Interface.svg;iter(dl);?;OK
+29_DataLoader-Interface.svg;all_batches;?;OK
+29_DataLoader-Interface.svg;len (dl);?;OK
+29_DataLoader-Interface.svg;iterator for batches;?;OK
+29_DataLoader-Interface.svg;number of batches;?;OK
+29_DataLoader-Interface.svg;device;?;OK
+29_DataLoader-Interface.svg;new(dataset=None, cls =None, **kwargs);?;OK
+29_DataLoader-Interface.svg;get_preds | tta show_results;?;OK
+29_DataLoader-Interface.svg;one_batch ();?;OK
+29_DataLoader-Interface.svg;show_results | Transform;?;OK
+29_DataLoader-Interface.svg;all_batches;?;OK
+29_DataLoader-Interface.svg;get_idxs ();?;OK
+29_DataLoader-Interface.svg;get_preds;?;OK
+29_DataLoader-Interface.svg;dataset;?;OK
+29_DataLoader-Interface.svg;tta | Callbacks;?;OK
+29_DataLoader-Interface.svg;to( device );?;OK
+29_DataLoader-Interface.svg;DataLoaders .__init__;?;OK
+29_DataLoader-Interface.svg;All other calls delegated to dataset Called in;?;OK
+29_DataLoader-Interface.svg;get first batch;?;OK
+29_DataLoader-Interface.svg;list of indexes (shuffled);?;OK
+30_DataLoader-Init.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ DataLoader - Init;?;OK
+30_DataLoader-Init.svg;if indexed is None: indexed = ( hasattr(dataset,'__getitem __') and not isinstance (dataset, IterableDataset ));?;OK
+30_DataLoader-Init.svg;__init__( dataset =None, indexed =None, n=None, shuffle =False, bs=None, drop_last =False, device =None, pin_memory =False, num_workers =0, persistent_workers =False, timeout=0 );?;OK
+30_DataLoader-Init.svg;---- PROCESS FORK ----;?;OK
+30_DataLoader-Init.svg;if n is None: try: n = len(dataset);?;OK
+30_DataLoader-Init.svg;assert not (bs is None and drop_last );?;OK
+30_DataLoader-Init.svg;assert not (not indexed and shuffle) Main process Worker child;?;OK
+30_DataLoader-Init.svg;dataset;?;OK
+30_DataLoader-Init.svg;bs;?;OK
+30_DataLoader-Init.svg;shuffle;?;OK
+30_DataLoader-Init.svg;indexed;?;OK
+30_DataLoader-Init.svg;drop_last;?;OK
+30_DataLoader-Init.svg;n;?;OK
+30_DataLoader-Init.svg;device;?;OK
+30_DataLoader-Init.svg;pin_memory;?;OK
+30_DataLoader-Init.svg;num_workers;?;OK
+30_DataLoader-Init.svg;offs;?;OK
+30_DataLoader-Init.svg;timeout;?;OK
+30_DataLoader-Init.svg;info = get_worker_info ();?;OK
+30_DataLoader-Init.svg;dl.num_workers = info.num_workers dl.offs = info.id;?;OK
+30_DataLoader-Init.svg;wif ();?;OK
+30_DataLoader-Init.svg;num_workers;?;OK
+30_DataLoader-Init.svg;offs;?;OK
+30_DataLoader-Init.svg;prebatched = bs is None;?;OK
+30_DataLoader-Init.svg;rng;?;OK
+30_DataLoader-Init.svg;All lifecycle methods can be overriden through __init__ arguments: DataLoader ( get_idxs=…);?;OK
+31_DataLoader-iter()_and_next().svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ DataLoader – iter () / next();?;OK
+31_DataLoader-iter()_and_next().svg;__ iter __;?;OK
+31_DataLoader-iter()_and_next().svg;before_iter;?;OK
+31_DataLoader-iter()_and_next().svg;sample;?;OK
+31_DataLoader-iter()_and_next().svg;for idx in samples: << if self.prebatched : return one item | else: return bs items with drop_last >>;?;OK
+31_DataLoader-iter()_and_next().svg;self.rng = random.Random ( self.rng.randint (0,2**32 - 1));?;OK
+31_DataLoader-iter()_and_next().svg;randomize;?;OK
+31_DataLoader-iter()_and_next().svg;get_idxs > shuffle_fn;?;OK
+31_DataLoader-iter()_and_next().svg;WORKER;?;OK
+31_DataLoader-iter()_and_next().svg;idxs = Inf.count if self.indexed else Inf.nones;?;OK
+31_DataLoader-iter()_and_next().svg;if self.shuffle : idxs = self.shuffle_fn ( idxs );?;OK
+31_DataLoader-iter()_and_next().svg;shuffle_fn : self.rng.sample ( idxs , len ( idxs ));?;OK
+31_DataLoader-iter()_and_next().svg;wif;?;OK
+31_DataLoader-iter()_and_next().svg;self.it = iter( self.dataset );?;OK
+31_DataLoader-iter()_and_next().svg;MAIN PROCESS;?;OK
+31_DataLoader-iter()_and_next().svg;( idx for i, idx in enumerate ( idxs ) if i // bs % num_workers == offs );?;OK
+31_DataLoader-iter()_and_next().svg;b = to_device (b, self.device );?;OK
+31_DataLoader-iter()_and_next().svg;return after_batch (b);?;OK
+31_DataLoader-iter()_and_next().svg;next();?;OK
+31_DataLoader-iter()_and_next().svg;chunkify;?;OK
+31_DataLoader-iter()_and_next().svg;item = create_item ( idx );?;OK
+31_DataLoader-iter()_and_next().svg;for offs in num_workers :;?;OK
+31_DataLoader-iter()_and_next().svg;WORKER process FORK;?;OK
+31_DataLoader-iter()_and_next().svg;WORKER;?;OK
+31_DataLoader-iter()_and_next().svg;item = after_item (item);?;OK
+31_DataLoader-iter()_and_next().svg;except SkipItemException;?;OK
+31_DataLoader-iter()_and_next().svg;if self.indexed : return self.dataset [ idx or 0] | elif idx is None:  return next(self.it);?;OK
+31_DataLoader-iter()_and_next().svg;items = before_batch (items);?;OK
+31_DataLoader-iter()_and_next().svg;b = create_batch (items);?;OK
+31_DataLoader-iter()_and_next().svg;(fa_collate,fa_convert)[self.prebatched](b);?;OK
+31_DataLoader-iter()_and_next().svg;-- can be used to set up iterable dataset with worker offs --;?;OK
+31_DataLoader-iter()_and_next().svg;do_item;?;OK
+31_DataLoader-iter()_and_next().svg;do_batch;?;OK
+31_DataLoader-iter()_and_next().svg;if self.n is not None : idxs = islice ( idxs , self.n );?;OK
+32_DataLoader-TfmDL.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ DataLoader - TfmDL;?;OK
+32_DataLoader-TfmDL.svg;Data description;?;OK
+32_DataLoader-TfmDL.svg;n_inp;?;OK
+32_DataLoader-TfmDL.svg;_types;?;OK
+32_DataLoader-TfmDL.svg;initialized at first n_inp access or decode call;?;OK
+32_DataLoader-TfmDL.svg;n_inp can be initialized via self.dataset.n_inp or _ one_pass;?;OK
+32_DataLoader-TfmDL.svg;Transforms - Pipelines;?;OK
+32_DataLoader-TfmDL.svg;after_item;?;OK
+32_DataLoader-TfmDL.svg;before_batch;?;OK
+32_DataLoader-TfmDL.svg;after_batch;?;OK
+32_DataLoader-TfmDL.svg;all three events are Pipelines of Transforms;?;OK
+32_DataLoader-TfmDL.svg;initialized and setup() in TfmDL .__ init __;?;OK
+32_DataLoader-TfmDL.svg;if dataset has a 'split_idx ’ attribute, configure Pipelines with it in before_iter;?;OK
+32_DataLoader-TfmDL.svg;Transforms - Decode;?;OK
+32_DataLoader-TfmDL.svg;to( device );?;OK
+32_DataLoader-TfmDL.svg;to() sends tensors in the 'parameters' attribute of the Transforms in after_batch Pipeline to device;?;OK
+32_DataLoader-TfmDL.svg;decode ();?;OK
+32_DataLoader-TfmDL.svg;decode_batch ();?;OK
+32_DataLoader-TfmDL.svg;show_batch ();?;OK
+32_DataLoader-TfmDL.svg;show_results ();?;OK
+32_DataLoader-TfmDL.svg;decode(), decode_batch () are defined by the decode() methods of the 3 Pipelines;?;OK
+32_DataLoader-TfmDL.svg;show_batch () and show_results () use these decode methods and delegate to top level show() functions num_workers = min(16, defaults.cpus );?;OK
+32_DataLoader-TfmDL.svg;_ pre_show_batch ();?;OK
+32_DataLoader-TfmDL.svg;Decode batch to be ready show_batch without calling show_batch;?;OK
+33_DataLoader-TfmDL_subclasses.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ DataLoader – TfmDL subclasses;?;OK
+33_DataLoader-TfmDL_subclasses.svg;LMDataLoader;?;OK
+33_DataLoader-TfmDL_subclasses.svg;SortedDL;?;OK
+33_DataLoader-TfmDL_subclasses.svg;WeightedDL;?;OK
+33_DataLoader-TfmDL_subclasses.svg;PartialDL;?;OK
+33_DataLoader-TfmDL_subclasses.svg;TabDataLoader;?;OK
+33_DataLoader-TfmDL_subclasses.svg;DistributedDL;?;OK
+33_DataLoader-TfmDL_subclasses.svg;A ` DataLoader ` suitable for language modeling;?;OK
+33_DataLoader-TfmDL_subclasses.svg;A ` DataLoader ` that goes throught the items in the order given by ` sort_func `;?;OK
+33_DataLoader-TfmDL_subclasses.svg;A ` DataLoader ` for Tabular data;?;OK
+33_DataLoader-TfmDL_subclasses.svg;Defines a distinct probability for each item in the shuffle operation;?;OK
+33_DataLoader-TfmDL_subclasses.svg;Randomly selects a partial quantity of data at each epoch;?;OK
+33_DataLoader-TfmDL_subclasses.svg;A ` DataLoader ` which splits a batch into equal size pieces for each worker;?;OK
+33_DataLoader-TfmDL_subclasses.svg;to_detach ( self,b , cpu =True , gather =True );?;OK
+33_DataLoader-TfmDL_subclasses.svg;n _padded;?;OK
+33_DataLoader-TfmDL_subclasses.svg;rank;?;OK
+33_DataLoader-TfmDL_subclasses.svg;world_size;?;OK
+33_DataLoader-TfmDL_subclasses.svg;get_preds | Metrics;?;OK
+33_DataLoader-TfmDL_subclasses.svg;Only if distributed;?;OK
+34_Dataset-Interface.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+34_Dataset-Interface.svg;Dataset – Interface;?;OK
+34_Dataset-Interface.svg;set_split_idx ( ds_idx );?;OK
+34_Dataset-Interface.svg;loss_func;?;OK
+34_Dataset-Interface.svg;__ getitem __(key);?;OK
+34_Dataset-Interface.svg;i ter ();?;OK
+34_Dataset-Interface.svg;next ();?;OK
+34_Dataset-Interface.svg;indexed;?;OK
+34_Dataset-Interface.svg;iterable;?;OK
+34_Dataset-Interface.svg;len ();?;OK
+34_Dataset-Interface.svg;optional;?;OK
+34_Dataset-Interface.svg;optional;?;OK
+34_Dataset-Interface.svg;n_inp;?;OK
+34_Dataset-Interface.svg;split_idx;?;OK
+34_Dataset-Interface.svg;decode ();?;OK
+34_Dataset-Interface.svg;new_empty();?;OK
+34_Dataset-Interface.svg;DataLoaders.new_empty ();?;OK
+34_Dataset-Interface.svg;DataLoader;?;OK
+34_Dataset-Interface.svg;TfmDL;?;OK
+34_Dataset-Interface.svg;TfmDL;?;OK
+34_Dataset-Interface.svg;TfmDL;?;OK
+34_Dataset-Interface.svg;items;?;OK
+34_Dataset-Interface.svg;ImageClassifierCleaner;?;OK
+34_Dataset-Interface.svg;Learner.tta ();?;OK
+34_Dataset-Interface.svg;Learner .__init__();?;OK
+34_Dataset-Interface.svg;tfms;?;OK
+34_Dataset-Interface.svg;CaptumInterpretation;?;OK
+34_Dataset-Interface.svg;vocab;?;OK
+34_Dataset-Interface.svg;ClassificationInterpretation Transform | Callback | text_learner;?;OK
+34_Dataset-Interface.svg;c;?;OK
+34_Dataset-Interface.svg;tabular_learner;?;OK
+34_Dataset-Interface.svg;classes;?;OK
+34_Dataset-Interface.svg;CollabDataLoaders Called in;?;OK
+35_Dataset-TfmdLists.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+35_Dataset-TfmdLists.svg;Dataset – Option 1 : TfmdLists;?;OK
+35_Dataset-TfmdLists.svg;n_subsets;?;OK
+35_Dataset-TfmdLists.svg;subset (i);?;OK
+35_Dataset-TfmdLists.svg;dataloaders ();?;OK
+35_Dataset-TfmdLists.svg;_ dl_type;?;OK
+35_Dataset-TfmdLists.svg;splits;?;OK
+35_Dataset-TfmdLists.svg;train;?;OK
+35_Dataset-TfmdLists.svg;valid;?;OK
+35_Dataset-TfmdLists.svg;_ dbunch_type apply ONE Pipeline of Transforms on a list of items;?;OK
+35_Dataset-TfmdLists.svg;items;?;OK
+35_Dataset-TfmdLists.svg;__ getitem __;?;OK
+35_Dataset-TfmdLists.svg;L;?;OK
+35_Dataset-TfmdLists.svg;FilteredBase;?;OK
+35_Dataset-TfmdLists.svg;FilteredBase;?;OK
+35_Dataset-TfmdLists.svg;All other calls delegated to tfms;?;OK
+35_Dataset-TfmdLists.svg;new_empty ();?;OK
+35_Dataset-TfmdLists.svg;overlapping_splits ();?;OK
+35_Dataset-TfmdLists.svg;Transforms;?;OK
+35_Dataset-TfmdLists.svg;iter () / next();?;OK
+35_Dataset-TfmdLists.svg;decode (o);?;OK
+35_Dataset-TfmdLists.svg;show(o);?;OK
+35_Dataset-TfmdLists.svg;… all methods of L …;?;OK
+35_Dataset-TfmdLists.svg;tfms;?;OK
+35_Dataset-TfmdLists.svg;split_idx;?;OK
+35_Dataset-TfmdLists.svg;types;?;OK
+35_Dataset-TfmdLists.svg;__call__(o);?;OK
+35_Dataset-TfmdLists.svg;setup();?;OK
+35_Dataset-TfmdLists.svg;infer (x);?;OK
+36_Dataset-Datasets.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+36_Dataset-Datasets.svg;Dataset – Option 2 : Datasets;?;OK
+36_Dataset-Datasets.svg;n_subsets;?;OK
+36_Dataset-Datasets.svg;subset (i);?;OK
+36_Dataset-Datasets.svg;dataloaders ();?;OK
+36_Dataset-Datasets.svg;_ dl_type;?;OK
+36_Dataset-Datasets.svg;splits;?;OK
+36_Dataset-Datasets.svg;train;?;OK
+36_Dataset-Datasets.svg;valid;?;OK
+36_Dataset-Datasets.svg;_ dbunch_type;?;OK
+36_Dataset-Datasets.svg;tls ( list of TfmdLists );?;OK
+36_Dataset-Datasets.svg;__ getitem __;?;OK
+36_Dataset-Datasets.svg;FilteredBase;?;OK
+36_Dataset-Datasets.svg;FilteredBase;?;OK
+36_Dataset-Datasets.svg;tfms;?;OK
+36_Dataset-Datasets.svg;split_idx;?;OK
+36_Dataset-Datasets.svg;All other calls delegated to tls through gather_attrs ();?;OK
+36_Dataset-Datasets.svg;decode (o);?;OK
+36_Dataset-Datasets.svg;show(o);?;OK
+36_Dataset-Datasets.svg;new_empty ();?;OK
+36_Dataset-Datasets.svg;overlapping_splits ();?;OK
+36_Dataset-Datasets.svg;@contextmanager set_split_idx ();?;OK
+36_Dataset-Datasets.svg;Transforms;?;OK
+36_Dataset-Datasets.svg;iter () / next() apply SEVERAL Pipelines of Transforms in parallel on a single list of items;?;OK
+36_Dataset-Datasets.svg;len ();?;OK
+36_Dataset-Datasets.svg;items ( identical for all TfmdLists );?;OK
+36_Dataset-Datasets.svg;n_inp;?;OK
+37_Dataset-Tabular_datasets.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+37_Dataset-Tabular_datasets.svg;TabularCollab Dataset – Tabular datasets;?;OK
+37_Dataset-Tabular_datasets.svg;Tabular / TabularPandas;?;OK
+37_Dataset-Tabular_datasets.svg;A `DataFrame` wrapper that knows which cols are cont/cat/y, and returns rows in `__getitem__`;?;OK
+37_Dataset-Tabular_datasets.svg;y_names;?;OK
+37_Dataset-Tabular_datasets.svg;device;?;OK
+37_Dataset-Tabular_datasets.svg;cat_names;?;OK
+37_Dataset-Tabular_datasets.svg;cont_names;?;OK
+37_Dataset-Tabular_datasets.svg;procs;?;OK
+37_Dataset-Tabular_datasets.svg;split ( idx );?;OK
+37_Dataset-Tabular_datasets.svg;process();?;OK
+37_Dataset-Tabular_datasets.svg;copy();?;OK
+37_Dataset-Tabular_datasets.svg;targ ();?;OK
+37_Dataset-Tabular_datasets.svg;x_names();?;OK
+37_Dataset-Tabular_datasets.svg;y;?;OK
+37_Dataset-Tabular_datasets.svg;all_col_names ();?;OK
+37_Dataset-Tabular_datasets.svg;loc ();?;OK
+37_Dataset-Tabular_datasets.svg;iloc ();?;OK
+37_Dataset-Tabular_datasets.svg;to_device ();?;OK
+37_Dataset-Tabular_datasets.svg;cat;?;OK
+37_Dataset-Tabular_datasets.svg;cont;?;OK
+37_Dataset-Tabular_datasets.svg;x;?;OK
+37_Dataset-Tabular_datasets.svg;all_col;?;OK
+37_Dataset-Tabular_datasets.svg;transform (f);?;OK
+37_Dataset-Tabular_datasets.svg;Instance of ` TabularPandas ` suitable for collaborative filtering (with no continuous variable);?;OK
+38_DataBlock.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+38_DataBlock.svg;DataBlock;?;OK
+38_DataBlock.svg;get_x;?;OK
+38_DataBlock.svg;get_items;?;OK
+38_DataBlock.svg;splitter;?;OK
+38_DataBlock.svg;get_y;?;OK
+38_DataBlock.svg;blocks;?;OK
+38_DataBlock.svg;dl_type;?;OK
+38_DataBlock.svg;type_tfms;?;OK
+38_DataBlock.svg;default_item_tfms;?;OK
+38_DataBlock.svg;default_batch_tfms;?;OK
+38_DataBlock.svg;dls_kwargs;?;OK
+38_DataBlock.svg;getters;?;OK
+38_DataBlock.svg;n_inp;?;OK
+38_DataBlock.svg;item_tfms;?;OK
+38_DataBlock.svg;batch_tfms;?;OK
+38_DataBlock.svg;+ +;?;OK
+38_DataBlock.svg;datasets(source);?;OK
+38_DataBlock.svg;dataloaders(source, path);?;OK
+38_DataBlock.svg;new( item_tfms , batch_tfms);?;OK
+38_DataBlock.svg;__init__( get_items , splitter, get_x, get_y , getters, n_inp, blocks, dl_type, item_tfms , batch_tfms) or;?;OK
+38_DataBlock.svg;DataBlock.from_columns ( get_items , getters, blocks );?;OK
+38_DataBlock.svg;Create a new `DataBlock` with other `item_tfms` and `batch_tfms`;?;OK
+38_DataBlock.svg;Create a `Datasets` object from `source`;?;OK
+38_DataBlock.svg;Create a ` DataLoaders ` object from `source`;?;OK
+38_DataBlock.svg;summary (source);?;OK
+39_DataBlock-Init_data_pipeline.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ DataBlock – Init data pipeline;?;OK
+39_DataBlock-Init_data_pipeline.svg;get_items;?;OK
+39_DataBlock-Init_data_pipeline.svg;splitter;?;OK
+39_DataBlock-Init_data_pipeline.svg;dl_type;?;OK
+39_DataBlock-Init_data_pipeline.svg;type_tfms;?;OK
+39_DataBlock-Init_data_pipeline.svg;dls_kwargs;?;OK
+39_DataBlock-Init_data_pipeline.svg;getters;?;OK
+39_DataBlock-Init_data_pipeline.svg;n_inp;?;OK
+39_DataBlock-Init_data_pipeline.svg;item_tfms;?;OK
+39_DataBlock-Init_data_pipeline.svg;batch_tfms;?;OK
+39_DataBlock-Init_data_pipeline.svg;datasets(source);?;OK
+39_DataBlock-Init_data_pipeline.svg;dataloaders(source, path);?;OK
+39_DataBlock-Init_data_pipeline.svg;items = self.get_items (source) or source;?;OK
+39_DataBlock-Init_data_pipeline.svg;splits = self.splitter (items) or RandomSplitter ()(items);?;OK
+39_DataBlock-Init_data_pipeline.svg;return Datasets(items, tfms , splits, n_inp , dl_type );?;OK
+39_DataBlock-Init_data_pipeline.svg;tfms = _ combine_zip (getters, type_tfms );?;OK
+39_DataBlock-Init_data_pipeline.svg;dsets = self.datasets(source);?;OK
+39_DataBlock-Init_data_pipeline.svg;kwargs = {** dls_kwargs , ** kwargs };?;OK
+39_DataBlock-Init_data_pipeline.svg;return dsets.dataloaders (path=path, after_item , after_batch , ** kwargs );?;OK
+39_DataBlock-Init_data_pipeline.svg;after_item = item_tfms;?;OK
+39_DataBlock-Init_data_pipeline.svg;after_batch = batch_tfms +;?;OK
+39_DataBlock-Init_data_pipeline.svg;ToTensor;?;OK
+40_TransformBlocks-Labels.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+40_TransformBlocks-Labels.svg;RegressionBlock ( n_out =None ) TransformBlocks – Classification & Regression;?;OK
+40_TransformBlocks-Labels.svg;TransformBlock;?;OK
+40_TransformBlocks-Labels.svg;(4) dl_type;?;OK
+40_TransformBlocks-Labels.svg;(1) type_tfms;?;OK
+40_TransformBlocks-Labels.svg;(5) dls_kwargs;?;OK
+40_TransformBlocks-Labels.svg;(2) item_tfms;?;OK
+40_TransformBlocks-Labels.svg;(3) batch_tfms;?;OK
+40_TransformBlocks-Labels.svg;CategoryBlock ( vocab =None , sort =True , add_na =False );?;OK
+40_TransformBlocks-Labels.svg;(1) Categorize;?;OK
+40_TransformBlocks-Labels.svg;MultiCategoryBlock ( encoded =False , vocab =None , add_na =False );?;OK
+40_TransformBlocks-Labels.svg;(1) EncodedMultiCategorize;?;OK
+40_TransformBlocks-Labels.svg;(1) MultiCategorize > OneHotEncode;?;OK
+40_TransformBlocks-Labels.svg;(1) RegressionSetup if encoded = True if encoded =False;?;OK
+40_TransformBlocks-Labels.svg;NB : in all DataBlocks , ToTensor () is automatically applied as the first (2) item_tfm;?;OK
+41_TransformBlocks-Vision.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ TransformBlocks - Vision;?;OK
+41_TransformBlocks-Vision.svg;ImageBlock ( cls = PILImage );?;OK
+41_TransformBlocks-Vision.svg;(1) cls.create;?;OK
+41_TransformBlocks-Vision.svg;(3) I ntToFloatTensor;?;OK
+41_TransformBlocks-Vision.svg;MaskBlock ( codes=None );?;OK
+41_TransformBlocks-Vision.svg;(1) PILMask .create;?;OK
+41_TransformBlocks-Vision.svg;(3) I ntToFloatTensor;?;OK
+41_TransformBlocks-Vision.svg;(2) AddMaskCodes (codes = codes);?;OK
+41_TransformBlocks-Vision.svg;PointBlock;?;OK
+41_TransformBlocks-Vision.svg;(1) TensorPoint .create;?;OK
+41_TransformBlocks-Vision.svg;(2) PointScaler;?;OK
+41_TransformBlocks-Vision.svg;BBoxBlock;?;OK
+41_TransformBlocks-Vision.svg;(1) TensorBBox .create;?;OK
+41_TransformBlocks-Vision.svg;(2) PointScaler;?;OK
+41_TransformBlocks-Vision.svg;(5) ' before_batch ' : bb_pad;?;OK
+41_TransformBlocks-Vision.svg;BBoxLblBlock ( vocab=None, add_na=True );?;OK
+41_TransformBlocks-Vision.svg;(1) MultiCategorize (vocab = vocab, add_na = add_na);?;OK
+41_TransformBlocks-Vision.svg;(2) BBoxLabeler o ther cls : PILImageBW , PILMask , PILDicom;?;OK
+41_TransformBlocks-Vision.svg;NB : in all DataBlocks , ToTensor () is automatically applied as the first (2) item_tfm;?;OK
+42_TransformBlocks-Text.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ TransformBlocks - Text;?;OK
+42_TransformBlocks-Text.svg;TextBlock ( tokenizer_tfm , vocab =None , is_lm =False , seq_len =72 , backwards =False , ** kwargs );?;OK
+42_TransformBlocks-Text.svg;(1) tokenizer_tfm;?;OK
+42_TransformBlocks-Text.svg;(1) Numericalize ( vocab , ** kwargs );?;OK
+42_TransformBlocks-Text.svg;(1) reverse_text backwards = True;?;OK
+42_TransformBlocks-Text.svg;(4) SortedDL;?;OK
+42_TransformBlocks-Text.svg;(5) ' before_batch' : Pad_Chunk ( seq_len = seq_len ) if is_lm =False if is_lm = True;?;OK
+42_TransformBlocks-Text.svg;(4) LMDataLoader;?;OK
+42_TransformBlocks-Text.svg;(5) ' seq_len ' : seq_len;?;OK
+42_TransformBlocks-Text.svg;TextBlock . from_df ( text_cols , vocab =None , is_lm =False , seq_len =72 , backwards =False , min_freq =3 , max_vocab =60000 , ** kwargs );?;OK
+42_TransformBlocks-Text.svg;tokenizer_tfm = Tokenizer . from_df ( text_cols , ** kwargs);?;OK
+42_TransformBlocks-Text.svg;TextBlock . from_folder ( path , vocab =None, is_lm =False, seq_len =72, backwards =False, min_freq =3, max_vocab =60000, ** kwargs );?;OK
+42_TransformBlocks-Text.svg;tokenizer_tfm = Tokenizer . from_folder ( path, ** kwargs );?;OK
+43_Download_datasets_and_models.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Download datasets and models;?;OK
+43_Download_datasets_and_models.svg;download_data ( url , fname =None , c_key ='archive' , force_download =False , timeout =4 );?;OK
+43_Download_datasets_and_models.svg;Download `url` to ` fname ` if specified , else to the default location : 1. Check if the following subdirectories exist in the current directory cwd () - if ‘ c_key ’ = ‘ models ’: check if ‘./ models ’ exists - else : check if ‘./data’ exists 2. If they exist , download ‘url’ in the current working directory. 3. If they don’t exist , download in the default fastai archive / data / model ( c_key ) directory, as specified by the Config() class – see next slide. 4. Return the full path of the downloaded file;?;OK
+43_Download_datasets_and_models.svg;download_url( url, dest , overwrite =False, pbar =None, show_progress = True , chunk_size =1024*1024, timeout=4, retries=5 );?;OK
+43_Download_datasets_and_models.svg;Download ` url ` to ` dest ` unless it exists and not `overwrite`;?;OK
+43_Download_datasets_and_models.svg;file_extract ( fname , dest =None );?;OK
+43_Download_datasets_and_models.svg;URLs.IMDB URLs.IMAGENETTE ...;?;OK
+43_Download_datasets_and_models.svg;Extract ` fname ` to ` dest ` using `tarfile` or ` zipfile `.;?;OK
+43_Download_datasets_and_models.svg;URLs pointing to compressed versions of datasets (. tgz ) ready to download from fastai or Amazon servers : 55 datasets and 3 pretrained models available;?;OK
+43_Download_datasets_and_models.svg;Download ` url ` to ` fname ` if ` dest ` doesn't exist, and un - tgz or unzip to folder ` dest `. The default ‘ dest ’ folder is determined as described in download_data () below. If the data is found in the shared ‘storage’ directory, a symbolic link is created instead of downloading. Return ‘ dest ’.;?;OK
+43_Download_datasets_and_models.svg;untar_data ( url , fname =None , dest =None , c_key ='data' , force_download =False , extract_func = file_extract , timeout =4 );?;OK
+44_Download-Directories_config.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Download datasets and models - Directories config config_path = '~/. fastai ’ or os. getenv ( 'FASTAI_HOME’) config_file = config_path /' config.yml ';?;OK
+44_Download-Directories_config.svg;Config;?;OK
+44_Download-Directories_config.svg;__init__ ();?;OK
+44_Download-Directories_config.svg;Loads yaml config file, creates path and config file if they didn’t exist;?;OK
+44_Download-Directories_config.svg;create_config ( cfg =None );?;OK
+44_Download-Directories_config.svg;load_config ( cfg =None );?;OK
+44_Download-Directories_config.svg;save ();?;OK
+44_Download-Directories_config.svg;archive_path : config_path /'archive’ # user # compressed datasets (. tgz ) data_path : config_path /'data’ # user # datasets ready to use storage_path : '/ tmp ’ # shared # shared datasets ( read only) model_path : config_path /' models ’ # user # model weights;?;OK
+44_Download-Directories_config.svg;__ getitem __ (k);?;OK
+44_Download-Directories_config.svg;__ setitem __ ( k,v );?;OK
+44_Download-Directories_config.svg;Directly sets the value for a given key in the dictionary;?;OK
+44_Download-Directories_config.svg;Tries to read key or key+’_path’ value in the dictionary. Config()[‘data’] will return the value for ‘ data_path ’. Config().data’ will return the value for ‘ data_path ’.;?;OK
+44_Download-Directories_config.svg;Persistent dictionary of configuration properties – used for storage dirs;?;OK
+44_Download-Directories_config.svg;__ geattr __ (k);?;OK
+45_Dataset_Model_Learner-Directories.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Dataset , Model, Learner – Directories used;?;OK
+45_Dataset_Model_Learner-Directories.svg;Learner.path;?;OK
+45_Dataset_Model_Learner-Directories.svg;1. explicit ‘path ’ constructor parameter 2 . or DataLoaders path : ‘ dls.path ’ 3. or current directory ‘.’;?;OK
+45_Dataset_Model_Learner-Directories.svg;Learner.export ( fname );?;OK
+45_Dataset_Model_Learner-Directories.svg;Save Learner in learner.path / fname (. pkl );?;OK
+45_Dataset_Model_Learner-Directories.svg;load_learner ( fname );?;OK
+45_Dataset_Model_Learner-Directories.svg;Load Learner from fname;?;OK
+45_Dataset_Model_Learner-Directories.svg;Learner.save (file);?;OK
+45_Dataset_Model_Learner-Directories.svg;Learner.load (file);?;OK
+45_Dataset_Model_Learner-Directories.svg;Save model and optimizer in learner.path / learner.model_dir /file (.pth );?;OK
+45_Dataset_Model_Learner-Directories.svg;Load model and optimizer from learner.path / learner.model_dir /file;?;OK
+45_Dataset_Model_Learner-Directories.svg;learner.model_dir;?;OK
+45_Dataset_Model_Learner-Directories.svg;1. explicit ‘model_dir ’ constructor parameter 2. ‘ models ’ by default;?;OK
+45_Dataset_Model_Learner-Directories.svg;torchvision models weights;?;OK
+45_Dataset_Model_Learner-Directories.svg;‘~/.cache/ torch /hub’ or $TORCH_HOME/hub;?;OK
+45_Dataset_Model_Learner-Directories.svg;models;?;OK
+45_Dataset_Model_Learner-Directories.svg;Learner;?;OK
+45_Dataset_Model_Learner-Directories.svg;DataLoaders.path;?;OK
+45_Dataset_Model_Learner-Directories.svg;Explicit ‘ path ’ constructor parameter or current directory ‘.’;?;OK
+45_Dataset_Model_Learner-Directories.svg;ImageDataLoaders.from_xxx( path );?;OK
+45_Dataset_Model_Learner-Directories.svg;DataBlock.dataloaders ( path );?;OK
+45_Dataset_Model_Learner-Directories.svg;Datasets.dataloaders( path );?;OK
+45_Dataset_Model_Learner-Directories.svg;Datasets;?;OK
+46_Get_items.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Get items;?;OK
+46_Get_items.svg;get_files ( path, extensions =None , recurse =True , folders =None , followlinks =True );?;OK
+46_Get_items.svg;get_image_files ( path, recurse =True , folders =None );?;OK
+46_Get_items.svg;FileGetter ( suf ='' , recurse =True , folders =None );?;OK
+46_Get_items.svg;Create ` get_files ` partial function that searches path suffix ` suf `;?;OK
+46_Get_items.svg;Returns a list (L) of Path objects;?;OK
+46_Get_items.svg;Get files with image extensions only;?;OK
+46_Get_items.svg;ImageGetter ( suf ='' , recurse =True , folders =None );?;OK
+46_Get_items.svg;Create ` get_image_files ` partial function that searches path suffix ` suf `;?;OK
+46_Get_items.svg;get_text_files ( path, recurse =True , folders =None );?;OK
+46_Get_items.svg;Get files with .txt extension only;?;OK
+46_Get_items.svg;pandas.read_csv ();?;OK
+46_Get_items.svg;pandas.read_json ();?;OK
+46_Get_items.svg;pandas.read _...;?;OK
+46_Get_items.svg;Files;?;OK
+46_Get_items.svg;Tables;?;OK
+47_Splitters.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Splitters;?;OK
+47_Splitters.svg;RandomSplitter ( valid_pct =0.2 , seed =None );?;OK
+47_Splitters.svg;Create function that splits `items` between train/val with ` valid_pct ` randomly.;?;OK
+47_Splitters.svg;TrainTestSplitter ( test_size =0.2 , random_state =None , stratify =None , train_size =None , shuffle =True );?;OK
+47_Splitters.svg;IndexSplitter ( valid_idx );?;OK
+47_Splitters.svg;GrandparentSplitter ( train_name ='train' , valid_name =' valid ' );?;OK
+47_Splitters.svg;FuncSplitter ( func );?;OK
+47_Splitters.svg;MaskSplitter ( mask );?;OK
+47_Splitters.svg;FileSplitter ( fname );?;OK
+47_Splitters.svg;RandomSubsetSplitter ( train_sz , valid_sz , seed =None );?;OK
+47_Splitters.svg;Split `items` into random train and test subsets using sklearn train_test_split utility.;?;OK
+47_Splitters.svg;Split `items` so that `val_idx` are in the validation set and the others in the training set;?;OK
+47_Splitters.svg;Split `items` from the grand parent folder names (`train_name` and `valid_name`).;?;OK
+47_Splitters.svg;Split `items` by result of `func` (`True` for validation, `False` for training set).;?;OK
+47_Splitters.svg;Split `items` depending on the value of `mask`.;?;OK
+47_Splitters.svg;Split `items` by providing file `fname` (contains names of valid items separated by newline).;?;OK
+47_Splitters.svg;Split `items` (supposed to be a dataframe) by value in `col`;?;OK
+48_Getters.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Getters;?;OK
+48_Getters.svg;ItemGetter( i );?;OK
+48_Getters.svg;Creates a proper transform that applies ` itemgetter ( i )` (even on a tuple);?;OK
+48_Getters.svg;AttrGetter ( nm, default=None );?;OK
+48_Getters.svg;Creates a proper transform that applies ` attrgetter (nm)` (even on a tuple);?;OK
+48_Getters.svg;parent_label;?;OK
+48_Getters.svg;ColReader ( cols, pref ='', suff ='', label_delim =None );?;OK
+48_Getters.svg;Label `item` with the parent folder name.;?;OK
+48_Getters.svg;RegexLabeller ( pat, match =False );?;OK
+48_Getters.svg;Label `item` with regex `pat`, by matching or searching;?;OK
+48_Getters.svg;Read `cols` in `row`, concat with potential ` pref ` and ` suff `, split by `label`;?;OK
+49_Transforms_for_labels.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Transforms for labels - Classification & Regression;?;OK
+49_Transforms_for_labels.svg;Categorize( vocab =None , sort =True , add_na =False );?;OK
+49_Transforms_for_labels.svg;MultiCategorize( vocab =None , add_na =False );?;OK
+49_Transforms_for_labels.svg;Reversible transform of category string to `vocab` id;?;OK
+49_Transforms_for_labels.svg;Reversible transform of multi - category strings to `vocab` id;?;OK
+49_Transforms_for_labels.svg;OneHotEncode( c =None );?;OK
+49_Transforms_for_labels.svg;One - hot encodes targets;?;OK
+49_Transforms_for_labels.svg;EncodedMultiCategorize( vocab );?;OK
+49_Transforms_for_labels.svg;One - hot encoded multi - category that decodes with `vocab`;?;OK
+49_Transforms_for_labels.svg;RegressionSetup ( c =None );?;OK
+49_Transforms_for_labels.svg;Transform that floatifies targets;?;OK
+49_Transforms_for_labels.svg;loss_func = CrossEntropyLossFlat ();?;OK
+49_Transforms_for_labels.svg;loss_func = BCEWithLogitsLossFlat ();?;OK
+49_Transforms_for_labels.svg;loss_func = BCEWithLogitsLossFlat ();?;OK
+49_Transforms_for_labels.svg;loss_func = MSELossFlat ();?;OK
+49_Transforms_for_labels.svg;e ncodes - > TensorCategory;?;OK
+49_Transforms_for_labels.svg;de codes - > Category;?;OK
+49_Transforms_for_labels.svg;e ncodes - > TensorMultiCategory;?;OK
+49_Transforms_for_labels.svg;de codes - > MultiCategory;?;OK
+49_Transforms_for_labels.svg;e ncodes - > TensorMultiCategory;?;OK
+49_Transforms_for_labels.svg;de codes - > L(str);?;OK
+49_Transforms_for_labels.svg;e ncodes - > TensorMultiCategory;?;OK
+49_Transforms_for_labels.svg;de codes - > MultiCategory;?;OK
+49_Transforms_for_labels.svg;e ncodes - > FloatTensor;?;OK
+49_Transforms_for_labels.svg;decodes - > TitledFloat / TitledTuple;?;OK
+50_Type_Transforms-Vision.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+50_Type_Transforms-Vision.svg;PILImage.create ( fn );?;OK
+50_Type_Transforms-Vision.svg;Load an image from file or data Type Transforms - Vision;?;OK
+50_Type_Transforms-Vision.svg;input: Path,str,Tensor,ndarray,bytes;?;OK
+50_Type_Transforms-Vision.svg;output: PIL Image | PIL ImageBW | PILMask;?;OK
+50_Type_Transforms-Vision.svg;PILImageBW.create( fn );?;OK
+50_Type_Transforms-Vision.svg;PILMask.create ( fn );?;OK
+50_Type_Transforms-Vision.svg;loss_func = CrossEntropyLossFlat (axis=1);?;OK
+50_Type_Transforms-Vision.svg;TensorPoint.create ( t, img_size =None );?;OK
+50_Type_Transforms-Vision.svg;loss_func = CrossEntropyLossFlat (axis=1);?;OK
+50_Type_Transforms-Vision.svg;Convert an array or a list of points `t` to a `Tensor`;?;OK
+50_Type_Transforms-Vision.svg;input: List of points;?;OK
+50_Type_Transforms-Vision.svg;output: TensorPoint;?;OK
+50_Type_Transforms-Vision.svg;TensorBBox.create( t, img_size =None );?;OK
+50_Type_Transforms-Vision.svg;loss_func = CrossEntropyLossFlat (axis=1);?;OK
+50_Type_Transforms-Vision.svg;Convert an array or a list of cords ( x,y,w,h ) to a `Tensor`;?;OK
+50_Type_Transforms-Vision.svg;input: List of cords ( x,y,w,h );?;OK
+50_Type_Transforms-Vision.svg;output: TensorBBox;?;OK
+50_Type_Transforms-Vision.svg;Inputs;?;OK
+50_Type_Transforms-Vision.svg;Labels;?;OK
+51_Item_Transforms-Vision.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+51_Item_Transforms-Vision.svg;ToTensor ();?;OK
+51_Item_Transforms-Vision.svg;IntToFloatTensor( div =255. , div_mask =1 );?;OK
+51_Item_Transforms-Vision.svg;Normalize( mean =None , std =None , axes = ( 0 , 2 , 3 ) ) norm_tfm.setup ( dl );?;OK
+51_Item_Transforms-Vision.svg;Convert item to appropriate tensor class;?;OK
+51_Item_Transforms-Vision.svg;Transform image to float tensor, optionally dividing by 255;?;OK
+51_Item_Transforms-Vision.svg;Normalize/ denorm batch of ` TensorImage` Item Transforms - Vision;?;OK
+51_Item_Transforms-Vision.svg;input: TensorImage | TensorMask;?;OK
+51_Item_Transforms-Vision.svg;input: TensorImage | TensorMask;?;OK
+51_Item_Transforms-Vision.svg;input: PILImage | PILImageBW | PILMask;?;OK
+51_Item_Transforms-Vision.svg;output: Tensor Image | Tensor ImageBW | TensorMask;?;OK
+51_Item_Transforms-Vision.svg;AddMaskCodes( codes=None );?;OK
+51_Item_Transforms-Vision.svg;Add the code metadata to a ` TensorMask ` in a decode() pipeline;?;OK
+51_Item_Transforms-Vision.svg;PointScaler( do_scale =True, y_first =False );?;OK
+51_Item_Transforms-Vision.svg;Scale a tensor representing points ( TensorPoint or TensorBBox );?;OK
+51_Item_Transforms-Vision.svg;BBoxLabeler ();?;OK
+51_Item_Transforms-Vision.svg;Combine the TensorBBox and the TensorMultiCategory elements of the out tuple to return a ` LabeledBBox ` in a decode() pipeline;?;OK
+51_Item_Transforms-Vision.svg;Inputs;?;OK
+51_Item_Transforms-Vision.svg;Labels;?;OK
+52_Data_augmentation-Vision_1_4.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Item transforms • FlipItem (p=0.5) : Randomly flip with probability p => calls @patch'd flip_lr behaviors for Image, TensorImage , TensorPoint , and TensorBBox • DihedralItem (p=1.0) : Randomly apply one of the 8 dihedral transformations => calls @patch'd dihedral behaviors for Image, TensorImage , TensorPoint , and TensorBBox • CropPad (size, pad_mode ='zeros’) / RandomCrop : Center / Randomly crop or pad an image to size => calls @patch'd crop_pad behaviors for Image, TensorImage , TensorPoint , and TensorBBox;?;OK
+52_Data_augmentation-Vision_1_4.svg;PadMode in ‘zeros', ‘border', ‘reflection’ • Resize(size, method='crop', pad_mode ='reflection’) : ResizeMethod in ‘squish', ‘crop', ‘pad’ - we squish any rectangle to size - we resize so that the shorter dimension is a match and use padding with pad_mode - we resize so that the larger dimension is match and crop (randomly on the training set, center crop for the validation set) => also calls @patch'd crop_pad behaviors PILImage => resamples= Image.BILINEAR, PILMask => resamples= Image.NEAREST • RandomResizedCrop (size, min_scale =0.08, ratio=(3/4, 4/3)) : Picks a random scaled crop of an image and resize it • RatioResize ( max_sz ) : Resizes the biggest dimension of an image to max_sz maintaining the aspect ratio Data augmentation – Vision 1/4;?;OK
+53_Data_augmentation-Vision_2_4.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Batch transforms - Affine and coord • AffineCoordTfm ( aff_fs =None, coord_fs =None, size=None, mode=' bilinear ', pad_mode =' reflection ', mode_mask =' nearest ', align_corners =None) => calls @patch'd affine_coord behaviors for TensorImage , TensorMask , TensorPoint , and TensorBBox • RandomResizedCropGPU (size, min_scale =0.08, ratio=(3/4, 4/3)) • Flip(p=0.5, draw=None, size=None) / DeterministicFlip => calls @patch'd flip_batch behaviors for TensorImage , TensorMask , TensorPoint , and TensorBBox • Dihedral(p=0.5, draw=None, size=None) / DeterministicDihedral => calls @patch'd dihedral_batch behaviors for TensorImage , TensorMask , TensorPoint , and TensorBBox • Rotate ( max_deg =10, p=0.5, draw=None, size=None) => calls @patch'd rotate behaviors for TensorImage , TensorMask , TensorPoint , and TensorBBox • Zoom( min_zoom =1.0, max_zoom =1.1, p=0.5, draw=None, draw_x =None, draw_y =None, size=None) => c alls @patch'd zoom behaviors for TensorImage , TensorMask , TensorPoint , and TensorBBox • Warp(magnitude=0.2, p=0.5, draw_x =None, draw_y =None, size=None) => calls @patch'd warp behaviors for TensorImage , TensorMask , TensorPoint , and TensorBBox Data augmentation – Vision 2/4;?;OK
+54_Data_augmentation-Vision_3_4.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Batch transforms - Lighting • LightingTfm (fs) : LightingTfm is a SpaceTfm that uses TensorImage.lighting to convert to logit space • Brightness( max_lighting =0.2, p=0.75, draw=None) => calls @patch'd brightness behaviors for TensorImage • Contrast( max_lighting =0.2, p=0.75, draw=None) => calls @patch'd contrast behaviors for TensorImage • Saturation( max_lighting =0.2, p=0.75, draw=None) : saturation controls the amount of color in the image => calls @patch'd saturation behaviors for TensorImage • HSVTfm (fs) : Apply fs to the images in HSV space => calls @patch'd hsv behaviors for TensorImage • Hue( max_hue =0.1, p=0.75, draw=None) : => calls @patch'd hue behaviors for TensorImage Data augmentation – Vision 3/4;?;OK
+55_Data_augmentation-Vision_4_4.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Batch transforms – Random Erasing ( https://arxiv.org/pdf/1708.04896.pdf );?;OK
+55_Data_augmentation-Vision_4_4.svg;• RandomErasing (p=0.5, sl=0.0, sh=0.3, min_aspect=0.3, max_count=1) Randomly selects a rectangle region in an image and randomizes its pixels. p: The probability that the Random Erasing operation will be performed sl : Minimum proportion of erased area sh : Maximum proportion of erased area min_aspect : Minimum aspect ratio of erased area max_count : maximum number of erasing blocks per image, area per box is scaled by count Combinations • setup_aug_tfms ( tfms ) : Go through tfms and combines together affine/ coord or lighting transform • aug_transforms ( mult =1.0, do_flip= True , flip_vert =False, max_rotate =10.0, min_zoom=1.0, max_zoom=1.1, max_lighting=0.2, max_warp =0.2, p_affine =0.75, p_lighting =0.75, xtra_tfms =None, size=None, mode=' bilinear ', pad_mode='reflection ', align_corners = True , batch=False, min_scale=1.0) Random flip (or dihedral if flip_vert =True) with p=0.5 is added when do_flip =True. With p_affine we apply a random rotation of max_rotate degrees, a random zoom between min_zoom and max_zoom and a perspective warping of max_warp . With p_lighting we apply a change in brightness and contrast of max_lighting . Custon xtra_tfms can be added. size, mode and pad_mode will be used for the interpolation. max_rotate,max_lighting,max_warp are multiplied by mult so you can more easily increase or decrease augmentation with a single parameter. Data augmentation – Vision 4/4;?;OK
+56_Type_Transforms-Text.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+56_Type_Transforms-Text.svg;Numericalize ( vocab=None, min_freq=3, max_vocab=60000, special_toks=None );?;OK
+56_Type_Transforms-Text.svg;`Transform` interface to tokenizers operating on DataFrames Type Transforms - Text;?;OK
+56_Type_Transforms-Text.svg;input: list of tokens;?;OK
+56_Type_Transforms-Text.svg;output: TensorText;?;OK
+56_Type_Transforms-Text.svg;Tokenizer . from_df ( text_cols , tok =None , rules =None , sep =' ' );?;OK
+56_Type_Transforms-Text.svg;Tokenizer . from_folder ( path, tok =None, rules=None );?;OK
+56_Type_Transforms-Text.svg;WordTokenizer( lang='en', special_toks=None, buf_sz=5000 );?;OK
+56_Type_Transforms-Text.svg;SubwordTokenizer ( lang='en', special_toks =None, sp_model =None, vocab_sz =None, max_vocab_sz =30000, model_type =' unigram ', char_coverage =None, cache_dir =' tmp ' );?;OK
+56_Type_Transforms-Text.svg;impl : spacy;?;OK
+56_Type_Transforms-Text.svg;impl : sentencepiece;?;OK
+56_Type_Transforms-Text.svg;`Transform` interface to tokenizers operating on folders;?;OK
+56_Type_Transforms-Text.svg;tok param;?;OK
+56_Type_Transforms-Text.svg;defaults.text_spec_tok = [ UNK , PAD , BOS , EOS , FLD , TK_REP , TK_WREP , TK_UP , TK_MAJ ] defaults.text_proc_rules = [ fix_html , replace_rep , replace_wrep , spec_add_spaces , rm_useless_spaces , replace_all_caps , replace_maj , lowercase] defaults.text_postproc_rules = [ replace_space ];?;OK
+56_Type_Transforms-Text.svg;rules;?;OK
+56_Type_Transforms-Text.svg;Reversible transform of tokenized texts to numericalized ids;?;OK
+56_Type_Transforms-Text.svg;reverse_text ();?;OK
+56_Type_Transforms-Text.svg;Flip TensorText along axis 0 to reverse the word order;?;OK
+56_Type_Transforms-Text.svg;Optional dataset attributes : dsets.counter , dsets.special_toks;?;OK
+57_Item_Transforms-Text.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Item Transforms - Text;?;OK
+57_Item_Transforms-Text.svg;Pad_Chunk ( pad_idx =1 , pad_first = True , seq_len =72 ,decode = True );?;OK
+57_Item_Transforms-Text.svg;Pad_Input ();?;OK
+57_Item_Transforms-Text.svg;Function that collect `samples` and adds padding;?;OK
+57_Item_Transforms-Text.svg;Pad `samples` by adding padding by chunks of size ` seq_len `;?;OK
+58_Tabular_datasets_and_transforms.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Tabular datasets & transforms;?;OK
+58_Tabular_datasets_and_transforms.svg;TabularPandas( df, procs=None, cat_names =None, cont_names =None, y_names =None, y_block =None, splits =None, do_setup = True , device =None, inplace=False, reduce_memory = True );?;OK
+58_Tabular_datasets_and_transforms.svg;procs;?;OK
+58_Tabular_datasets_and_transforms.svg;y_block;?;OK
+58_Tabular_datasets_and_transforms.svg;a dd_datepart ( df, field_name , prefix=None, drop=True, time=False );?;OK
+58_Tabular_datasets_and_transforms.svg;add_elapsed_times ( df, field_names , date_field , base_field );?;OK
+58_Tabular_datasets_and_transforms.svg;Categorify();?;OK
+58_Tabular_datasets_and_transforms.svg;CategoryBlock () | MultiCategoryBlock ();?;OK
+58_Tabular_datasets_and_transforms.svg;RegressionBlock();?;OK
+58_Tabular_datasets_and_transforms.svg;Normalize();?;OK
+58_Tabular_datasets_and_transforms.svg;FillMissing( fill_strategy = FillStrategy.median , add_col =True, fill_vals =None );?;OK
+58_Tabular_datasets_and_transforms.svg;ReadTabBatch();?;OK
+58_Tabular_datasets_and_transforms.svg;TabDataLoader after_batch;?;OK
+58_Tabular_datasets_and_transforms.svg;df;?;OK
+58_Tabular_datasets_and_transforms.svg;Adds columns relevant to a date in the column ` field_name ` of `df`;?;OK
+58_Tabular_datasets_and_transforms.svg;Add in `df` for each event in `field_names ` the elapsed time according to ` date_field ` grouped by ` base_field`;?;OK
+58_Tabular_datasets_and_transforms.svg;Returns column names of cont and cat variables from given `df`;?;OK
+58_Tabular_datasets_and_transforms.svg;Transform the categorical variables to something similar to ` pd.Categorical `;?;OK
+58_Tabular_datasets_and_transforms.svg;Normalize the continuous columns with the training set values;?;OK
+58_Tabular_datasets_and_transforms.svg;Fill the missing values in continuous columns.;?;OK
+58_Tabular_datasets_and_transforms.svg;cont_cat_split( df, max_card =20 , dep_var =None );?;OK
+58_Tabular_datasets_and_transforms.svg;A ` DataFrame ` wrapper that knows which cols are cont /cat/y, and returns rows in `__ getitem__`;?;OK
+58_Tabular_datasets_and_transforms.svg;Classification – single or multiclass;?;OK
+58_Tabular_datasets_and_transforms.svg;Regression;?;OK
+58_Tabular_datasets_and_transforms.svg;Transform ` TabularPandas ` values into a `Tensor` with the ability to decode;?;OK
+59_Optimizer.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Optimizer;?;OK
+59_Optimizer.svg;__init__( params, cbs , train_bn = True , **defaults );?;OK
+59_Optimizer.svg;zero_grad();?;OK
+59_Optimizer.svg;step();?;OK
+59_Optimizer.svg;clear_state();?;OK
+59_Optimizer.svg;state_dict();?;OK
+59_Optimizer.svg;load_state_dict( sd );?;OK
+59_Optimizer.svg;all_params ( n=slice(None), with_grad =False );?;OK
+59_Optimizer.svg;freeze_to (n);?;OK
+59_Optimizer.svg;freeze();?;OK
+59_Optimizer.svg;unfreeze ();?;OK
+59_Optimizer.svg;param_groups;?;OK
+59_Optimizer.svg;set_hypers( ** kwargs );?;OK
+59_Optimizer.svg;set_hyper( k, v );?;OK
+59_Optimizer.svg;OptimWrapper;?;OK
+59_Optimizer.svg;A wrapper class for existing PyTorch optimizers;?;OK
+59_Optimizer.svg;Lookahead;?;OK
+59_Optimizer.svg;Wrap `opt` in a lookahead optimizer;?;OK
+60_Optimizers.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Optimizers;?;OK
+60_Optimizers.svg;SGD ( params, lr , mom=0., wd=0., decouple_wd =True );?;OK
+60_Optimizers.svg;RMSProp ( params, lr , sqr_mom =0.99, mom=0., wd=0., decouple_wd =True );?;OK
+60_Optimizers.svg;Adam( params, lr , mom =0.9, sqr_mom =0.99, eps =1e - 5, wd =0.01, decouple_wd = True );?;OK
+60_Optimizers.svg;RAdam ( params, lr , mom =0.9, sqr_mom =0.99, eps =1e - 5, wd =0.01, decouple_wd = True );?;OK
+60_Optimizers.svg;QHAdam ( params, lr , mom =0.999 , sqr_mom =0.999 , nu_1 =0.7 , nu_2 = 1.0 , eps =1e - 8 , wd =0. , decouple_wd = True );?;OK
+60_Optimizers.svg;Larc ( params, lr , mom=0.9, clip=True, trust_coeff =0.02, eps=1e - 8, wd=0., decouple_wd =True );?;OK
+60_Optimizers.svg;Lamb( params, lr , mom =0.9, sqr_mom =0.99, eps =1e - 5, wd =0., decouple_wd = True );?;OK
+60_Optimizers.svg;ranger( p, lr , mom =0.95, wd =0.01, eps =1e - 6, ** kwargs );?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Optimizer - Hyperparameters scheduling;?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;SchedLin (start, end);?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;SchedCos (start, end);?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;SchedNo (start, end);?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;SchedExp (start, end);?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;SchedPoly (start, end, power);?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;combine_scheds ( pcts , scheds );?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;combined_cos (pct, start, middle, end);?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;ParamScheduler ( scheds ) scheds = { ' lr ’: combined_cos ( pct_start , lr_max/div, lr_max , lr_max/div_final), ' mom’: combined_cos (pct_start, *(self.moms if moms is None else moms))  } learner. fit ( n_epoch , cbs = ParamScheduler ( scheds ) +L ( cbs ), reset_opt = reset_opt , wd = wd ) [ before_batch ] for n,f in scheds. items (): learn . opt. set_hyper (n, f ( pct_train ));?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;Linear schedule function from `start` to `end`;?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;Cosine schedule function from `start` to `end`;?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;Constant schedule function with `start` value;?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;Exponential schedule function from `start` to `end`;?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;Polynomial schedule (of `power`) function from `start` to `end`;?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;Combine `scheds` according to `pcts` in one function;?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;Scheduler with cosine annealing from ` start`→`middle ` & ` middle`→`end `;?;OK
+61_Optimizer-Hyperparameters_scheduling.svg;Schedule hyper - parameters according to `scheds`;?;OK
+62_Create_model-Vision.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Create model - Vision;?;OK
+62_Create_model-Vision.svg;create_body ( arch, n_in =3 , pretrained =True , cut =None );?;OK
+62_Create_model-Vision.svg;Cut off the body of a typically pretrained `arch` as determined by `cut`;?;OK
+62_Create_model-Vision.svg;create_head ( nf , n_out , lin_ftrs =None, ps =0.5, concat_pool =True, first_bn =True, bn_final =False, lin_first =False, y_range =None );?;OK
+62_Create_model-Vision.svg;Model head that takes `nf` features, runs through `lin_ftrs`, and out `n_out` classes.;?;OK
+62_Create_model-Vision.svg;create_cnn_model ( arch, n_out , pretrained=True, cut=None, n_in =3, init = nn.init.kaiming_normal _, custom_head =None, concat_pool =True );?;OK
+62_Create_model-Vision.svg;Create custom convnet architecture;?;OK
+62_Create_model-Vision.svg;arch =  resnet18 | resnet34 | resnet50 | resnet101 | resnet152;?;OK
+62_Create_model-Vision.svg;arch =  xresnet18 | xresnet34 | xresnet50 | xresnet101 | xresnet152;?;OK
+62_Create_model-Vision.svg;arch = squeezenet1_0 | squeezenet1_1;?;OK
+62_Create_model-Vision.svg;arch = densenet121 | densenet169 | densenet201 | densenet161;?;OK
+62_Create_model-Vision.svg;arch = vgg11_bn | vgg13_bn | vgg16_bn | vgg19_bn;?;OK
+62_Create_model-Vision.svg;arch = alexnet;?;OK
+62_Create_model-Vision.svg;create_unet_model ( arch, n_out , img_size , pretrained =True , cut =None , n_in =3 );?;OK
+62_Create_model-Vision.svg;Create custom unet architecture;?;OK
+63_Create_Model-Text_GAN.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Create Model – Text, GAN;?;OK
+63_Create_Model-Text_GAN.svg;get_language_model ( arch, vocab_sz , config=None, drop_mult =1. );?;OK
+63_Create_Model-Text_GAN.svg;Create a language model from `arch` and its `config`.;?;OK
+63_Create_Model-Text_GAN.svg;arch = AWD_LSTM | AWD_QRNN;?;OK
+63_Create_Model-Text_GAN.svg;get_text_classifier( arch , vocab_sz , n_class , seq_len =72, config=None, drop_mult =1., lin_ftrs =None, ps =None, pad_idx =1, max_len =72*20, y_range =None );?;OK
+63_Create_Model-Text_GAN.svg;Create a text classifier from `arch` and its `config`, maybe `pretrained`;?;OK
+63_Create_Model-Text_GAN.svg;arch = AWD_LSTM | AWD_QRNN;?;OK
+63_Create_Model-Text_GAN.svg;basic_critic ( in_size , n_channels , n_features =64, n_extra_layers =0, norm_type = NormType.Batch );?;OK
+63_Create_Model-Text_GAN.svg;A basic critic for images `n_channels` x `in_size` x `in_size`.;?;OK
+63_Create_Model-Text_GAN.svg;basic_generator( out_size , n_channels , in_sz =100, n_features =64, n_extra_layers =0 );?;OK
+63_Create_Model-Text_GAN.svg;A basic generator from `in_sz` to images `n_channels` x `out_size` x `out_size`.;?;OK
+63_Create_Model-Text_GAN.svg;gan_critic ( n_channels =3, nf =128, n_blocks =3, p=0.15 );?;OK
+63_Create_Model-Text_GAN.svg;Critic to train a `GAN`.;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Pytorch Modules – Functions , Shapes & Pooling;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Identity;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Do nothing at all;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Lambda;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;An easy way to create a pytorch layer for a simple `func`;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;PartialLambda;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Layer that applies `partial( func , ** kwargs )`;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Flatten;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Flatten `x` to a single dimension, e.g. at end of a model. `full` for rank - 1 tensor;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;View;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Reshape `x` to `size`;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;ResizeBatch;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Reshape `x` to `size`, keeping batch dim the same size;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;AdaptiveConcatPool 1d;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Layer that concats `AdaptiveAvgPool1d` and `AdaptiveMaxPool1d`;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;AdaptiveConcatPool 2d;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Layer that concats `AdaptiveAvgPool2d` and `AdaptiveMaxPool2d`;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;PoolFlatten;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Combine `nn.AdaptiveAvgPool2d` and `Flatten`.;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;AdaptiveAvgPool;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;nn.AdaptiveAvgPool layer for `ndim`;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;MaxPool;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;nn.MaxPool layer for `ndim`;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;AvgPool;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;nn.AvgPool layer for `ndim`;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Module;?;OK
+64_Modules-Functions_Shapes_Pooling.svg;Same as `nn.Module`, but no need for subclasses to call `super().__init__`;?;OK
+65_Modules-Combine_layers_In_Out.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Pytorch Modules – Combine layers , In & Out;?;OK
+65_Modules-Combine_layers_In_Out.svg;Debugger;?;OK
+65_Modules-Combine_layers_In_Out.svg;A module to debug inside a model.;?;OK
+65_Modules-Combine_layers_In_Out.svg;Embedding;?;OK
+65_Modules-Combine_layers_In_Out.svg;Embedding layer with truncated normal initialization;?;OK
+65_Modules-Combine_layers_In_Out.svg;trunc_normal _;?;OK
+65_Modules-Combine_layers_In_Out.svg;SigmoidRange;?;OK
+65_Modules-Combine_layers_In_Out.svg;Sigmoid module with range `(low, high)`;?;OK
+65_Modules-Combine_layers_In_Out.svg;sequential(*args);?;OK
+65_Modules-Combine_layers_In_Out.svg;Create an `nn.Sequential`, wrapping items with `Lambda` if needed;?;OK
+65_Modules-Combine_layers_In_Out.svg;SequentialEx;?;OK
+65_Modules-Combine_layers_In_Out.svg;Like `nn.Sequential`, but with ModuleList semantics, and can access module input;?;OK
+65_Modules-Combine_layers_In_Out.svg;MergeLayer;?;OK
+65_Modules-Combine_layers_In_Out.svg;Merge a shortcut with the result of the module by adding them or concatenating them if `dense=True`.;?;OK
+65_Modules-Combine_layers_In_Out.svg;Cat;?;OK
+65_Modules-Combine_layers_In_Out.svg;Concatenate layers outputs over a given dim;?;OK
+65_Modules-Combine_layers_In_Out.svg;ProdLayer;?;OK
+65_Modules-Combine_layers_In_Out.svg;Merge a shortcut with the result of the module by multiplying them.;?;OK
+65_Modules-Combine_layers_In_Out.svg;children_and_param eters (m);?;OK
+65_Modules-Combine_layers_In_Out.svg;Return the children of `m` and its direct parameters not registered in modules.;?;OK
+65_Modules-Combine_layers_In_Out.svg;flatten_model(m);?;OK
+65_Modules-Combine_layers_In_Out.svg;Return the list of all submodules and parameters of `m`;?;OK
+65_Modules-Combine_layers_In_Out.svg;ResizeToOrig;?;OK
+65_Modules-Combine_layers_In_Out.svg;When used with SequentialEx , resizes the input of the module to the shape of the input of the SequentialEx block;?;OK
+66_Modules-Activations_Norms.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Pytorch Modules – Activations & Norms;?;OK
+66_Modules-Activations_Norms.svg;sigmoid;?;OK
+66_Modules-Activations_Norms.svg;Same as ` torch.sigmoid `, plus clamping to `(eps,1 - eps);?;OK
+66_Modules-Activations_Norms.svg;BatchNorm;?;OK
+66_Modules-Activations_Norms.svg;BatchNorm layer with `nf` features and `ndim` initialized depending on `norm_type`.;?;OK
+66_Modules-Activations_Norms.svg;InstanceNorm;?;OK
+66_Modules-Activations_Norms.svg;InstanceNorm layer with `nf` features and `ndim` initialized depending on `norm_type`.;?;OK
+66_Modules-Activations_Norms.svg;BatchNorm1dFlat;?;OK
+66_Modules-Activations_Norms.svg;`nn.BatchNorm1d`, but first flattens leading dimensions;?;OK
+66_Modules-Activations_Norms.svg;LinBnDrop;?;OK
+66_Modules-Activations_Norms.svg;Module grouping `BatchNorm1d`, `Dropout` and `Linear` layers;?;OK
+66_Modules-Activations_Norms.svg;F.relu;?;OK
+66_Modules-Activations_Norms.svg;F.relu6;?;OK
+66_Modules-Activations_Norms.svg;F.leaky_relu;?;OK
+66_Modules-Activations_Norms.svg;__default_init__ = kaiming_uniform_;?;OK
+66_Modules-Activations_Norms.svg;nn.ReLU;?;OK
+66_Modules-Activations_Norms.svg;nn.ReLU6;?;OK
+66_Modules-Activations_Norms.svg;nn.LeakyReLU;?;OK
+66_Modules-Activations_Norms.svg;sigmoid_;?;OK
+66_Modules-Activations_Norms.svg;F.sigmoid;?;OK
+66_Modules-Activations_Norms.svg;F.tanh;?;OK
+66_Modules-Activations_Norms.svg;nn.Sigmoid;?;OK
+66_Modules-Activations_Norms.svg;nn.Tanh;?;OK
+66_Modules-Activations_Norms.svg;__default_init__ = xavier_uniform_ defaults.activation = nn. ReLU;?;OK
+66_Modules-Activations_Norms.svg;init_default ( m, func = nn.init.kaiming_normal _ );?;OK
+66_Modules-Activations_Norms.svg;init_linear ( m, act_func =None, init ='auto', bias_std =0.01 );?;OK
+66_Modules-Activations_Norms.svg;`F.leaky_relu` with 0.3 slope;?;OK
+66_Modules-Activations_Norms.svg;vleaky_relu;?;OK
+66_Modules-Activations_Norms.svg;mish;?;OK
+66_Modules-Activations_Norms.svg;swish;?;OK
+66_Modules-Activations_Norms.svg;Mish;?;OK
+66_Modules-Activations_Norms.svg;Swish;?;OK
+67_Modules-Convolutions_Attention.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Pytorch Modules – Convolutions & Attention;?;OK
+67_Modules-Convolutions_Attention.svg;ConvLayer;?;OK
+67_Modules-Convolutions_Attention.svg;Create a sequence of convolutional (`ni` to `nf`), ReLU (if `use_activ`) and `norm_type` layers.;?;OK
+67_Modules-Convolutions_Attention.svg;SelfAttention;?;OK
+67_Modules-Convolutions_Attention.svg;Self attention layer for `n_channels`.;?;OK
+67_Modules-Convolutions_Attention.svg;PooledSelfAttention2d;?;OK
+67_Modules-Convolutions_Attention.svg;Pooled self attention layer for 2d.;?;OK
+67_Modules-Convolutions_Attention.svg;SimpleSelfAttention;?;OK
+67_Modules-Convolutions_Attention.svg;PixelShuffle_ICNR;?;OK
+67_Modules-Convolutions_Attention.svg;Upsample by `scale` from `ni` filters to `nf` (default `ni`), using `nn.PixelShuffle`.;?;OK
+67_Modules-Convolutions_Attention.svg;icnr_init;?;OK
+67_Modules-Convolutions_Attention.svg;SimpleCNN;?;OK
+67_Modules-Convolutions_Attention.svg;Create a simple CNN with `filters`.;?;OK
+67_Modules-Convolutions_Attention.svg;SEModule;?;OK
+67_Modules-Convolutions_Attention.svg;Squeeze and Excitation;?;OK
+67_Modules-Convolutions_Attention.svg;ResBlock;?;OK
+67_Modules-Convolutions_Attention.svg;Resnet block from `ni` to `nh` with `stride`;?;OK
+67_Modules-Convolutions_Attention.svg;SEBlock;?;OK
+67_Modules-Convolutions_Attention.svg;SEResNeXtBlock;?;OK
+67_Modules-Convolutions_Attention.svg;SeparableBlock;?;OK
+68_Modules-Text_sequences_Dropout.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Pytorch Modules – Text sequences & Dropout;?;OK
+68_Modules-Text_sequences_Dropout.svg;RNNDropout;?;OK
+68_Modules-Text_sequences_Dropout.svg;Dropout with probability `p` that is consistent on the seq_len dimension.;?;OK
+68_Modules-Text_sequences_Dropout.svg;WeightDropout;?;OK
+68_Modules-Text_sequences_Dropout.svg;A module that wraps another layer in which some weights will be replaced by 0 during training.;?;OK
+68_Modules-Text_sequences_Dropout.svg;EmbeddingDropout;?;OK
+68_Modules-Text_sequences_Dropout.svg;Apply dropout with probability `embed_p` to an embedding layer `emb`.;?;OK
+68_Modules-Text_sequences_Dropout.svg;AWD_LSTM;?;OK
+68_Modules-Text_sequences_Dropout.svg;AWD - LSTM inspired by https://arxiv.org/abs/1708.02182;?;OK
+68_Modules-Text_sequences_Dropout.svg;awd_lstm_lm_split;?;OK
+68_Modules-Text_sequences_Dropout.svg;awd_lstm_clas_split;?;OK
+68_Modules-Text_sequences_Dropout.svg;AWD_QRNN;?;OK
+68_Modules-Text_sequences_Dropout.svg;Same as an AWD - LSTM, but using QRNNs instead of LSTMs;?;OK
+68_Modules-Text_sequences_Dropout.svg;SequentialRNN;?;OK
+68_Modules-Text_sequences_Dropout.svg;A sequential module that passes the reset call to its children.;?;OK
+68_Modules-Text_sequences_Dropout.svg;SentenceEncoder;?;OK
+68_Modules-Text_sequences_Dropout.svg;Create an encoder over `module` that can process a full sentence.;?;OK
+68_Modules-Text_sequences_Dropout.svg;LinearDecoder;?;OK
+68_Modules-Text_sequences_Dropout.svg;To go on top of a RNNCore module and create a Language Model.;?;OK
+68_Modules-Text_sequences_Dropout.svg;PoolingLinearClassifier;?;OK
+68_Modules-Text_sequences_Dropout.svg;Create a linear classifier with pooling;?;OK
+68_Modules-Text_sequences_Dropout.svg;QRNNLayer;?;OK
+68_Modules-Text_sequences_Dropout.svg;Apply a single layer Quasi - Recurrent Neural Network (QRNN) to an input sequence.;?;OK
+68_Modules-Text_sequences_Dropout.svg;QRNN;?;OK
+68_Modules-Text_sequences_Dropout.svg;Apply a multiple layer Quasi - Recurrent Neural Network (QRNN) to an input sequence.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Pytorch Modules – Unet , GAN & Tabular;?;OK
+69_Modules-Unet_GAN_Tabular.svg;UnetBlock;?;OK
+69_Modules-Unet_GAN_Tabular.svg;A quasi - UNet block, using `PixelShuffle_ICNR upsampling`.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;DynamicUnet;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Create a U- Net from a given architecture.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;TabularModel;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Basic model for tabular data.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;GANModule;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Wrapper around a `generator` and a `critic` to create a GAN.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;AddChannels;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Add `n_dim` channels at the end of the input.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;DenseResBlock;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Dense Resnet block of ` nf ` features.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;GANLoss;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Wrapper around `crit_loss_func` and `gen_loss_func`;?;OK
+69_Modules-Unet_GAN_Tabular.svg;AdaptiveLoss;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Expand the `target` to match the `output` size before applying `crit`.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;EmbeddingDotBias;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Base dot model for collaborative filtering.;?;OK
+69_Modules-Unet_GAN_Tabular.svg;EmbeddingNN;?;OK
+69_Modules-Unet_GAN_Tabular.svg;Subclass `TabularModel` to create a NN suitable for collaborative filtering.;?;OK
+70_Loss_function-Interface.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Loss function - Interface;?;OK
+70_Loss_function-Interface.svg;Loss class;?;OK
+70_Loss_function-Interface.svg;reduction;?;OK
+70_Loss_function-Interface.svg;__call__(inp , targ);?;OK
+70_Loss_function-Interface.svg;decodes (x);?;OK
+70_Loss_function-Interface.svg;activation(x);?;OK
+70_Loss_function-Interface.svg;training;?;OK
+70_Loss_function-Interface.svg;inference;?;OK
+70_Loss_function-Interface.svg;nn. CrossEntropyLoss ( inp , targ );?;OK
+70_Loss_function-Interface.svg;F.softmax(x, dim=self.axis);?;OK
+70_Loss_function-Interface.svg;nn. CrossEntropyLoss.reduction = ‘ mean ’;?;OK
+70_Loss_function-Interface.svg;Example :;?;OK
+70_Loss_function-Interface.svg;x. argmax ( dim = self.axis);?;OK
+70_Loss_function-Interface.svg;BaseLoss ( l oss_cls , * args , axis= - 1, flatten=True, floatify =False, is_2d=True, ** kwargs );?;OK
+70_Loss_function-Interface.svg;Same as `loss_cls`, but flattens input and target.;?;OK
+71_Loss_functions-Classification_Regression.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Loss functions – Classification & Regression;?;OK
+71_Loss_functions-Classification_Regression.svg;CrossEntropyLossFlat ( *args, axis= - 1, ** kwargs );?;OK
+71_Loss_functions-Classification_Regression.svg;Same as ` nn.CrossEntropyLoss `, but flattens input and target.;?;OK
+71_Loss_functions-Classification_Regression.svg;FocalLossFlat( *args, gamma=2, axis= - 1, **kwargs );?;OK
+71_Loss_functions-Classification_Regression.svg;Same as CrossEntropyLossFlat but with focal parameter, `gamma`.;?;OK
+71_Loss_functions-Classification_Regression.svg;BCEWithLogitsLossFlat ( * args , axis= - 1, floatify =True, thresh=0.5, ** kwargs );?;OK
+71_Loss_functions-Classification_Regression.svg;BCELossFlat ( *args, axis= - 1, floatify = True , ** kwargs );?;OK
+71_Loss_functions-Classification_Regression.svg;Same as ` nn.BCEWithLogitsLoss `, but flattens input and target.;?;OK
+71_Loss_functions-Classification_Regression.svg;Same as `nn.BCELoss`, but flattens input and target.;?;OK
+71_Loss_functions-Classification_Regression.svg;MSELossFlat( *args, axis= - 1, floatify = True , ** kwargs );?;OK
+71_Loss_functions-Classification_Regression.svg;Same as ` nn.MSELoss `, but flattens input and target.;?;OK
+71_Loss_functions-Classification_Regression.svg;L1LossFlat( *args, axis= - 1, floatify = True , ** kwargs );?;OK
+71_Loss_functions-Classification_Regression.svg;Same as `nn.L1Loss`, but flattens input and target.;?;OK
+71_Loss_functions-Classification_Regression.svg;LabelSmoothingCrossEntropyFlat ( *args, eps =0.1, axis= - 1, * kwargs );?;OK
+71_Loss_functions-Classification_Regression.svg;Same as `LabelSmoothingCrossEntropy`, but flattens input and target.;?;OK
+71_Loss_functions-Classification_Regression.svg;classification;?;OK
+71_Loss_functions-Classification_Regression.svg;multi - category classification;?;OK
+71_Loss_functions-Classification_Regression.svg;regression;?;OK
+72_Summary-DataBlock.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+72_Summary-DataBlock.svg;DataBlock;?;OK
+72_Summary-DataBlock.svg;Directory;?;OK
+72_Summary-DataBlock.svg;Data File;?;OK
+72_Summary-DataBlock.svg;get_items;?;OK
+72_Summary-DataBlock.svg;List of paths;?;OK
+72_Summary-DataBlock.svg;Table rows;?;OK
+72_Summary-DataBlock.svg;get_x;?;OK
+72_Summary-DataBlock.svg;get_y;?;OK
+72_Summary-DataBlock.svg;Image path;?;OK
+72_Summary-DataBlock.svg;Image label;?;OK
+72_Summary-DataBlock.svg;ImageBlock;?;OK
+72_Summary-DataBlock.svg;CategoryBlock;?;OK
+72_Summary-DataBlock.svg;blocks;?;OK
+72_Summary-DataBlock.svg;Image;?;OK
+72_Summary-DataBlock.svg;Category index;?;OK
+72_Summary-DataBlock.svg;item_tfms;?;OK
+72_Summary-DataBlock.svg;iterator;?;OK
+72_Summary-DataBlock.svg;Image resized;?;OK
+72_Summary-DataBlock.svg;Category index;?;OK
+72_Summary-DataBlock.svg;split;?;OK
+72_Summary-DataBlock.svg;Indices train;?;OK
+72_Summary-DataBlock.svg;Indices valid;?;OK
+72_Summary-DataBlock.svg;batch;?;OK
+72_Summary-DataBlock.svg;batch_tfms tensor (1) CPU;?;OK
+72_Summary-DataBlock.svg;Images augmented;?;OK
+72_Summary-DataBlock.svg;Category indexes tensor (1) CPU tensor ( batch_size ) GPU;?;OK
+72_Summary-DataBlock.svg;n_inp;?;OK
+72_Summary-DataBlock.svg;bs Summary - DataBlock;?;OK
+73_Summary-DataLoaders.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+73_Summary-DataLoaders.svg;Summary - DataLoaders;?;OK
+74_Summary-Learner.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/;?;OK
+74_Summary-Learner.svg;Summary - Learner;?;OK
+75_Implementation_notes.svg;https://www.cognitivefactory.fr/fastaidocs https://docs.fast.ai/ Implementation notes For fastai show methods to work, the model architecture must : • return the same number of values as the ys in the dataloader For learn . get_preds , learn . predict and learn . show_results to work, the loss module must : • define a self.reduction property, used to compute the forward method, and support reduction='none' • define a self.activation method (optional sigmoid or softmax on the activations) => get_preds () • define a self.decodes method (apply on activations, result = align predictions with target, must be the SAME EXACT SHAPE, ex: argmax) => get_preds ( with_decoded =True) / predict When cnn_learner () is not used to create a Learner , two things need to be done manually for transfer learning : • define a splitter to select the trainable params • freeze the parameters of the body;?;OK
