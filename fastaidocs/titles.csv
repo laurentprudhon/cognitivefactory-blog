@@ -29,8 +29,8 @@
 29;DataLoader;DataLoader - Interface
 30;DataLoader;DataLoader - Init
 31;DataLoader;DataLoader - iter() and next()
-32;DataLoader;DataLoader - TfmDL
-33;DataLoader;DataLoader - TfmDL subclasses
+32;DataLoader;DataLoader - TfmdDL
+33;DataLoader;DataLoader - TfmdDL subclasses
 34;Dataset;Dataset - Interface
 35;Dataset;Dataset - TfmdLists
 36;Dataset;Dataset - Datasets
