@@ -1,0 +1,1271 @@
+Getting started;;Overview;https://docs.fast.ai/
+;;Installing;https://docs.fast.ai/#Installing
+;;Learning fastai;https://docs.fast.ai/#Learning-fastai
+;;About fastai;https://docs.fast.ai/#About-fastai
+;;Migrating from other libraries;https://docs.fast.ai/#Migrating-from-other-libraries
+;;Windows Support;https://docs.fast.ai/#Windows-Support
+;;Tests;https://docs.fast.ai/#Tests
+;;Contributing;https://docs.fast.ai/#Contributing
+;;Docker Containers;https://docs.fast.ai/#Docker-Containers
+Getting started;;Quick Start;https://docs.fast.ai/quick_start.html
+;;Computer vision classification;https://docs.fast.ai/quick_start.html#Computer-vision-classification
+;;;Computer vision segmentation;https://docs.fast.ai/quick_start.html#Computer-vision-segmentation
+;;Natural language processing;https://docs.fast.ai/quick_start.html#Natural-language-processing
+;;Tabular;https://docs.fast.ai/quick_start.html#Tabular
+;;Recommendation systems;https://docs.fast.ai/quick_start.html#Recommendation-systems
+Tutorials;;Overview;https://docs.fast.ai/tutorial.html
+Tutorials;Beginner;Vision Tutorial;https://docs.fast.ai/tutorial.vision.html
+;;Single-label classification;https://docs.fast.ai/tutorial.vision.html#Single-label-classification
+;;;Cats vs dogs;https://docs.fast.ai/tutorial.vision.html#Cats-vs-dogs
+;;;Classifying breeds;https://docs.fast.ai/tutorial.vision.html#Classifying-breeds
+;;;Single-label classification - With the data block API;https://docs.fast.ai/tutorial.vision.html#Single-label-classification---With-the-data-block-API
+;;Multi-label classification;https://docs.fast.ai/tutorial.vision.html#Multi-label-classification
+;;;Multi-label classification - Using the high-level API;https://docs.fast.ai/tutorial.vision.html#Multi-label-classification---Using-the-high-level-API
+;;;Multi-label classification - With the data block API;https://docs.fast.ai/tutorial.vision.html#Multi-label-classification---With-the-data-block-API
+;;Segmentation;https://docs.fast.ai/tutorial.vision.html#Segmentation
+;;;Segmentation - Using the high-level API;https://docs.fast.ai/tutorial.vision.html#Segmentation---Using-the-high-level-API
+;;;Segmentation - With the data block API;https://docs.fast.ai/tutorial.vision.html#Segmentation---With-the-data-block-API
+;;Points;https://docs.fast.ai/tutorial.vision.html#Points
+Tutorials;Beginner;Text Tutorial;https://docs.fast.ai/tutorial.text.html
+;;Train a text classifier from a pretrained model;https://docs.fast.ai/tutorial.text.html#Train-a-text-classifier-from-a-pretrained-model
+;;Using the high-level API;https://docs.fast.ai/tutorial.text.html#Using-the-high-level-API
+;;;Using the data block API;https://docs.fast.ai/tutorial.text.html#Using-the-data-block-API
+;;The ULMFiT approach;https://docs.fast.ai/tutorial.text.html#The-ULMFiT-approach
+;;;Fine-tuning a language model on IMDb;https://docs.fast.ai/tutorial.text.html#Fine-tuning-a-language-model-on-IMDb
+;;;Training a text classifier;https://docs.fast.ai/tutorial.text.html#Training-a-text-classifier
+Tutorials;Beginner;Tabular Tutorial;https://docs.fast.ai/tutorial.tabular.html
+;;fastai with Other Libraries;https://docs.fast.ai/tutorial.tabular.html#fastai-with-Other-Libraries
+Tutorials;Beginner;Collab Tutorial;https://docs.fast.ai/tutorial.collab.html
+;;Training a model;https://docs.fast.ai/tutorial.collab.html#Training-a-model
+;;Interpretation;https://docs.fast.ai/tutorial.collab.html#Interpretation
+;;;Movie bias;https://docs.fast.ai/tutorial.collab.html#Movie-bias
+;;;Movie weights;https://docs.fast.ai/tutorial.collab.html#Movie-weights
+Tutorials;Intermediate;DataBlock Tutorial;https://docs.fast.ai/tutorial.datablock.html
+;;Building a DataBlock from scratch;https://docs.fast.ai/tutorial.datablock.html#Building-a-DataBlock-from-scratch
+;;Image classification;https://docs.fast.ai/tutorial.datablock.html#Image-classification
+;;;MNIST (single label);https://docs.fast.ai/tutorial.datablock.html#MNIST-(single-label)
+;;;Pets (single label);https://docs.fast.ai/tutorial.datablock.html#Pets-(single-label)
+;;;Pascal (multi-label);https://docs.fast.ai/tutorial.datablock.html#Pascal-(multi-label)
+;;Image localization;https://docs.fast.ai/tutorial.datablock.html#Image-localization
+;;;Segmentation;https://docs.fast.ai/tutorial.datablock.html#Segmentation
+;;;Points;https://docs.fast.ai/tutorial.datablock.html#Points
+;;;Bounding boxes;https://docs.fast.ai/tutorial.datablock.html#Bounding-boxes
+;;Text;https://docs.fast.ai/tutorial.datablock.html#Text
+;;;Language model;https://docs.fast.ai/tutorial.datablock.html#Language-model
+;;;Text classification;https://docs.fast.ai/tutorial.datablock.html#Text-classification
+;;Tabular data;https://docs.fast.ai/tutorial.datablock.html#Tabular-data
+Tutorials;Intermediate;Imagenette Tutorial;https://docs.fast.ai/tutorial.imagenette.html
+;;Assemble the data;https://docs.fast.ai/tutorial.imagenette.html#Assemble-the-data
+;;;Loading the data with a factory method;https://docs.fast.ai/tutorial.imagenette.html#Loading-the-data-with-a-factory-method
+;;;Loading the data with the data block API;https://docs.fast.ai/tutorial.imagenette.html#Loading-the-data-with-the-data-block-API
+;;;Loading the data with the mid-level API;https://docs.fast.ai/tutorial.imagenette.html#Loading-the-data-with-the-mid-level-API
+;;Training;https://docs.fast.ai/tutorial.imagenette.html#Training
+;;;Building a Learner;https://docs.fast.ai/tutorial.imagenette.html#Building-a-Learner
+;;;Changing the loss function;https://docs.fast.ai/tutorial.imagenette.html#Changing-the-loss-function
+;;;Changing the optimizer;https://docs.fast.ai/tutorial.imagenette.html#Changing-the-optimizer
+;;;Changing the training loop with a Callback;https://docs.fast.ai/tutorial.imagenette.html#Changing-the-training-loop-with-a-Callback
+Tutorials;Intermediate;Medical Imaging Tutorial;https://docs.fast.ai/tutorial.medical_imaging.html
+;;Download and import of X-ray DICOM files;https://docs.fast.ai/tutorial.medical_imaging.html#Download-and-import-of-X-ray-DICOM-files
+;;What are DICOMs?;https://docs.fast.ai/tutorial.medical_imaging.html#What-are-DICOMs?
+;;;Plotting the DICOM data;https://docs.fast.ai/tutorial.medical_imaging.html#Plotting-the-DICOM-data
+;;Training;https://docs.fast.ai/tutorial.medical_imaging.html#Training
+;;Result Evaluation;https://docs.fast.ai/tutorial.medical_imaging.html#Result-Evaluation
+Tutorials;Intermediate;Pets Tutorial;https://docs.fast.ai/tutorial.pets.html
+;;Overview;https://docs.fast.ai/tutorial.pets.html#Overview
+;;Processing data;https://docs.fast.ai/tutorial.pets.html#Processing-data
+;;;Transform;https://docs.fast.ai/tutorial.pets.html#Transform
+;;;Pipeline;https://docs.fast.ai/tutorial.pets.html#Pipeline
+;;Loading the pets dataset using only Transform;https://docs.fast.ai/tutorial.pets.html#Loading-the-pets-dataset-using-only-Transform
+;;;Using decodes for showing processed data;https://docs.fast.ai/tutorial.pets.html#Using-decodes-for-showing-processed-data
+;;;Setting up the internal state with a setups;https://docs.fast.ai/tutorial.pets.html#Setting-up-the-internal-state-with-a-setups
+;;;Combining our Transform with data augmentation in a Pipeline.;https://docs.fast.ai/tutorial.pets.html#Combining-our-Transform-with-data-augmentation-in-a-Pipeline.
+;;TfmdLists and Datasets;https://docs.fast.ai/tutorial.pets.html#TfmdLists-and-Datasets
+;;;One pipeline makes a TfmdLists;https://docs.fast.ai/tutorial.pets.html#One-pipeline-makes-a-TfmdLists
+;;;Traning and validation set;https://docs.fast.ai/tutorial.pets.html#Traning-and-validation-set
+;;;Getting to DataLoaders;https://docs.fast.ai/tutorial.pets.html#Getting-to-DataLoaders
+;;;Using Datasets;https://docs.fast.ai/tutorial.pets.html#Using-Datasets
+;;;Segmentation;https://docs.fast.ai/tutorial.pets.html#Segmentation
+;;Adding a test dataloader for inference;https://docs.fast.ai/tutorial.pets.html#Adding-a-test-dataloader-for-inference
+Tutorials;Intermediate;Transformers Tutorial;https://docs.fast.ai/tutorial.transformers.html
+;;Importing a transformers pretrained model;https://docs.fast.ai/tutorial.transformers.html#Importing-a-transformers-pretrained-model
+;;Bridging the gap with fastai;https://docs.fast.ai/tutorial.transformers.html#Bridging-the-gap-with-fastai
+;;;Preparing the data;https://docs.fast.ai/tutorial.transformers.html#Preparing-the-data
+;;;Fine-tuning the model;https://docs.fast.ai/tutorial.transformers.html#Fine-tuning-the-model
+Tutorials;Intermediate;Wikitext Tutorial;https://docs.fast.ai/tutorial.wikitext.html
+;;Data;https://docs.fast.ai/tutorial.wikitext.html#Data
+;;Model;https://docs.fast.ai/tutorial.wikitext.html#Model
+Tutorials;Advanced;Albumentations Tutorial;https://docs.fast.ai/tutorial.albumentations.html
+;;Overview;https://docs.fast.ai/tutorial.albumentations.html#Overview
+;;;Creating your own Transform;https://docs.fast.ai/tutorial.albumentations.html#Creating-your-own-Transform
+;;;Segmentation;https://docs.fast.ai/tutorial.albumentations.html#Segmentation
+;;;Using different transform pipelines and the DataBlock API;https://docs.fast.ai/tutorial.albumentations.html#Using-different-transform-pipelines-and-the-DataBlock-API
+Tutorials;Advanced;Siamese Tutorial;https://docs.fast.ai/tutorial.siamese.html
+;;Preparing the data;https://docs.fast.ai/tutorial.siamese.html#Preparing-the-data
+;;;Purely in PyTorch;https://docs.fast.ai/tutorial.siamese.html#Purely-in-PyTorch
+;;;Using the mid-level API;https://docs.fast.ai/tutorial.siamese.html#Using-the-mid-level-API
+;;;Making show work;https://docs.fast.ai/tutorial.siamese.html#Making-show-work
+;;;Writing your custom data block;https://docs.fast.ai/tutorial.siamese.html#Writing-your-custom-data-block
+;;Training a model;https://docs.fast.ai/tutorial.siamese.html#Training-a-model
+;;;The model;https://docs.fast.ai/tutorial.siamese.html#The-model
+;;;Train the model;https://docs.fast.ai/tutorial.siamese.html#Train-the-model
+;;;Making show_results work;https://docs.fast.ai/tutorial.siamese.html#Making-show_results-work
+;;;Patch in a siampredict method to Learner, to automatically show images and prediction;https://docs.fast.ai/tutorial.siamese.html#Patch-in-a-siampredict-method-to-Learner,-to-automatically-show-images-and-prediction
+Tutorials;Advanced;Performance Tips and Tricks;https://docs.fast.ai/dev/performance.html
+;;Mixed Precision Training;https://docs.fast.ai/dev/performance.html#mixed-precision-training
+;;Faster Image Processing;https://docs.fast.ai/dev/performance.html#faster-image-processing
+;;;libjpeg-turbo;https://docs.fast.ai/dev/performance.html#libjpeg-turbo
+;;;Pillow-SIMD;https://docs.fast.ai/dev/performance.html#pillow-simd
+;;;;Background;https://docs.fast.ai/dev/performance.html#background
+;;;;Installation;https://docs.fast.ai/dev/performance.html#installation
+;;;;How to check whether youâre running Pillow or Pillow-SIMD;https://docs.fast.ai/dev/performance.html#how-to-check-whether-youre-running-pillow-or-pillow-simd
+;;;;Is JPEG compression SIMD-optimized?;https://docs.fast.ai/dev/performance.html#is-jpeg-compression-simd-optimized
+;;;;How to tell whether Pillow or Pillow-SIMD is using libjpeg-turbo;https://docs.fast.ai/dev/performance.html#how-to-tell-whether-pillow-or-pillow-simd-is-using-libjpeg-turbo
+;;;Conda packages;https://docs.fast.ai/dev/performance.html#conda-packages
+;;GPU Performance;https://docs.fast.ai/dev/performance.html#gpu-performance
+Tutorials;Migrating from Other Libraries;Plain PyTorch;https://docs.fast.ai/migrating_pytorch.html
+Tutorials;Migrating from Other Libraries;Ignite;https://docs.fast.ai/migrating_ignite.html
+Tutorials;Migrating from Other Libraries;Lightning;https://docs.fast.ai/migrating_lightning.html
+;;Using fastai's training loop;https://docs.fast.ai/migrating_lightning.html#Using-fastai's-training-loop
+;;;Taking advantage of fastai Data Blocks;https://docs.fast.ai/migrating_lightning.html#Taking-advantage-of-fastai-Data-Blocks
+Tutorials;Migrating from Other Libraries;Catalyst;https://docs.fast.ai/migrating_catalyst.html
+;;Catalyst code;https://docs.fast.ai/migrating_catalyst.html#Catalyst-code
+;;;Using callbacks;https://docs.fast.ai/migrating_catalyst.html#Using-callbacks
+;;;Changing the model;https://docs.fast.ai/migrating_catalyst.html#Changing-the-model
+Training;;Training Loop;https://docs.fast.ai/learner.html
+;;Utils function;https://docs.fast.ai/learner.html#Utils-function
+;;;;replacing_yield;https://docs.fast.ai/learner.html#replacing_yield
+;;;;mk_metric;https://docs.fast.ai/learner.html#mk_metric
+;;;;save_model;https://docs.fast.ai/learner.html#save_model
+;;;;load_model;https://docs.fast.ai/learner.html#load_model
+;;class Learner;https://docs.fast.ai/learner.html#Learner
+;;;PyTorch interop;https://docs.fast.ai/learner.html#PyTorch-interop
+;;;Training loop;https://docs.fast.ai/learner.html#Training-loop
+;;;;Learner.fit;https://docs.fast.ai/learner.html#Learner.fit
+;;;;Learner.one_batch;https://docs.fast.ai/learner.html#Learner.one_batch
+;;;;Learner.all_batches;https://docs.fast.ai/learner.html#Learner.all_batches
+;;;;Learner.create_opt;https://docs.fast.ai/learner.html#Learner.create_opt
+;;;Callback handling;https://docs.fast.ai/learner.html#Callback-handling
+;;;;Learner.__call__;https://docs.fast.ai/learner.html#Learner.__call__
+;;;;Learner.add_cb;https://docs.fast.ai/learner.html#Learner.add_cb
+;;;;Learner.add_cbs;https://docs.fast.ai/learner.html#Learner.add_cbs
+;;;;Learner.added_cbs;https://docs.fast.ai/learner.html#Learner.added_cbs
+;;;;Learner.ordered_cbs;https://docs.fast.ai/learner.html#Learner.ordered_cbs
+;;;;Learner.remove_cb;https://docs.fast.ai/learner.html#Learner.remove_cb
+;;;;Learner.remove_cbs;https://docs.fast.ai/learner.html#Learner.remove_cbs
+;;;;Learner.removed_cbs;https://docs.fast.ai/learner.html#Learner.removed_cbs
+;;;;Learner.show_training_loop;https://docs.fast.ai/learner.html#Learner.show_training_loop
+;;;;before_batch_cb;https://docs.fast.ai/learner.html#before_batch_cb
+;;;Serializing;https://docs.fast.ai/learner.html#Serializing
+;;;;Learner.save;https://docs.fast.ai/learner.html#Learner.save
+;;;;Learner.load;https://docs.fast.ai/learner.html#Learner.load
+;;;;Learner.export;https://docs.fast.ai/learner.html#Learner.export
+;;;;load_learner;https://docs.fast.ai/learner.html#load_learner
+;;;;to_detach_from_dl;https://docs.fast.ai/learner.html#to_detach_from_dl
+;;;class Metric;https://docs.fast.ai/learner.html#Metric
+;;;;Metric.reset;https://docs.fast.ai/learner.html#Metric.reset
+;;;;Metric.accumulate;https://docs.fast.ai/learner.html#Metric.accumulate
+;;;;Metric.value;https://docs.fast.ai/learner.html#Metric.value
+;;;;Metric.name;https://docs.fast.ai/learner.html#Metric.name
+;;;class AvgMetric;https://docs.fast.ai/learner.html#AvgMetric
+;;;class AvgLoss;https://docs.fast.ai/learner.html#AvgLoss
+;;;class AvgSmoothLoss;https://docs.fast.ai/learner.html#AvgSmoothLoss
+;;;class ValueMetric;https://docs.fast.ai/learner.html#ValueMetric
+;;class Recorder;https://docs.fast.ai/learner.html#Recorder
+;;;Internals;https://docs.fast.ai/learner.html#Internals
+;;;;Recorder.before_fit;https://docs.fast.ai/learner.html#Recorder.before_fit
+;;;;Recorder.before_epoch;https://docs.fast.ai/learner.html#Recorder.before_epoch
+;;;;Recorder.before_validate;https://docs.fast.ai/learner.html#Recorder.before_validate
+;;;;Recorder.after_batch;https://docs.fast.ai/learner.html#Recorder.after_batch
+;;;;Recorder.after_epoch;https://docs.fast.ai/learner.html#Recorder.after_epoch
+;;;Plotting tools;https://docs.fast.ai/learner.html#Plotting-tools
+;;;;Recorder.plot_loss;https://docs.fast.ai/learner.html#Recorder.plot_loss
+;;Inference functions;https://docs.fast.ai/learner.html#Inference-functions
+;;;;Learner.validate;https://docs.fast.ai/learner.html#Learner.validate
+;;;;Learner.get_preds;https://docs.fast.ai/learner.html#Learner.get_preds
+;;;;Learner.predict;https://docs.fast.ai/learner.html#Learner.predict
+;;;;Learner.show_results;https://docs.fast.ai/learner.html#Learner.show_results
+;;;;Learner.no_logging;https://docs.fast.ai/learner.html#Learner.no_logging
+;;;;Learner.loss_not_reduced;https://docs.fast.ai/learner.html#Learner.loss_not_reduced
+;;Transfer learning;https://docs.fast.ai/learner.html#Transfer-learning
+;;;;Learner.freeze_to;https://docs.fast.ai/learner.html#Learner.freeze_to
+;;;;Learner.freeze;https://docs.fast.ai/learner.html#Learner.freeze
+;;;;Learner.unfreeze;https://docs.fast.ai/learner.html#Learner.unfreeze
+;;TTA;https://docs.fast.ai/learner.html#TTA
+;;;;Learner.tta;https://docs.fast.ai/learner.html#Learner.tta
+Training;;Optimizer;https://docs.fast.ai/optimizer.html
+;;class Optimizer;https://docs.fast.ai/optimizer.html#Optimizer
+;;;Initializing an Optimizer;https://docs.fast.ai/optimizer.html#Initializing-an-Optimizer
+;;;Basic steppers;https://docs.fast.ai/optimizer.html#Basic-steppers
+;;;;sgd_step;https://docs.fast.ai/optimizer.html#sgd_step
+;;;;weight_decay;https://docs.fast.ai/optimizer.html#weight_decay
+;;;;l2_reg;https://docs.fast.ai/optimizer.html#l2_reg
+;;;Making the step;https://docs.fast.ai/optimizer.html#Making-the-step
+;;;;Optimizer.step;https://docs.fast.ai/optimizer.html#Optimizer.step
+;;;;Optimizer.zero_grad;https://docs.fast.ai/optimizer.html#Optimizer.zero_grad
+;;Statistics;https://docs.fast.ai/optimizer.html#Statistics
+;;;;average_grad;https://docs.fast.ai/optimizer.html#average_grad
+;;;;average_sqr_grad;https://docs.fast.ai/optimizer.html#average_sqr_grad
+;;;Freezing part of the model;https://docs.fast.ai/optimizer.html#Freezing-part-of-the-model
+;;;;Optimizer.freeze;https://docs.fast.ai/optimizer.html#Optimizer.freeze
+;;;;Optimizer.freeze_to;https://docs.fast.ai/optimizer.html#Optimizer.freeze_to
+;;;;Optimizer.unfreeze;https://docs.fast.ai/optimizer.html#Optimizer.unfreeze
+;;;Serializing;https://docs.fast.ai/optimizer.html#Serializing
+;;;;Optimizer.state_dict;https://docs.fast.ai/optimizer.html#Optimizer.state_dict
+;;;;Optimizer.load_state_dict;https://docs.fast.ai/optimizer.html#Optimizer.load_state_dict
+;;;;Optimizer.clear_state;https://docs.fast.ai/optimizer.html#Optimizer.clear_state
+;;Optimizers;https://docs.fast.ai/optimizer.html#Optimizers
+;;;SGD with momentum;https://docs.fast.ai/optimizer.html#SGD-with-momentum
+;;;;momentum_step;https://docs.fast.ai/optimizer.html#momentum_step
+;;;;SGD;https://docs.fast.ai/optimizer.html#SGD
+;;;RMSProp;https://docs.fast.ai/optimizer.html#RMSProp
+;;;;rms_prop_step;https://docs.fast.ai/optimizer.html#rms_prop_step
+;;;;RMSProp;https://docs.fast.ai/optimizer.html#RMSProp
+;;;Adam;https://docs.fast.ai/optimizer.html#Adam
+;;;;step_stat;https://docs.fast.ai/optimizer.html#step_stat
+;;;;debias;https://docs.fast.ai/optimizer.html#debias
+;;;;adam_step;https://docs.fast.ai/optimizer.html#adam_step
+;;;;Adam;https://docs.fast.ai/optimizer.html#Adam
+;;;RAdam;https://docs.fast.ai/optimizer.html#RAdam
+;;;;radam_step;https://docs.fast.ai/optimizer.html#radam_step
+;;;;RAdam;https://docs.fast.ai/optimizer.html#RAdam
+;;;QHAdam;https://docs.fast.ai/optimizer.html#QHAdam
+;;;;qhadam_step;https://docs.fast.ai/optimizer.html#qhadam_step
+;;;;QHAdam;https://docs.fast.ai/optimizer.html#QHAdam
+;;;LARS/LARC;https://docs.fast.ai/optimizer.html#LARS/LARC
+;;;;larc_layer_lr;https://docs.fast.ai/optimizer.html#larc_layer_lr
+;;;;larc_step;https://docs.fast.ai/optimizer.html#larc_step
+;;;;Larc;https://docs.fast.ai/optimizer.html#Larc
+;;;LAMB;https://docs.fast.ai/optimizer.html#LAMB
+;;;;lamb_step;https://docs.fast.ai/optimizer.html#lamb_step
+;;;;Lamb;https://docs.fast.ai/optimizer.html#Lamb
+;;class Lookahead;https://docs.fast.ai/optimizer.html#Lookahead
+;;;;ranger;https://docs.fast.ai/optimizer.html#ranger
+;;;;detuplify_pg;https://docs.fast.ai/optimizer.html#detuplify_pg
+;;;;set_item_pg;https://docs.fast.ai/optimizer.html#set_item_pg
+;;class OptimWrapper;https://docs.fast.ai/optimizer.html#OptimWrapper
+Training;;Metrics;https://docs.fast.ai/metrics.html
+;;Core metric;https://docs.fast.ai/metrics.html#Core-metric
+;;;;flatten_check;https://docs.fast.ai/metrics.html#flatten_check
+;;;class AccumMetric;https://docs.fast.ai/metrics.html#AccumMetric
+;;;;skm_to_fastai;https://docs.fast.ai/metrics.html#skm_to_fastai
+;;;;optim_metric;https://docs.fast.ai/metrics.html#optim_metric
+;;Single-label classification;https://docs.fast.ai/metrics.html#Single-label-classification
+;;;;accuracy;https://docs.fast.ai/metrics.html#accuracy
+;;;;error_rate;https://docs.fast.ai/metrics.html#error_rate
+;;;;top_k_accuracy;https://docs.fast.ai/metrics.html#top_k_accuracy
+;;;;APScoreBinary;https://docs.fast.ai/metrics.html#APScoreBinary
+;;;;BalancedAccuracy;https://docs.fast.ai/metrics.html#BalancedAccuracy
+;;;;BrierScore;https://docs.fast.ai/metrics.html#BrierScore
+;;;;CohenKappa;https://docs.fast.ai/metrics.html#CohenKappa
+;;;;F1Score;https://docs.fast.ai/metrics.html#F1Score
+;;;;FBeta;https://docs.fast.ai/metrics.html#FBeta
+;;;;HammingLoss;https://docs.fast.ai/metrics.html#HammingLoss
+;;;;Jaccard;https://docs.fast.ai/metrics.html#Jaccard
+;;;;Precision;https://docs.fast.ai/metrics.html#Precision
+;;;;Recall;https://docs.fast.ai/metrics.html#Recall
+;;;;RocAuc;https://docs.fast.ai/metrics.html#RocAuc
+;;;;RocAucBinary;https://docs.fast.ai/metrics.html#RocAucBinary
+;;;;MatthewsCorrCoef;https://docs.fast.ai/metrics.html#MatthewsCorrCoef
+;;Multi-label classification;https://docs.fast.ai/metrics.html#Multi-label-classification
+;;;;accuracy_multi;https://docs.fast.ai/metrics.html#accuracy_multi
+;;;;APScoreMulti;https://docs.fast.ai/metrics.html#APScoreMulti
+;;;;BrierScoreMulti;https://docs.fast.ai/metrics.html#BrierScoreMulti
+;;;;F1ScoreMulti;https://docs.fast.ai/metrics.html#F1ScoreMulti
+;;;;FBetaMulti;https://docs.fast.ai/metrics.html#FBetaMulti
+;;;;HammingLossMulti;https://docs.fast.ai/metrics.html#HammingLossMulti
+;;;;JaccardMulti;https://docs.fast.ai/metrics.html#JaccardMulti
+;;;;MatthewsCorrCoefMulti;https://docs.fast.ai/metrics.html#MatthewsCorrCoefMulti
+;;;;PrecisionMulti;https://docs.fast.ai/metrics.html#PrecisionMulti
+;;;;RecallMulti;https://docs.fast.ai/metrics.html#RecallMulti
+;;;;RocAucMulti;https://docs.fast.ai/metrics.html#RocAucMulti
+;;Regression;https://docs.fast.ai/metrics.html#Regression
+;;;;mse;https://docs.fast.ai/metrics.html#mse
+;;;;rmse;https://docs.fast.ai/metrics.html#rmse
+;;;;mae;https://docs.fast.ai/metrics.html#mae
+;;;;msle;https://docs.fast.ai/metrics.html#msle
+;;;;exp_rmspe;https://docs.fast.ai/metrics.html#exp_rmspe
+;;;;ExplainedVariance;https://docs.fast.ai/metrics.html#ExplainedVariance
+;;;;R2Score;https://docs.fast.ai/metrics.html#R2Score
+;;;;PearsonCorrCoef;https://docs.fast.ai/metrics.html#PearsonCorrCoef
+;;;;SpearmanCorrCoef;https://docs.fast.ai/metrics.html#SpearmanCorrCoef
+;;Segmentation;https://docs.fast.ai/metrics.html#Segmentation
+;;;;foreground_acc;https://docs.fast.ai/metrics.html#foreground_acc
+;;;class Dice;https://docs.fast.ai/metrics.html#Dice
+;;;class DiceMulti;https://docs.fast.ai/metrics.html#DiceMulti
+;;;class JaccardCoeff;https://docs.fast.ai/metrics.html#JaccardCoeff
+;;NLP;https://docs.fast.ai/metrics.html#NLP
+;;;class CorpusBLEUMetric;https://docs.fast.ai/metrics.html#CorpusBLEUMetric
+;;;class Perplexity;https://docs.fast.ai/metrics.html#Perplexity
+;;;class LossMetric;https://docs.fast.ai/metrics.html#LossMetric
+;;;;LossMetrics;https://docs.fast.ai/metrics.html#LossMetrics
+Training;;Interpretation;https://docs.fast.ai/interpret.html
+;;class Interpretation;https://docs.fast.ai/interpret.html#Interpretation
+;;class ClassificationInterpretation;https://docs.fast.ai/interpret.html#ClassificationInterpretation
+;;class SegmentationInterpretation;https://docs.fast.ai/interpret.html#SegmentationInterpretation
+Training;;Distributed;https://docs.fast.ai/distributed.html
+;;Parallel;https://docs.fast.ai/distributed.html#Parallel
+;;;;DataParallel.reset;https://docs.fast.ai/distributed.html#DataParallel.reset
+;;class ParallelTrainer;https://docs.fast.ai/distributed.html#ParallelTrainer
+;;;;Learner.to_parallel;https://docs.fast.ai/distributed.html#Learner.to_parallel
+;;;;Learner.detach_parallel;https://docs.fast.ai/distributed.html#Learner.detach_parallel
+;;;;Learner.parallel_ctx;https://docs.fast.ai/distributed.html#Learner.parallel_ctx
+;;Distributed;https://docs.fast.ai/distributed.html#Distributed
+;;;Helper functions;https://docs.fast.ai/distributed.html#Helper-functions
+;;;;DistributedDataParallel.reset;https://docs.fast.ai/distributed.html#DistributedDataParallel.reset
+;;;;setup_distrib;https://docs.fast.ai/distributed.html#setup_distrib
+;;;;teardown_distrib;https://docs.fast.ai/distributed.html#teardown_distrib
+;;;DataLoader;https://docs.fast.ai/distributed.html#DataLoader
+;;class DistributedDL;https://docs.fast.ai/distributed.html#DistributedDL
+;;class DistributedTrainer;https://docs.fast.ai/distributed.html#DistributedTrainer
+;;;;Learner.to_distributed;https://docs.fast.ai/distributed.html#Learner.to_distributed
+;;;;Learner.detach_distributed;https://docs.fast.ai/distributed.html#Learner.detach_distributed
+;;;distrib_ctx context manager;https://docs.fast.ai/distributed.html#distrib_ctx-context-manager
+;;;;Learner.distrib_ctx;https://docs.fast.ai/distributed.html#Learner.distrib_ctx
+;;;;rank0_first;https://docs.fast.ai/distributed.html#rank0_first
+Training;Callbacks;Core;https://docs.fast.ai/callback.core.html
+;;Events;https://docs.fast.ai/callback.core.html#Events
+;;;class event;https://docs.fast.ai/callback.core.html#event
+;;class Callback;https://docs.fast.ai/callback.core.html#Callback
+;;;;Callback.__call__;https://docs.fast.ai/callback.core.html#Callback.__call__
+;;;;Callback.name;https://docs.fast.ai/callback.core.html#Callback.name
+;;;class TrainEvalCallback;https://docs.fast.ai/callback.core.html#TrainEvalCallback
+;;Attributes available to callbacks;https://docs.fast.ai/callback.core.html#Attributes-available-to-callbacks
+;;Callbacks control flow;https://docs.fast.ai/callback.core.html#Callbacks-control-flow
+;;;class CancelStepException;https://docs.fast.ai/callback.core.html#CancelStepException
+;;;class CancelBatchException;https://docs.fast.ai/callback.core.html#CancelBatchException
+;;;class CancelTrainException;https://docs.fast.ai/callback.core.html#CancelTrainException
+;;;class CancelValidException;https://docs.fast.ai/callback.core.html#CancelValidException
+;;;class CancelEpochException;https://docs.fast.ai/callback.core.html#CancelEpochException
+;;;class CancelFitException;https://docs.fast.ai/callback.core.html#CancelFitException
+;;;class GatherPredsCallback;https://docs.fast.ai/callback.core.html#GatherPredsCallback
+;;;class FetchPredsCallback;https://docs.fast.ai/callback.core.html#FetchPredsCallback
+Training;Callbacks;Hooks;https://docs.fast.ai/callback.hook.html
+;;What are hooks?;https://docs.fast.ai/callback.hook.html#What-are-hooks?
+;;class Hook;https://docs.fast.ai/callback.hook.html#Hook
+;;;;Hook.hook_fn;https://docs.fast.ai/callback.hook.html#Hook.hook_fn
+;;;;Hook.remove;https://docs.fast.ai/callback.hook.html#Hook.remove
+;;;Context Manager;https://docs.fast.ai/callback.hook.html#Context-Manager
+;;;;Hook.__enter__;https://docs.fast.ai/callback.hook.html#Hook.__enter__
+;;;;Hook.__exit__;https://docs.fast.ai/callback.hook.html#Hook.__exit__
+;;;;hook_output;https://docs.fast.ai/callback.hook.html#hook_output
+;;class Hooks;https://docs.fast.ai/callback.hook.html#Hooks
+;;;;Hooks.stored;https://docs.fast.ai/callback.hook.html#Hooks.stored
+;;;;Hooks.remove;https://docs.fast.ai/callback.hook.html#Hooks.remove
+;;;Context Manager;https://docs.fast.ai/callback.hook.html#Context-Manager
+;;;;Hooks.__enter__;https://docs.fast.ai/callback.hook.html#Hooks.__enter__
+;;;;Hooks.__exit__;https://docs.fast.ai/callback.hook.html#Hooks.__exit__
+;;;;hook_outputs;https://docs.fast.ai/callback.hook.html#hook_outputs
+;;;;dummy_eval;https://docs.fast.ai/callback.hook.html#dummy_eval
+;;;;model_sizes;https://docs.fast.ai/callback.hook.html#model_sizes
+;;;;num_features_model;https://docs.fast.ai/callback.hook.html#num_features_model
+;;;;has_params;https://docs.fast.ai/callback.hook.html#has_params
+;;class HookCallback;https://docs.fast.ai/callback.hook.html#HookCallback
+;;;;HookCallback.before_fit;https://docs.fast.ai/callback.hook.html#HookCallback.before_fit
+;;;;HookCallback.after_fit;https://docs.fast.ai/callback.hook.html#HookCallback.after_fit
+;;Model summary;https://docs.fast.ai/callback.hook.html#Model-summary
+;;;;total_params;https://docs.fast.ai/callback.hook.html#total_params
+;;;;layer_info;https://docs.fast.ai/callback.hook.html#layer_info
+;;;;module_summary;https://docs.fast.ai/callback.hook.html#module_summary
+;;;;Learner.summary;https://docs.fast.ai/callback.hook.html#Learner.summary
+;;Activation graphs;https://docs.fast.ai/callback.hook.html#Activation-graphs
+;;class ActivationStats;https://docs.fast.ai/callback.hook.html#ActivationStats
+Training;Callbacks;Progress;https://docs.fast.ai/callback.progress.html
+;;class ProgressCallback;https://docs.fast.ai/callback.progress.html#ProgressCallback
+;;;;Learner.no_bar;https://docs.fast.ai/callback.progress.html#Learner.no_bar
+;;;;ProgressCallback.before_fit;https://docs.fast.ai/callback.progress.html#ProgressCallback.before_fit
+;;;;ProgressCallback.before_epoch;https://docs.fast.ai/callback.progress.html#ProgressCallback.before_epoch
+;;;;ProgressCallback.before_train;https://docs.fast.ai/callback.progress.html#ProgressCallback.before_train
+;;;;ProgressCallback.before_validate;https://docs.fast.ai/callback.progress.html#ProgressCallback.before_validate
+;;;;ProgressCallback.after_batch;https://docs.fast.ai/callback.progress.html#ProgressCallback.after_batch
+;;;;ProgressCallback.after_train;https://docs.fast.ai/callback.progress.html#ProgressCallback.after_train
+;;;;ProgressCallback.after_validate;https://docs.fast.ai/callback.progress.html#ProgressCallback.after_validate
+;;;;ProgressCallback.after_fit;https://docs.fast.ai/callback.progress.html#ProgressCallback.after_fit
+;;class ShowGraphCallback;https://docs.fast.ai/callback.progress.html#ShowGraphCallback
+;;class CSVLogger;https://docs.fast.ai/callback.progress.html#CSVLogger
+;;;;CSVLogger.read_log;https://docs.fast.ai/callback.progress.html#CSVLogger.read_log
+;;;;CSVLogger.before_fit;https://docs.fast.ai/callback.progress.html#CSVLogger.before_fit
+;;;;CSVLogger.after_fit;https://docs.fast.ai/callback.progress.html#CSVLogger.after_fit
+Training;Callbacks;Schedulers;https://docs.fast.ai/callback.schedule.html
+;;Annealing;https://docs.fast.ai/callback.schedule.html#Annealing
+;;;;annealer;https://docs.fast.ai/callback.schedule.html#annealer
+;;;;sched_lin;https://docs.fast.ai/callback.schedule.html#sched_lin
+;;;;sched_cos;https://docs.fast.ai/callback.schedule.html#sched_cos
+;;;;sched_no;https://docs.fast.ai/callback.schedule.html#sched_no
+;;;;sched_exp;https://docs.fast.ai/callback.schedule.html#sched_exp
+;;;;SchedLin;https://docs.fast.ai/callback.schedule.html#SchedLin
+;;;;SchedCos;https://docs.fast.ai/callback.schedule.html#SchedCos
+;;;;SchedNo;https://docs.fast.ai/callback.schedule.html#SchedNo
+;;;;SchedExp;https://docs.fast.ai/callback.schedule.html#SchedExp
+;;;;SchedPoly;https://docs.fast.ai/callback.schedule.html#SchedPoly
+;;;;combine_scheds;https://docs.fast.ai/callback.schedule.html#combine_scheds
+;;;;combined_cos;https://docs.fast.ai/callback.schedule.html#combined_cos
+;;class ParamScheduler;https://docs.fast.ai/callback.schedule.html#ParamScheduler
+;;;;ParamScheduler.before_fit;https://docs.fast.ai/callback.schedule.html#ParamScheduler.before_fit
+;;;;ParamScheduler.before_batch;https://docs.fast.ai/callback.schedule.html#ParamScheduler.before_batch
+;;;;ParamScheduler.after_batch;https://docs.fast.ai/callback.schedule.html#ParamScheduler.after_batch
+;;;;ParamScheduler.after_fit;https://docs.fast.ai/callback.schedule.html#ParamScheduler.after_fit
+;;;;Learner.fit_one_cycle;https://docs.fast.ai/callback.schedule.html#Learner.fit_one_cycle
+;;;;Recorder.plot_sched;https://docs.fast.ai/callback.schedule.html#Recorder.plot_sched
+;;;;Learner.fit_flat_cos;https://docs.fast.ai/callback.schedule.html#Learner.fit_flat_cos
+;;;;Learner.fit_sgdr;https://docs.fast.ai/callback.schedule.html#Learner.fit_sgdr
+;;;;Learner.fine_tune;https://docs.fast.ai/callback.schedule.html#Learner.fine_tune
+;;class LRFinder;https://docs.fast.ai/callback.schedule.html#LRFinder
+;;;;LRFinder.before_fit;https://docs.fast.ai/callback.schedule.html#LRFinder.before_fit
+;;;;LRFinder.before_batch;https://docs.fast.ai/callback.schedule.html#LRFinder.before_batch
+;;;;LRFinder.after_batch;https://docs.fast.ai/callback.schedule.html#LRFinder.after_batch
+;;;;LRFinder.before_validate;https://docs.fast.ai/callback.schedule.html#LRFinder.before_validate
+;;;;Recorder.plot_lr_find;https://docs.fast.ai/callback.schedule.html#Recorder.plot_lr_find
+;;;;Learner.lr_find;https://docs.fast.ai/callback.schedule.html#Learner.lr_find
+Training;Callbacks;Data;https://docs.fast.ai/callback.data.html
+;;class CollectDataCallback;https://docs.fast.ai/callback.data.html#CollectDataCallback
+;;class WeightedDL;https://docs.fast.ai/callback.data.html#WeightedDL
+;;;;Datasets.weighted_dataloaders;https://docs.fast.ai/callback.data.html#Datasets.weighted_dataloaders
+;;class PartialDL;https://docs.fast.ai/callback.data.html#PartialDL
+;;;;FilteredBase.partial_dataloaders;https://docs.fast.ai/callback.data.html#FilteredBase.partial_dataloaders
+Training;Callbacks;Mixed Precision;https://docs.fast.ai/callback.fp16.html
+;;A little bit of theory;https://docs.fast.ai/callback.fp16.html#A-little-bit-of-theory
+;;;What's half precision?;https://docs.fast.ai/callback.fp16.html#What's-half-precision?
+;;;Problems with half-precision:;https://docs.fast.ai/callback.fp16.html#Problems-with-half-precision:
+;;;The solution: mixed precision training;https://docs.fast.ai/callback.fp16.html#The-solution:-mixed-precision-training
+;;;Dynamic loss scaling;https://docs.fast.ai/callback.fp16.html#Dynamic-loss-scaling
+;;class MixedPrecision;https://docs.fast.ai/callback.fp16.html#MixedPrecision
+;;class FP16TestCallback;https://docs.fast.ai/callback.fp16.html#FP16TestCallback
+;;;;Learner.to_fp16;https://docs.fast.ai/callback.fp16.html#Learner.to_fp16
+;;;;Learner.to_fp32;https://docs.fast.ai/callback.fp16.html#Learner.to_fp32
+;;Util functions;https://docs.fast.ai/callback.fp16.html#Util-functions
+;;;Converting the model to FP16;https://docs.fast.ai/callback.fp16.html#Converting-the-model-to-FP16
+;;;Creating the master copy of the parameters;https://docs.fast.ai/callback.fp16.html#Creating-the-master-copy-of-the-parameters
+;;;;get_master;https://docs.fast.ai/callback.fp16.html#get_master
+;;;Copy the gradients from model params to master params;https://docs.fast.ai/callback.fp16.html#Copy-the-gradients-from-model-params-to-master-params
+;;;;to_master_grads;https://docs.fast.ai/callback.fp16.html#to_master_grads
+;;;Copy the master params to the model params;https://docs.fast.ai/callback.fp16.html#Copy-the-master-params-to-the-model-params
+;;;;to_model_params;https://docs.fast.ai/callback.fp16.html#to_model_params
+;;;Checking for overflow;https://docs.fast.ai/callback.fp16.html#Checking-for-overflow
+;;;;test_overflow;https://docs.fast.ai/callback.fp16.html#test_overflow
+;;;;grad_overflow;https://docs.fast.ai/callback.fp16.html#grad_overflow
+;;;;copy_clone;https://docs.fast.ai/callback.fp16.html#copy_clone
+;;class ModelToHalf;https://docs.fast.ai/callback.fp16.html#ModelToHalf
+;;class NonNativeMixedPrecision;https://docs.fast.ai/callback.fp16.html#NonNativeMixedPrecision
+;;;;Learner.to_non_native_fp16;https://docs.fast.ai/callback.fp16.html#Learner.to_non_native_fp16
+;;;;Learner.to_non_native_fp32;https://docs.fast.ai/callback.fp16.html#Learner.to_non_native_fp32
+Training;Callbacks;MixUp and Friends;https://docs.fast.ai/callback.mixup.html
+;;;;reduce_loss;https://docs.fast.ai/callback.mixup.html#reduce_loss
+;;class MixHandler;https://docs.fast.ai/callback.mixup.html#MixHandler
+;;class MixUp;https://docs.fast.ai/callback.mixup.html#MixUp
+;;class CutMix;https://docs.fast.ai/callback.mixup.html#CutMix
+Training;Callbacks;Predictions;https://docs.fast.ai/callback.preds.html
+;;MCDropoutCallback;https://docs.fast.ai/callback.preds.html#MCDropoutCallback
+;;class MCDropoutCallback;https://docs.fast.ai/callback.preds.html#MCDropoutCallback
+Training;Callbacks;RNN;https://docs.fast.ai/callback.rnn.html
+;;class ModelResetter;https://docs.fast.ai/callback.rnn.html#ModelResetter
+;;class RNNCallback;https://docs.fast.ai/callback.rnn.html#RNNCallback
+;;class RNNRegularizer;https://docs.fast.ai/callback.rnn.html#RNNRegularizer
+;;;;rnn_cbs;https://docs.fast.ai/callback.rnn.html#rnn_cbs
+Training;Callbacks;Tracker;https://docs.fast.ai/callback.tracker.html
+;;class TerminateOnNaNCallback;https://docs.fast.ai/callback.tracker.html#TerminateOnNaNCallback
+;;class TrackerCallback;https://docs.fast.ai/callback.tracker.html#TrackerCallback
+;;class EarlyStoppingCallback;https://docs.fast.ai/callback.tracker.html#EarlyStoppingCallback
+;;class SaveModelCallback;https://docs.fast.ai/callback.tracker.html#SaveModelCallback
+;;ReduceLROnPlateau;https://docs.fast.ai/callback.tracker.html#ReduceLROnPlateau
+;;class ReduceLROnPlateau;https://docs.fast.ai/callback.tracker.html#ReduceLROnPlateau
+Training;Callbacks;Training;https://docs.fast.ai/callback.training.html
+;;class ShortEpochCallback;https://docs.fast.ai/callback.training.html#ShortEpochCallback
+;;class GradientAccumulation;https://docs.fast.ai/callback.training.html#GradientAccumulation
+;;class GradientClip;https://docs.fast.ai/callback.training.html#GradientClip
+;;BnFreeze;https://docs.fast.ai/callback.training.html#BnFreeze
+;;;;set_bn_eval;https://docs.fast.ai/callback.training.html#set_bn_eval
+;;class BnFreeze;https://docs.fast.ai/callback.training.html#BnFreeze
+Data;;Blocks;https://docs.fast.ai/data.block.html
+;;class TransformBlock;https://docs.fast.ai/data.block.html#TransformBlock
+;;;;CategoryBlock;https://docs.fast.ai/data.block.html#CategoryBlock
+;;;;MultiCategoryBlock;https://docs.fast.ai/data.block.html#MultiCategoryBlock
+;;;;RegressionBlock;https://docs.fast.ai/data.block.html#RegressionBlock
+;;General API;https://docs.fast.ai/data.block.html#General-API
+;;class DataBlock;https://docs.fast.ai/data.block.html#DataBlock
+;;;;DataBlock.datasets;https://docs.fast.ai/data.block.html#DataBlock.datasets
+;;;;DataBlock.dataloaders;https://docs.fast.ai/data.block.html#DataBlock.dataloaders
+;;Debugging;https://docs.fast.ai/data.block.html#Debugging
+;;;;DataBlock.summary;https://docs.fast.ai/data.block.html#DataBlock.summary
+Data;;Core;https://docs.fast.ai/data.core.html
+;;class TfmdDL;https://docs.fast.ai/data.core.html#TfmdDL
+;;;Methods;https://docs.fast.ai/data.core.html#Methods
+;;;;DataLoader.one_batch;https://docs.fast.ai/data.core.html#DataLoader.one_batch
+;;;;TfmdDL.decode;https://docs.fast.ai/data.core.html#TfmdDL.decode
+;;;;TfmdDL.decode_batch;https://docs.fast.ai/data.core.html#TfmdDL.decode_batch
+;;;;TfmdDL.show_batch;https://docs.fast.ai/data.core.html#TfmdDL.show_batch
+;;;;TfmdDL.to;https://docs.fast.ai/data.core.html#TfmdDL.to
+;;class DataLoaders;https://docs.fast.ai/data.core.html#DataLoaders
+;;;Methods;https://docs.fast.ai/data.core.html#Methods
+;;;;DataLoaders.__getitem__;https://docs.fast.ai/data.core.html#DataLoaders.__getitem__
+;;;;DataLoaders.train;https://docs.fast.ai/data.core.html#DataLoaders.train
+;;;;DataLoaders.valid;https://docs.fast.ai/data.core.html#DataLoaders.valid
+;;;;DataLoaders.train_ds;https://docs.fast.ai/data.core.html#DataLoaders.train_ds
+;;;;DataLoaders.valid_ds;https://docs.fast.ai/data.core.html#DataLoaders.valid_ds
+;;class FilteredBase;https://docs.fast.ai/data.core.html#FilteredBase
+;;;;FilteredBase.dataloaders;https://docs.fast.ai/data.core.html#FilteredBase.dataloaders
+;;class TfmdLists;https://docs.fast.ai/data.core.html#TfmdLists
+;;;;decode_at;https://docs.fast.ai/data.core.html#decode_at
+;;;;show_at;https://docs.fast.ai/data.core.html#show_at
+;;;;TfmdLists.subset;https://docs.fast.ai/data.core.html#TfmdLists.subset
+;;;;TfmdLists.infer_idx;https://docs.fast.ai/data.core.html#TfmdLists.infer_idx
+;;;;TfmdLists.infer;https://docs.fast.ai/data.core.html#TfmdLists.infer
+;;class Datasets;https://docs.fast.ai/data.core.html#Datasets
+;;;Methods;https://docs.fast.ai/data.core.html#Methods
+;;;;Datasets.dataloaders;https://docs.fast.ai/data.core.html#Datasets.dataloaders
+;;;;Datasets.decode;https://docs.fast.ai/data.core.html#Datasets.decode
+;;;;Datasets.show;https://docs.fast.ai/data.core.html#Datasets.show
+;;;;Datasets.new_empty;https://docs.fast.ai/data.core.html#Datasets.new_empty
+;;Add test set for inference;https://docs.fast.ai/data.core.html#Add-test-set-for-inference
+;;;;test_set;https://docs.fast.ai/data.core.html#test_set
+;;;;DataLoaders.test_dl;https://docs.fast.ai/data.core.html#DataLoaders.test_dl
+Data;;DataLoader;https://docs.fast.ai/data.load.html
+;;DataLoader helpers;https://docs.fast.ai/data.load.html#DataLoader-helpers
+;;;;fa_collate;https://docs.fast.ai/data.load.html#fa_collate
+;;;;fa_convert;https://docs.fast.ai/data.load.html#fa_convert
+;;;class SkipItemException;https://docs.fast.ai/data.load.html#SkipItemException
+;;class DataLoader;https://docs.fast.ai/data.load.html#DataLoader
+Data;;External;https://docs.fast.ai/data.external.html
+;;;;Config;https://docs.fast.ai/data.external.html#Config
+;;class URLs;https://docs.fast.ai/data.external.html#URLs
+;;Downloading;https://docs.fast.ai/data.external.html#Downloading
+;;;;download_url;https://docs.fast.ai/data.external.html#download_url
+;;;;download_data;https://docs.fast.ai/data.external.html#download_data
+;;;Extract;https://docs.fast.ai/data.external.html#Extract
+;;;;file_extract;https://docs.fast.ai/data.external.html#file_extract
+;;;;newest_folder;https://docs.fast.ai/data.external.html#newest_folder
+;;;;rename_extracted;https://docs.fast.ai/data.external.html#rename_extracted
+;;;;untar_data;https://docs.fast.ai/data.external.html#untar_data
+Data;;Transforms;https://docs.fast.ai/data.transforms.html
+;;Get, split, and label;https://docs.fast.ai/data.transforms.html#Get,-split,-and-label
+;;;Get;https://docs.fast.ai/data.transforms.html#Get
+;;;;get_files;https://docs.fast.ai/data.transforms.html#get_files
+;;;;FileGetter;https://docs.fast.ai/data.transforms.html#FileGetter
+;;;;get_image_files;https://docs.fast.ai/data.transforms.html#get_image_files
+;;;;ImageGetter;https://docs.fast.ai/data.transforms.html#ImageGetter
+;;;;get_text_files;https://docs.fast.ai/data.transforms.html#get_text_files
+;;class ItemGetter;https://docs.fast.ai/data.transforms.html#ItemGetter
+;;class AttrGetter;https://docs.fast.ai/data.transforms.html#AttrGetter
+;;;Split;https://docs.fast.ai/data.transforms.html#Split
+;;;;RandomSplitter;https://docs.fast.ai/data.transforms.html#RandomSplitter
+;;;;TrainTestSplitter;https://docs.fast.ai/data.transforms.html#TrainTestSplitter
+;;;;IndexSplitter;https://docs.fast.ai/data.transforms.html#IndexSplitter
+;;;;GrandparentSplitter;https://docs.fast.ai/data.transforms.html#GrandparentSplitter
+;;;;FuncSplitter;https://docs.fast.ai/data.transforms.html#FuncSplitter
+;;;;MaskSplitter;https://docs.fast.ai/data.transforms.html#MaskSplitter
+;;;;FileSplitter;https://docs.fast.ai/data.transforms.html#FileSplitter
+;;;;ColSplitter;https://docs.fast.ai/data.transforms.html#ColSplitter
+;;;;RandomSubsetSplitter;https://docs.fast.ai/data.transforms.html#RandomSubsetSplitter
+;;;Label;https://docs.fast.ai/data.transforms.html#Label
+;;;;parent_label;https://docs.fast.ai/data.transforms.html#parent_label
+;;class RegexLabeller;https://docs.fast.ai/data.transforms.html#RegexLabeller
+;;class ColReader;https://docs.fast.ai/data.transforms.html#ColReader
+;;class CategoryMap;https://docs.fast.ai/data.transforms.html#CategoryMap
+;;class Categorize;https://docs.fast.ai/data.transforms.html#Categorize
+;;class Category;https://docs.fast.ai/data.transforms.html#Category
+;;class MultiCategorize;https://docs.fast.ai/data.transforms.html#MultiCategorize
+;;class MultiCategory;https://docs.fast.ai/data.transforms.html#MultiCategory
+;;class OneHotEncode;https://docs.fast.ai/data.transforms.html#OneHotEncode
+;;class EncodedMultiCategorize;https://docs.fast.ai/data.transforms.html#EncodedMultiCategorize
+;;class RegressionSetup;https://docs.fast.ai/data.transforms.html#RegressionSetup
+;;;;get_c;https://docs.fast.ai/data.transforms.html#get_c
+;;End-to-end dataset example with MNIST;https://docs.fast.ai/data.transforms.html#End-to-end-dataset-example-with-MNIST
+;;class ToTensor;https://docs.fast.ai/data.transforms.html#ToTensor
+;;class IntToFloatTensor;https://docs.fast.ai/data.transforms.html#IntToFloatTensor
+;;;;broadcast_vec;https://docs.fast.ai/data.transforms.html#broadcast_vec
+;;class Normalize;https://docs.fast.ai/data.transforms.html#Normalize
+Core;;PyTorch Core;https://docs.fast.ai/torch_core.html
+;;Arrays and show;https://docs.fast.ai/torch_core.html#Arrays-and-show
+;;;;subplots;https://docs.fast.ai/torch_core.html#subplots
+;;;;show_image;https://docs.fast.ai/torch_core.html#show_image
+;;;;show_titled_image;https://docs.fast.ai/torch_core.html#show_titled_image
+;;;;show_images;https://docs.fast.ai/torch_core.html#show_images
+;;class ArrayBase;https://docs.fast.ai/torch_core.html#ArrayBase
+;;class ArrayImageBase;https://docs.fast.ai/torch_core.html#ArrayImageBase
+;;class ArrayImage;https://docs.fast.ai/torch_core.html#ArrayImage
+;;class ArrayImageBW;https://docs.fast.ai/torch_core.html#ArrayImageBW
+;;class ArrayMask;https://docs.fast.ai/torch_core.html#ArrayMask
+;;Basics;https://docs.fast.ai/torch_core.html#Basics
+;;;;Tensor.__array_eq__;https://docs.fast.ai/torch_core.html#Tensor.__array_eq__
+;;;;tensor;https://docs.fast.ai/torch_core.html#tensor
+;;;;set_seed;https://docs.fast.ai/torch_core.html#set_seed
+;;;;get_random_states;https://docs.fast.ai/torch_core.html#get_random_states
+;;;;set_random_states;https://docs.fast.ai/torch_core.html#set_random_states
+;;;;no_random;https://docs.fast.ai/torch_core.html#no_random
+;;;;unsqueeze;https://docs.fast.ai/torch_core.html#unsqueeze
+;;;;unsqueeze_;https://docs.fast.ai/torch_core.html#unsqueeze_
+;;;;apply;https://docs.fast.ai/torch_core.html#apply
+;;;;maybe_gather;https://docs.fast.ai/torch_core.html#maybe_gather
+;;;;to_detach;https://docs.fast.ai/torch_core.html#to_detach
+;;;;to_half;https://docs.fast.ai/torch_core.html#to_half
+;;;;to_float;https://docs.fast.ai/torch_core.html#to_float
+;;;;default_device;https://docs.fast.ai/torch_core.html#default_device
+;;;;to_device;https://docs.fast.ai/torch_core.html#to_device
+;;;;to_cpu;https://docs.fast.ai/torch_core.html#to_cpu
+;;;;to_np;https://docs.fast.ai/torch_core.html#to_np
+;;;;to_concat;https://docs.fast.ai/torch_core.html#to_concat
+;;Tensor subtypes;https://docs.fast.ai/torch_core.html#Tensor-subtypes
+;;;;Tensor.set_meta;https://docs.fast.ai/torch_core.html#Tensor.set_meta
+;;;;Tensor.as_subclass;https://docs.fast.ai/torch_core.html#Tensor.as_subclass
+;;class TensorBase;https://docs.fast.ai/torch_core.html#TensorBase
+;;class TensorImageBase;https://docs.fast.ai/torch_core.html#TensorImageBase
+;;class TensorImage;https://docs.fast.ai/torch_core.html#TensorImage
+;;class TensorImageBW;https://docs.fast.ai/torch_core.html#TensorImageBW
+;;class TensorMask;https://docs.fast.ai/torch_core.html#TensorMask
+;;class TensorFlowField;https://docs.fast.ai/torch_core.html#TensorFlowField
+;;class TensorCategory;https://docs.fast.ai/torch_core.html#TensorCategory
+;;class TensorMultiCategory;https://docs.fast.ai/torch_core.html#TensorMultiCategory
+;;class TitledTensorScalar;https://docs.fast.ai/torch_core.html#TitledTensorScalar
+;;;;L.tensored;https://docs.fast.ai/torch_core.html#L.tensored
+;;;;L.stack;https://docs.fast.ai/torch_core.html#L.stack
+;;;;L.cat;https://docs.fast.ai/torch_core.html#L.cat
+;;Chunks;https://docs.fast.ai/torch_core.html#Chunks
+;;;;concat;https://docs.fast.ai/torch_core.html#concat
+;;class Chunks;https://docs.fast.ai/torch_core.html#Chunks
+;;Simple types;https://docs.fast.ai/torch_core.html#Simple-types
+;;;;show_title;https://docs.fast.ai/torch_core.html#show_title
+;;class ShowTitle;https://docs.fast.ai/torch_core.html#ShowTitle
+;;;class TitledInt;https://docs.fast.ai/torch_core.html#TitledInt
+;;;class TitledStr;https://docs.fast.ai/torch_core.html#TitledStr
+;;;class TitledFloat;https://docs.fast.ai/torch_core.html#TitledFloat
+;;;class TitledTuple;https://docs.fast.ai/torch_core.html#TitledTuple
+;;;;TitledStr.truncate;https://docs.fast.ai/torch_core.html#TitledStr.truncate
+;;Other functions;https://docs.fast.ai/torch_core.html#Other-functions
+;;;;DataFrame.__init__;https://docs.fast.ai/torch_core.html#DataFrame.__init__
+;;;;get_empty_df;https://docs.fast.ai/torch_core.html#get_empty_df
+;;;;display_df;https://docs.fast.ai/torch_core.html#display_df
+;;;;get_first;https://docs.fast.ai/torch_core.html#get_first
+;;;;one_param;https://docs.fast.ai/torch_core.html#one_param
+;;;;item_find;https://docs.fast.ai/torch_core.html#item_find
+;;;;find_device;https://docs.fast.ai/torch_core.html#find_device
+;;;;find_bs;https://docs.fast.ai/torch_core.html#find_bs
+;;;;np_func;https://docs.fast.ai/torch_core.html#np_func
+;;;class Module;https://docs.fast.ai/torch_core.html#Module
+;;;;get_model;https://docs.fast.ai/torch_core.html#get_model
+;;;;one_hot;https://docs.fast.ai/torch_core.html#one_hot
+;;;;one_hot_decode;https://docs.fast.ai/torch_core.html#one_hot_decode
+;;;;params;https://docs.fast.ai/torch_core.html#params
+;;;;trainable_params;https://docs.fast.ai/torch_core.html#trainable_params
+;;;;norm_bias_params;https://docs.fast.ai/torch_core.html#norm_bias_params
+;;;;batch_to_samples;https://docs.fast.ai/torch_core.html#batch_to_samples
+;;;;Tensor.interp_1d;https://docs.fast.ai/torch_core.html#Tensor.interp_1d
+;;;;Tensor.pca;https://docs.fast.ai/torch_core.html#Tensor.pca
+;;;;logit;https://docs.fast.ai/torch_core.html#logit
+;;;;num_distrib;https://docs.fast.ai/torch_core.html#num_distrib
+;;;;rank_distrib;https://docs.fast.ai/torch_core.html#rank_distrib
+;;;;distrib_barrier;https://docs.fast.ai/torch_core.html#distrib_barrier
+;;;;Path.save_array;https://docs.fast.ai/torch_core.html#Path.save_array
+;;;;Path.load_array;https://docs.fast.ai/torch_core.html#Path.load_array
+;;;;base_doc;https://docs.fast.ai/torch_core.html#base_doc
+;;;;doc;https://docs.fast.ai/torch_core.html#doc
+;;;;nested_reorder;https://docs.fast.ai/torch_core.html#nested_reorder
+;;Image helpers;https://docs.fast.ai/torch_core.html#Image-helpers
+;;;;make_cross_image;https://docs.fast.ai/torch_core.html#make_cross_image
+;;;;show_image_batch;https://docs.fast.ai/torch_core.html#show_image_batch
+;;Model init;https://docs.fast.ai/torch_core.html#Model-init
+;;;;requires_grad;https://docs.fast.ai/torch_core.html#requires_grad
+;;;;init_default;https://docs.fast.ai/torch_core.html#init_default
+;;;;cond_init;https://docs.fast.ai/torch_core.html#cond_init
+;;;;apply_leaf;https://docs.fast.ai/torch_core.html#apply_leaf
+;;;;apply_init;https://docs.fast.ai/torch_core.html#apply_init
+;;autograd jit functions;https://docs.fast.ai/torch_core.html#autograd-jit-functions
+;;;;script_use_ctx;https://docs.fast.ai/torch_core.html#script_use_ctx
+;;;;script_save_ctx;https://docs.fast.ai/torch_core.html#script_save_ctx
+;;;;script_fwd;https://docs.fast.ai/torch_core.html#script_fwd
+;;;;script_bwd;https://docs.fast.ai/torch_core.html#script_bwd
+;;;;grad_module;https://docs.fast.ai/torch_core.html#grad_module
+Core;;Layers;https://docs.fast.ai/layers.html
+;;Basic manipulations and resize;https://docs.fast.ai/layers.html#Basic-manipulations-and-resize
+;;;;module;https://docs.fast.ai/layers.html#module
+;;;class Identity;https://docs.fast.ai/layers.html#Identity
+;;;class Lambda;https://docs.fast.ai/layers.html#Lambda
+;;;class PartialLambda;https://docs.fast.ai/layers.html#PartialLambda
+;;;class Flatten;https://docs.fast.ai/layers.html#Flatten
+;;;class View;https://docs.fast.ai/layers.html#View
+;;;class ResizeBatch;https://docs.fast.ai/layers.html#ResizeBatch
+;;;class Debugger;https://docs.fast.ai/layers.html#Debugger
+;;;;sigmoid_range;https://docs.fast.ai/layers.html#sigmoid_range
+;;;class SigmoidRange;https://docs.fast.ai/layers.html#SigmoidRange
+;;Pooling layers;https://docs.fast.ai/layers.html#Pooling-layers
+;;;class AdaptiveConcatPool1d;https://docs.fast.ai/layers.html#AdaptiveConcatPool1d
+;;;class AdaptiveConcatPool2d;https://docs.fast.ai/layers.html#AdaptiveConcatPool2d
+;;;class PoolType;https://docs.fast.ai/layers.html#PoolType
+;;;;adaptive_pool;https://docs.fast.ai/layers.html#adaptive_pool
+;;;class PoolFlatten;https://docs.fast.ai/layers.html#PoolFlatten
+;;BatchNorm layers;https://docs.fast.ai/layers.html#BatchNorm-layers
+;;;;BatchNorm;https://docs.fast.ai/layers.html#BatchNorm
+;;;;InstanceNorm;https://docs.fast.ai/layers.html#InstanceNorm
+;;;class BatchNorm1dFlat;https://docs.fast.ai/layers.html#BatchNorm1dFlat
+;;;class LinBnDrop;https://docs.fast.ai/layers.html#LinBnDrop
+;;Inits;https://docs.fast.ai/layers.html#Inits
+;;;;sigmoid;https://docs.fast.ai/layers.html#sigmoid
+;;;;sigmoid_;https://docs.fast.ai/layers.html#sigmoid_
+;;;;vleaky_relu;https://docs.fast.ai/layers.html#vleaky_relu
+;;;;init_default;https://docs.fast.ai/layers.html#init_default
+;;;;init_linear;https://docs.fast.ai/layers.html#init_linear
+;;Convolutions;https://docs.fast.ai/layers.html#Convolutions
+;;;class ConvLayer;https://docs.fast.ai/layers.html#ConvLayer
+;;;;AdaptiveAvgPool;https://docs.fast.ai/layers.html#AdaptiveAvgPool
+;;;;MaxPool;https://docs.fast.ai/layers.html#MaxPool
+;;;;AvgPool;https://docs.fast.ai/layers.html#AvgPool
+;;Embeddings;https://docs.fast.ai/layers.html#Embeddings
+;;;;trunc_normal_;https://docs.fast.ai/layers.html#trunc_normal_
+;;;class Embedding;https://docs.fast.ai/layers.html#Embedding
+;;Self attention;https://docs.fast.ai/layers.html#Self-attention
+;;;class SelfAttention;https://docs.fast.ai/layers.html#SelfAttention
+;;;class PooledSelfAttention2d;https://docs.fast.ai/layers.html#PooledSelfAttention2d
+;;;class SimpleSelfAttention;https://docs.fast.ai/layers.html#SimpleSelfAttention
+;;PixelShuffle;https://docs.fast.ai/layers.html#PixelShuffle
+;;;;icnr_init;https://docs.fast.ai/layers.html#icnr_init
+;;;class PixelShuffle_ICNR;https://docs.fast.ai/layers.html#PixelShuffle_ICNR
+;;Sequential extensions;https://docs.fast.ai/layers.html#Sequential-extensions
+;;;;sequential;https://docs.fast.ai/layers.html#sequential
+;;;class SequentialEx;https://docs.fast.ai/layers.html#SequentialEx
+;;;class MergeLayer;https://docs.fast.ai/layers.html#MergeLayer
+;;Concat;https://docs.fast.ai/layers.html#Concat
+;;;class Cat;https://docs.fast.ai/layers.html#Cat
+;;Ready-to-go models;https://docs.fast.ai/layers.html#Ready-to-go-models
+;;;class SimpleCNN;https://docs.fast.ai/layers.html#SimpleCNN
+;;;class ProdLayer;https://docs.fast.ai/layers.html#ProdLayer
+;;;;SEModule;https://docs.fast.ai/layers.html#SEModule
+;;;class ResBlock;https://docs.fast.ai/layers.html#ResBlock
+;;;;SEBlock;https://docs.fast.ai/layers.html#SEBlock
+;;;;SEResNeXtBlock;https://docs.fast.ai/layers.html#SEResNeXtBlock
+;;;;SeparableBlock;https://docs.fast.ai/layers.html#SeparableBlock
+;;Time Distributed Layer;https://docs.fast.ai/layers.html#Time-Distributed-Layer
+;;class TimeDistributed;https://docs.fast.ai/layers.html#TimeDistributed
+;;Swish and Mish;https://docs.fast.ai/layers.html#Swish-and-Mish
+;;;;swish;https://docs.fast.ai/layers.html#swish
+;;;class Swish;https://docs.fast.ai/layers.html#Swish
+;;;class MishJitAutoFn;https://docs.fast.ai/layers.html#MishJitAutoFn
+;;;;mish;https://docs.fast.ai/layers.html#mish
+;;;class Mish;https://docs.fast.ai/layers.html#Mish
+;;Helper functions for submodules;https://docs.fast.ai/layers.html#Helper-functions-for-submodules
+;;;class ParameterModule;https://docs.fast.ai/layers.html#ParameterModule
+;;;;children_and_parameters;https://docs.fast.ai/layers.html#children_and_parameters
+;;;;has_children;https://docs.fast.ai/layers.html#has_children
+;;;;flatten_model;https://docs.fast.ai/layers.html#flatten_model
+;;;class NoneReduce;https://docs.fast.ai/layers.html#NoneReduce
+;;;;in_channels;https://docs.fast.ai/layers.html#in_channels
+Core;;Loss Functions;https://docs.fast.ai/losses.html
+;;;class BaseLoss;https://docs.fast.ai/losses.html#BaseLoss
+;;;class CrossEntropyLossFlat;https://docs.fast.ai/losses.html#CrossEntropyLossFlat
+;;;class FocalLossFlat;https://docs.fast.ai/losses.html#FocalLossFlat
+;;;class BCEWithLogitsLossFlat;https://docs.fast.ai/losses.html#BCEWithLogitsLossFlat
+;;;;BCELossFlat;https://docs.fast.ai/losses.html#BCELossFlat
+;;;;MSELossFlat;https://docs.fast.ai/losses.html#MSELossFlat
+;;;;L1LossFlat;https://docs.fast.ai/losses.html#L1LossFlat
+;;;class LabelSmoothingCrossEntropy;https://docs.fast.ai/losses.html#LabelSmoothingCrossEntropy
+;;;class LabelSmoothingCrossEntropyFlat;https://docs.fast.ai/losses.html#LabelSmoothingCrossEntropyFlat
+Vision;;Core;https://docs.fast.ai/vision.core.html
+;;Helpers;https://docs.fast.ai/vision.core.html#Helpers
+;;;;None;https://docs.fast.ai/vision.core.html#None
+;;;;Image.n_px;https://docs.fast.ai/vision.core.html#Image.n_px
+;;;;None;https://docs.fast.ai/vision.core.html#None
+;;;;Image.shape;https://docs.fast.ai/vision.core.html#Image.shape
+;;;;None;https://docs.fast.ai/vision.core.html#None
+;;;;Image.aspect;https://docs.fast.ai/vision.core.html#Image.aspect
+;;;;Image.reshape;https://docs.fast.ai/vision.core.html#Image.reshape
+;;;;Image.to_bytes_format;https://docs.fast.ai/vision.core.html#Image.to_bytes_format
+;;;;Image.to_thumb;https://docs.fast.ai/vision.core.html#Image.to_thumb
+;;;;Image.resize_max;https://docs.fast.ai/vision.core.html#Image.resize_max
+;;Basic types;https://docs.fast.ai/vision.core.html#Basic-types
+;;;;to_image;https://docs.fast.ai/vision.core.html#to_image
+;;;;load_image;https://docs.fast.ai/vision.core.html#load_image
+;;;;image2tensor;https://docs.fast.ai/vision.core.html#image2tensor
+;;;class PILBase;https://docs.fast.ai/vision.core.html#PILBase
+;;;class PILImage;https://docs.fast.ai/vision.core.html#PILImage
+;;;class PILImageBW;https://docs.fast.ai/vision.core.html#PILImageBW
+;;;class PILMask;https://docs.fast.ai/vision.core.html#PILMask
+;;;Images;https://docs.fast.ai/vision.core.html#Images
+;;;Segmentation masks;https://docs.fast.ai/vision.core.html#Segmentation-masks
+;;;class AddMaskCodes;https://docs.fast.ai/vision.core.html#AddMaskCodes
+;;;Points;https://docs.fast.ai/vision.core.html#Points
+;;;class TensorPoint;https://docs.fast.ai/vision.core.html#TensorPoint
+;;;Bounding boxes;https://docs.fast.ai/vision.core.html#Bounding-boxes
+;;;;get_annotations;https://docs.fast.ai/vision.core.html#get_annotations
+;;;class TensorBBox;https://docs.fast.ai/vision.core.html#TensorBBox
+;;;class LabeledBBox;https://docs.fast.ai/vision.core.html#LabeledBBox
+;;Basic Transforms;https://docs.fast.ai/vision.core.html#Basic-Transforms
+;;;;encodes;https://docs.fast.ai/vision.core.html#encodes
+;;;;encodes;https://docs.fast.ai/vision.core.html#encodes
+;;;class PointScaler;https://docs.fast.ai/vision.core.html#PointScaler
+;;;class BBoxLabeler;https://docs.fast.ai/vision.core.html#BBoxLabeler
+;;;;decodes;https://docs.fast.ai/vision.core.html#decodes
+;;;;encodes;https://docs.fast.ai/vision.core.html#encodes
+;;;;decodes;https://docs.fast.ai/vision.core.html#decodes
+Vision;;Data;https://docs.fast.ai/vision.data.html
+;;Helper functions;https://docs.fast.ai/vision.data.html#Helper-functions
+;;;;get_grid;https://docs.fast.ai/vision.data.html#get_grid
+;;;;clip_remove_empty;https://docs.fast.ai/vision.data.html#clip_remove_empty
+;;;;bb_pad;https://docs.fast.ai/vision.data.html#bb_pad
+;;TransformBlocks for vision;https://docs.fast.ai/vision.data.html#TransformBlocks-for-vision
+;;;;ImageBlock;https://docs.fast.ai/vision.data.html#ImageBlock
+;;;;MaskBlock;https://docs.fast.ai/vision.data.html#MaskBlock
+;;;;PointBlock;https://docs.fast.ai/vision.data.html#PointBlock
+;;;;BBoxBlock;https://docs.fast.ai/vision.data.html#BBoxBlock
+;;;;BBoxLblBlock;https://docs.fast.ai/vision.data.html#BBoxLblBlock
+;;class ImageDataLoaders;https://docs.fast.ai/vision.data.html#ImageDataLoaders
+;;;;ImageDataLoaders.from_folder;https://docs.fast.ai/vision.data.html#ImageDataLoaders.from_folder
+;;;;ImageDataLoaders.from_path_func;https://docs.fast.ai/vision.data.html#ImageDataLoaders.from_path_func
+;;;;ImageDataLoaders.from_path_re;https://docs.fast.ai/vision.data.html#ImageDataLoaders.from_path_re
+;;;;ImageDataLoaders.from_name_func;https://docs.fast.ai/vision.data.html#ImageDataLoaders.from_name_func
+;;;;ImageDataLoaders.from_name_re;https://docs.fast.ai/vision.data.html#ImageDataLoaders.from_name_re
+;;;;ImageDataLoaders.from_df;https://docs.fast.ai/vision.data.html#ImageDataLoaders.from_df
+;;;;ImageDataLoaders.from_csv;https://docs.fast.ai/vision.data.html#ImageDataLoaders.from_csv
+;;;;ImageDataLoaders.from_lists;https://docs.fast.ai/vision.data.html#ImageDataLoaders.from_lists
+;;class SegmentationDataLoaders;https://docs.fast.ai/vision.data.html#SegmentationDataLoaders
+;;;;SegmentationDataLoaders.from_label_func;https://docs.fast.ai/vision.data.html#SegmentationDataLoaders.from_label_func
+Vision;;Data Augmentation;https://docs.fast.ai/vision.augment.html
+;;;class RandTransform;https://docs.fast.ai/vision.augment.html#RandTransform
+;;;;RandTransform.before_call;https://docs.fast.ai/vision.augment.html#RandTransform.before_call
+;;Item transforms;https://docs.fast.ai/vision.augment.html#Item-transforms
+;;;class FlipItem;https://docs.fast.ai/vision.augment.html#FlipItem
+;;;class DihedralItem;https://docs.fast.ai/vision.augment.html#DihedralItem
+;;Resize with crop, pad or squish;https://docs.fast.ai/vision.augment.html#Resize-with-crop,-pad-or-squish
+;;;class PadMode;https://docs.fast.ai/vision.augment.html#PadMode
+;;;class CropPad;https://docs.fast.ai/vision.augment.html#CropPad
+;;;class RandomCrop;https://docs.fast.ai/vision.augment.html#RandomCrop
+;;;class OldRandomCrop;https://docs.fast.ai/vision.augment.html#OldRandomCrop
+;;;class ResizeMethod;https://docs.fast.ai/vision.augment.html#ResizeMethod
+;;;class Resize;https://docs.fast.ai/vision.augment.html#Resize
+;;;class RandomResizedCrop;https://docs.fast.ai/vision.augment.html#RandomResizedCrop
+;;;class RatioResize;https://docs.fast.ai/vision.augment.html#RatioResize
+;;Affine and coord tfm on the GPU;https://docs.fast.ai/vision.augment.html#Affine-and-coord-tfm-on-the-GPU
+;;;;affine_grid;https://docs.fast.ai/vision.augment.html#affine_grid
+;;;class AffineCoordTfm;https://docs.fast.ai/vision.augment.html#AffineCoordTfm
+;;;;AffineCoordTfm.compose;https://docs.fast.ai/vision.augment.html#AffineCoordTfm.compose
+;;;class RandomResizedCropGPU;https://docs.fast.ai/vision.augment.html#RandomResizedCropGPU
+;;;GPU helpers;https://docs.fast.ai/vision.augment.html#GPU-helpers
+;;;;mask_tensor;https://docs.fast.ai/vision.augment.html#mask_tensor
+;;;;Flip/Dihedral GPU Helpers;https://docs.fast.ai/vision.augment.html#Flip/Dihedral-GPU-Helpers
+;;;;affine_mat;https://docs.fast.ai/vision.augment.html#affine_mat
+;;;;flip_mat;https://docs.fast.ai/vision.augment.html#flip_mat
+;;;class Flip;https://docs.fast.ai/vision.augment.html#Flip
+;;;class DeterministicDraw;https://docs.fast.ai/vision.augment.html#DeterministicDraw
+;;;class DeterministicFlip;https://docs.fast.ai/vision.augment.html#DeterministicFlip
+;;;;dihedral_mat;https://docs.fast.ai/vision.augment.html#dihedral_mat
+;;;class Dihedral;https://docs.fast.ai/vision.augment.html#Dihedral
+;;;class DeterministicDihedral;https://docs.fast.ai/vision.augment.html#DeterministicDihedral
+;;;;rotate_mat;https://docs.fast.ai/vision.augment.html#rotate_mat
+;;;class Rotate;https://docs.fast.ai/vision.augment.html#Rotate
+;;;;zoom_mat;https://docs.fast.ai/vision.augment.html#zoom_mat
+;;;class Zoom;https://docs.fast.ai/vision.augment.html#Zoom
+;;;Warping;https://docs.fast.ai/vision.augment.html#Warping
+;;;;find_coeffs;https://docs.fast.ai/vision.augment.html#find_coeffs
+;;;;apply_perspective;https://docs.fast.ai/vision.augment.html#apply_perspective
+;;;class Warp;https://docs.fast.ai/vision.augment.html#Warp
+;;Lighting transforms;https://docs.fast.ai/vision.augment.html#Lighting-transforms
+;;;;TensorImage.lighting;https://docs.fast.ai/vision.augment.html#TensorImage.lighting
+;;;class SpaceTfm;https://docs.fast.ai/vision.augment.html#SpaceTfm
+;;;class LightingTfm;https://docs.fast.ai/vision.augment.html#LightingTfm
+;;;class Brightness;https://docs.fast.ai/vision.augment.html#Brightness
+;;;class Contrast;https://docs.fast.ai/vision.augment.html#Contrast
+;;;;grayscale;https://docs.fast.ai/vision.augment.html#grayscale
+;;;class Saturation;https://docs.fast.ai/vision.augment.html#Saturation
+;;;;rgb2hsv;https://docs.fast.ai/vision.augment.html#rgb2hsv
+;;;;hsv2rgb;https://docs.fast.ai/vision.augment.html#hsv2rgb
+;;;class HSVTfm;https://docs.fast.ai/vision.augment.html#HSVTfm
+;;;class Hue;https://docs.fast.ai/vision.augment.html#Hue
+;;RandomErasing;https://docs.fast.ai/vision.augment.html#RandomErasing
+;;;;cutout_gaussian;https://docs.fast.ai/vision.augment.html#cutout_gaussian
+;;;;norm_apply_denorm;https://docs.fast.ai/vision.augment.html#norm_apply_denorm
+;;;class RandomErasing;https://docs.fast.ai/vision.augment.html#RandomErasing
+;;All together;https://docs.fast.ai/vision.augment.html#All-together
+;;;;setup_aug_tfms;https://docs.fast.ai/vision.augment.html#setup_aug_tfms
+;;;;aug_transforms;https://docs.fast.ai/vision.augment.html#aug_transforms
+;;Integration tests;https://docs.fast.ai/vision.augment.html#Integration-tests
+;;;Segmentation;https://docs.fast.ai/vision.augment.html#Segmentation
+;;;Point targets;https://docs.fast.ai/vision.augment.html#Point-targets
+;;;Bounding boxes;https://docs.fast.ai/vision.augment.html#Bounding-boxes
+Vision;;Learner;https://docs.fast.ai/vision.learner.html
+;;Cut a pretrained model;https://docs.fast.ai/vision.learner.html#Cut-a-pretrained-model
+;;;;has_pool_type;https://docs.fast.ai/vision.learner.html#has_pool_type
+;;;;create_body;https://docs.fast.ai/vision.learner.html#create_body
+;;Head and model;https://docs.fast.ai/vision.learner.html#Head-and-model
+;;;;create_head;https://docs.fast.ai/vision.learner.html#create_head
+;;;;default_split;https://docs.fast.ai/vision.learner.html#default_split
+;;;;create_cnn_model;https://docs.fast.ai/vision.learner.html#create_cnn_model
+;;Learner convenience functions;https://docs.fast.ai/vision.learner.html#Learner-convenience-functions
+;;;;cnn_learner;https://docs.fast.ai/vision.learner.html#cnn_learner
+;;;;create_unet_model;https://docs.fast.ai/vision.learner.html#create_unet_model
+;;;;unet_learner;https://docs.fast.ai/vision.learner.html#unet_learner
+Vision;Models;XResnet;https://docs.fast.ai/vision.models.xresnet.html
+;;;;init_cnn;https://docs.fast.ai/vision.models.xresnet.html#init_cnn
+;;class XResNet;https://docs.fast.ai/vision.models.xresnet.html#XResNet
+;;;;xresnet18;https://docs.fast.ai/vision.models.xresnet.html#xresnet18
+;;;;xresnet34;https://docs.fast.ai/vision.models.xresnet.html#xresnet34
+;;;;xresnet50;https://docs.fast.ai/vision.models.xresnet.html#xresnet50
+;;;;xresnet101;https://docs.fast.ai/vision.models.xresnet.html#xresnet101
+;;;;xresnet152;https://docs.fast.ai/vision.models.xresnet.html#xresnet152
+;;;;xresnet18_deep;https://docs.fast.ai/vision.models.xresnet.html#xresnet18_deep
+;;;;xresnet34_deep;https://docs.fast.ai/vision.models.xresnet.html#xresnet34_deep
+;;;;xresnet50_deep;https://docs.fast.ai/vision.models.xresnet.html#xresnet50_deep
+;;;;xresnet18_deeper;https://docs.fast.ai/vision.models.xresnet.html#xresnet18_deeper
+;;;;xresnet34_deeper;https://docs.fast.ai/vision.models.xresnet.html#xresnet34_deeper
+;;;;xresnet50_deeper;https://docs.fast.ai/vision.models.xresnet.html#xresnet50_deeper
+;;;;xse_resnet18;https://docs.fast.ai/vision.models.xresnet.html#xse_resnet18
+;;;;xse_resnext18;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext18
+;;;;xresnext18;https://docs.fast.ai/vision.models.xresnet.html#xresnext18
+;;;;xse_resnet34;https://docs.fast.ai/vision.models.xresnet.html#xse_resnet34
+;;;;xse_resnext34;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext34
+;;;;xresnext34;https://docs.fast.ai/vision.models.xresnet.html#xresnext34
+;;;;xse_resnet50;https://docs.fast.ai/vision.models.xresnet.html#xse_resnet50
+;;;;xse_resnext50;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext50
+;;;;xresnext50;https://docs.fast.ai/vision.models.xresnet.html#xresnext50
+;;;;xse_resnet101;https://docs.fast.ai/vision.models.xresnet.html#xse_resnet101
+;;;;xse_resnext101;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext101
+;;;;xresnext101;https://docs.fast.ai/vision.models.xresnet.html#xresnext101
+;;;;xse_resnet152;https://docs.fast.ai/vision.models.xresnet.html#xse_resnet152
+;;;;xsenet154;https://docs.fast.ai/vision.models.xresnet.html#xsenet154
+;;;;xse_resnext18_deep;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext18_deep
+;;;;xse_resnext34_deep;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext34_deep
+;;;;xse_resnext50_deep;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext50_deep
+;;;;xse_resnext18_deeper;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext18_deeper
+;;;;xse_resnext34_deeper;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext34_deeper
+;;;;xse_resnext50_deeper;https://docs.fast.ai/vision.models.xresnet.html#xse_resnext50_deeper
+Vision;Models;Unet;https://docs.fast.ai/vision.models.unet.html
+;;class UnetBlock;https://docs.fast.ai/vision.models.unet.html#UnetBlock
+;;class ResizeToOrig;https://docs.fast.ai/vision.models.unet.html#ResizeToOrig
+;;class DynamicUnet;https://docs.fast.ai/vision.models.unet.html#DynamicUnet
+Vision;;GAN;https://docs.fast.ai/vision.gan.html
+;;Wrapping the modules;https://docs.fast.ai/vision.gan.html#Wrapping-the-modules
+;;;class GANModule;https://docs.fast.ai/vision.gan.html#GANModule
+;;;;GANModule.switch;https://docs.fast.ai/vision.gan.html#GANModule.switch
+;;;;basic_critic;https://docs.fast.ai/vision.gan.html#basic_critic
+;;;class AddChannels;https://docs.fast.ai/vision.gan.html#AddChannels
+;;;;basic_generator;https://docs.fast.ai/vision.gan.html#basic_generator
+;;;;DenseResBlock;https://docs.fast.ai/vision.gan.html#DenseResBlock
+;;;;gan_critic;https://docs.fast.ai/vision.gan.html#gan_critic
+;;;class GANLoss;https://docs.fast.ai/vision.gan.html#GANLoss
+;;;class AdaptiveLoss;https://docs.fast.ai/vision.gan.html#AdaptiveLoss
+;;;;accuracy_thresh_expand;https://docs.fast.ai/vision.gan.html#accuracy_thresh_expand
+;;Callbacks for GAN training;https://docs.fast.ai/vision.gan.html#Callbacks-for-GAN-training
+;;;;set_freeze_model;https://docs.fast.ai/vision.gan.html#set_freeze_model
+;;;class GANTrainer;https://docs.fast.ai/vision.gan.html#GANTrainer
+;;;class FixedGANSwitcher;https://docs.fast.ai/vision.gan.html#FixedGANSwitcher
+;;;class AdaptiveGANSwitcher;https://docs.fast.ai/vision.gan.html#AdaptiveGANSwitcher
+;;;class GANDiscriminativeLR;https://docs.fast.ai/vision.gan.html#GANDiscriminativeLR
+;;GAN data;https://docs.fast.ai/vision.gan.html#GAN-data
+;;;class InvisibleTensor;https://docs.fast.ai/vision.gan.html#InvisibleTensor
+;;;;generate_noise;https://docs.fast.ai/vision.gan.html#generate_noise
+;;GAN Learner;https://docs.fast.ai/vision.gan.html#GAN-Learner
+;;;;gan_loss_from_func;https://docs.fast.ai/vision.gan.html#gan_loss_from_func
+;;;class GANLearner;https://docs.fast.ai/vision.gan.html#GANLearner
+Vision;;Utilities;https://docs.fast.ai/vision.utils.html
+;;;;download_images;https://docs.fast.ai/vision.utils.html#download_images
+;;;;resize_to;https://docs.fast.ai/vision.utils.html#resize_to
+;;;;verify_image;https://docs.fast.ai/vision.utils.html#verify_image
+;;;;verify_images;https://docs.fast.ai/vision.utils.html#verify_images
+;;;;resize_image;https://docs.fast.ai/vision.utils.html#resize_image
+;;;;resize_images;https://docs.fast.ai/vision.utils.html#resize_images
+Vision;;Widgets;https://docs.fast.ai/vision.widgets.html
+;;;;Box.__getitem__;https://docs.fast.ai/vision.widgets.html#Box.__getitem__
+;;;;widget;https://docs.fast.ai/vision.widgets.html#widget
+;;;;carousel;https://docs.fast.ai/vision.widgets.html#carousel
+;;class ImagesCleaner;https://docs.fast.ai/vision.widgets.html#ImagesCleaner
+;;class ImageClassifierCleaner;https://docs.fast.ai/vision.widgets.html#ImageClassifierCleaner
+Text;;Core;https://docs.fast.ai/text.core.html
+;;Preprocessing rules;https://docs.fast.ai/text.core.html#Preprocessing-rules
+;;;;spec_add_spaces;https://docs.fast.ai/text.core.html#spec_add_spaces
+;;;;rm_useless_spaces;https://docs.fast.ai/text.core.html#rm_useless_spaces
+;;;;replace_rep;https://docs.fast.ai/text.core.html#replace_rep
+;;;;replace_wrep;https://docs.fast.ai/text.core.html#replace_wrep
+;;;;fix_html;https://docs.fast.ai/text.core.html#fix_html
+;;;;replace_all_caps;https://docs.fast.ai/text.core.html#replace_all_caps
+;;;;replace_maj;https://docs.fast.ai/text.core.html#replace_maj
+;;;;lowercase;https://docs.fast.ai/text.core.html#lowercase
+;;;;replace_space;https://docs.fast.ai/text.core.html#replace_space
+;;Tokenizing;https://docs.fast.ai/text.core.html#Tokenizing
+;;;class BaseTokenizer;https://docs.fast.ai/text.core.html#BaseTokenizer
+;;;class SpacyTokenizer;https://docs.fast.ai/text.core.html#SpacyTokenizer
+;;;class TokenizeWithRules;https://docs.fast.ai/text.core.html#TokenizeWithRules
+;;;;tokenize1;https://docs.fast.ai/text.core.html#tokenize1
+;;;;parallel_tokenize;https://docs.fast.ai/text.core.html#parallel_tokenize
+;;;Tokenize texts in files;https://docs.fast.ai/text.core.html#Tokenize-texts-in-files
+;;;;tokenize_folder;https://docs.fast.ai/text.core.html#tokenize_folder
+;;;;tokenize_files;https://docs.fast.ai/text.core.html#tokenize_files
+;;;Tokenize texts in a dataframe;https://docs.fast.ai/text.core.html#Tokenize-texts-in-a-dataframe
+;;;;tokenize_texts;https://docs.fast.ai/text.core.html#tokenize_texts
+;;;;tokenize_df;https://docs.fast.ai/text.core.html#tokenize_df
+;;;;tokenize_csv;https://docs.fast.ai/text.core.html#tokenize_csv
+;;;;load_tokenized_csv;https://docs.fast.ai/text.core.html#load_tokenized_csv
+;;;class Tokenizer;https://docs.fast.ai/text.core.html#Tokenizer
+;;Sentencepiece;https://docs.fast.ai/text.core.html#Sentencepiece
+;;;class SentencePieceTokenizer;https://docs.fast.ai/text.core.html#SentencePieceTokenizer
+Text;;Data;https://docs.fast.ai/text.data.html
+;;Backwards;https://docs.fast.ai/text.data.html#Backwards
+;;;;reverse_text;https://docs.fast.ai/text.data.html#reverse_text
+;;Numericalizing;https://docs.fast.ai/text.data.html#Numericalizing
+;;;;make_vocab;https://docs.fast.ai/text.data.html#make_vocab
+;;;class TensorText;https://docs.fast.ai/text.data.html#TensorText
+;;;class LMTensorText;https://docs.fast.ai/text.data.html#LMTensorText
+;;;class Numericalize;https://docs.fast.ai/text.data.html#Numericalize
+;;class LMDataLoader;https://docs.fast.ai/text.data.html#LMDataLoader
+;;Classification;https://docs.fast.ai/text.data.html#Classification
+;;;class Pad_Input;https://docs.fast.ai/text.data.html#Pad_Input
+;;;;pad_chunk;https://docs.fast.ai/text.data.html#pad_chunk
+;;;;pad_input_chunk;https://docs.fast.ai/text.data.html#pad_input_chunk
+;;;class Pad_Chunk;https://docs.fast.ai/text.data.html#Pad_Chunk
+;;;class SortedDL;https://docs.fast.ai/text.data.html#SortedDL
+;;TransformBlock for text;https://docs.fast.ai/text.data.html#TransformBlock-for-text
+;;;class TextBlock;https://docs.fast.ai/text.data.html#TextBlock
+;;;;TextBlock.from_df;https://docs.fast.ai/text.data.html#TextBlock.from_df
+;;;;TextBlock.from_folder;https://docs.fast.ai/text.data.html#TextBlock.from_folder
+;;class TextDataLoaders;https://docs.fast.ai/text.data.html#TextDataLoaders
+;;;;TextDataLoaders.from_folder;https://docs.fast.ai/text.data.html#TextDataLoaders.from_folder
+;;;;TextDataLoaders.from_df;https://docs.fast.ai/text.data.html#TextDataLoaders.from_df
+;;;;TextDataLoaders.from_csv;https://docs.fast.ai/text.data.html#TextDataLoaders.from_csv
+Text;;Learner;https://docs.fast.ai/text.learner.html
+;;Loading a pretrained model;https://docs.fast.ai/text.learner.html#Loading-a-pretrained-model
+;;;;match_embeds;https://docs.fast.ai/text.learner.html#match_embeds
+;;;;load_ignore_keys;https://docs.fast.ai/text.learner.html#load_ignore_keys
+;;;;clean_raw_keys;https://docs.fast.ai/text.learner.html#clean_raw_keys
+;;;;load_model_text;https://docs.fast.ai/text.learner.html#load_model_text
+;;class TextLearner;https://docs.fast.ai/text.learner.html#TextLearner
+;;;;TextLearner.load_pretrained;https://docs.fast.ai/text.learner.html#TextLearner.load_pretrained
+;;;;TextLearner.save_encoder;https://docs.fast.ai/text.learner.html#TextLearner.save_encoder
+;;;;TextLearner.load_encoder;https://docs.fast.ai/text.learner.html#TextLearner.load_encoder
+;;Language modeling predictions;https://docs.fast.ai/text.learner.html#Language-modeling-predictions
+;;;;decode_spec_tokens;https://docs.fast.ai/text.learner.html#decode_spec_tokens
+;;;class LMLearner;https://docs.fast.ai/text.learner.html#LMLearner
+;;;;LMLearner.predict;https://docs.fast.ai/text.learner.html#LMLearner.predict
+;;Learner convenience functions;https://docs.fast.ai/text.learner.html#Learner-convenience-functions
+;;;;language_model_learner;https://docs.fast.ai/text.learner.html#language_model_learner
+;;;;text_classifier_learner;https://docs.fast.ai/text.learner.html#text_classifier_learner
+Text;Models;Core;https://docs.fast.ai/text.models.core.html
+;;Language models;https://docs.fast.ai/text.models.core.html#Language-models
+;;;class LinearDecoder;https://docs.fast.ai/text.models.core.html#LinearDecoder
+;;;class SequentialRNN;https://docs.fast.ai/text.models.core.html#SequentialRNN
+;;;;get_language_model;https://docs.fast.ai/text.models.core.html#get_language_model
+;;Classification models;https://docs.fast.ai/text.models.core.html#Classification-models
+;;;class SentenceEncoder;https://docs.fast.ai/text.models.core.html#SentenceEncoder
+;;;;masked_concat_pool;https://docs.fast.ai/text.models.core.html#masked_concat_pool
+;;;class PoolingLinearClassifier;https://docs.fast.ai/text.models.core.html#PoolingLinearClassifier
+;;;;get_text_classifier;https://docs.fast.ai/text.models.core.html#get_text_classifier
+Text;Models;AWD LSTM;https://docs.fast.ai/text.models.awdlstm.html
+;;Basic NLP modules;https://docs.fast.ai/text.models.awdlstm.html#Basic-NLP-modules
+;;;;dropout_mask;https://docs.fast.ai/text.models.awdlstm.html#dropout_mask
+;;;class RNNDropout;https://docs.fast.ai/text.models.awdlstm.html#RNNDropout
+;;;class WeightDropout;https://docs.fast.ai/text.models.awdlstm.html#WeightDropout
+;;;class EmbeddingDropout;https://docs.fast.ai/text.models.awdlstm.html#EmbeddingDropout
+;;;class AWD_LSTM;https://docs.fast.ai/text.models.awdlstm.html#AWD_LSTM
+;;;;awd_lstm_lm_split;https://docs.fast.ai/text.models.awdlstm.html#awd_lstm_lm_split
+;;;;awd_lstm_clas_split;https://docs.fast.ai/text.models.awdlstm.html#awd_lstm_clas_split
+;;QRNN;https://docs.fast.ai/text.models.awdlstm.html#QRNN
+;;;class AWD_QRNN;https://docs.fast.ai/text.models.awdlstm.html#AWD_QRNN
+Text;Models;QRNN;https://docs.fast.ai/text.models.qrnn.html
+;;ForgetMult;https://docs.fast.ai/text.models.qrnn.html#ForgetMult
+;;;;load_cpp;https://docs.fast.ai/text.models.qrnn.html#load_cpp
+;;;;dispatch_cuda;https://docs.fast.ai/text.models.qrnn.html#dispatch_cuda
+;;;;forget_mult_CPU;https://docs.fast.ai/text.models.qrnn.html#forget_mult_CPU
+;;;class ForgetMultGPU;https://docs.fast.ai/text.models.qrnn.html#ForgetMultGPU
+;;QRNN;https://docs.fast.ai/text.models.qrnn.html#QRNN
+;;;class QRNNLayer;https://docs.fast.ai/text.models.qrnn.html#QRNNLayer
+;;;class QRNN;https://docs.fast.ai/text.models.qrnn.html#QRNN
+Tabular;;Core;https://docs.fast.ai/tabular.core.html
+;;Initial preprocessing;https://docs.fast.ai/tabular.core.html#Initial-preprocessing
+;;;;make_date;https://docs.fast.ai/tabular.core.html#make_date
+;;;;add_datepart;https://docs.fast.ai/tabular.core.html#add_datepart
+;;;;add_elapsed_times;https://docs.fast.ai/tabular.core.html#add_elapsed_times
+;;;;cont_cat_split;https://docs.fast.ai/tabular.core.html#cont_cat_split
+;;;df_shrink_dtypes;https://docs.fast.ai/tabular.core.html#df_shrink_dtypes
+;;;df_shrink;https://docs.fast.ai/tabular.core.html#df_shrink
+;;class Tabular;https://docs.fast.ai/tabular.core.html#Tabular
+;;class TabularPandas;https://docs.fast.ai/tabular.core.html#TabularPandas
+;;class TabularProc;https://docs.fast.ai/tabular.core.html#TabularProc
+;;;class Categorify;https://docs.fast.ai/tabular.core.html#Categorify
+;;class FillStrategy;https://docs.fast.ai/tabular.core.html#FillStrategy
+;;;class FillMissing;https://docs.fast.ai/tabular.core.html#FillMissing
+;;class ReadTabBatch;https://docs.fast.ai/tabular.core.html#ReadTabBatch
+;;class TabDataLoader;https://docs.fast.ai/tabular.core.html#TabDataLoader
+;;Integration example;https://docs.fast.ai/tabular.core.html#Integration-example
+;;Other target types;https://docs.fast.ai/tabular.core.html#Other-target-types
+;;;Multi-label categories;https://docs.fast.ai/tabular.core.html#Multi-label-categories
+;;;;one-hot encoded label;https://docs.fast.ai/tabular.core.html#one-hot-encoded-label
+;;;;Not one-hot encoded;https://docs.fast.ai/tabular.core.html#Not-one-hot-encoded
+;;;Regression;https://docs.fast.ai/tabular.core.html#Regression
+;;Not being used now - for multi-modal;https://docs.fast.ai/tabular.core.html#Not-being-used-now---for-multi-modal
+Tabular;;Data;https://docs.fast.ai/tabular.data.html
+;;class TabularDataLoaders;https://docs.fast.ai/tabular.data.html#TabularDataLoaders
+;;;;TabularDataLoaders.from_df;https://docs.fast.ai/tabular.data.html#TabularDataLoaders.from_df
+;;;;TabularDataLoaders.from_csv;https://docs.fast.ai/tabular.data.html#TabularDataLoaders.from_csv
+Tabular;;Learner;https://docs.fast.ai/tabular.learner.html
+;;Main functions;https://docs.fast.ai/tabular.learner.html#Main-functions
+;;;class TabularLearner;https://docs.fast.ai/tabular.learner.html#TabularLearner
+;;;;tabular_learner;https://docs.fast.ai/tabular.learner.html#tabular_learner
+;;;;TabularLearner.predict;https://docs.fast.ai/tabular.learner.html#TabularLearner.predict
+Tabular;;Model;https://docs.fast.ai/tabular.model.html
+;;Embeddings;https://docs.fast.ai/tabular.model.html#Embeddings
+;;;;emb_sz_rule;https://docs.fast.ai/tabular.model.html#emb_sz_rule
+;;;;get_emb_sz;https://docs.fast.ai/tabular.model.html#get_emb_sz
+;;class TabularModel;https://docs.fast.ai/tabular.model.html#TabularModel
+;;;;tabular_config;https://docs.fast.ai/tabular.model.html#tabular_config
+Tabular;;Collab;https://docs.fast.ai/collab.html
+;;Gather the data;https://docs.fast.ai/collab.html#Gather-the-data
+;;class TabularCollab;https://docs.fast.ai/collab.html#TabularCollab
+;;class CollabDataLoaders;https://docs.fast.ai/collab.html#CollabDataLoaders
+;;;;CollabDataLoaders.from_df;https://docs.fast.ai/collab.html#CollabDataLoaders.from_df
+;;;;CollabDataLoaders.from_csv;https://docs.fast.ai/collab.html#CollabDataLoaders.from_csv
+;;Models;https://docs.fast.ai/collab.html#Models
+;;class EmbeddingDotBias;https://docs.fast.ai/collab.html#EmbeddingDotBias
+;;;;EmbeddingDotBias.from_classes;https://docs.fast.ai/collab.html#EmbeddingDotBias.from_classes
+;;;;EmbeddingDotBias.weight;https://docs.fast.ai/collab.html#EmbeddingDotBias.weight
+;;;;EmbeddingDotBias.bias;https://docs.fast.ai/collab.html#EmbeddingDotBias.bias
+;;class EmbeddingNN;https://docs.fast.ai/collab.html#EmbeddingNN
+;;Create a Learner;https://docs.fast.ai/collab.html#Create-a-Learner
+;;;;collab_learner;https://docs.fast.ai/collab.html#collab_learner
+Medical;;Imagery;https://docs.fast.ai/medical.imaging.html
+;;Patching;https://docs.fast.ai/medical.imaging.html#Patching
+;;;;get_dicom_files;https://docs.fast.ai/medical.imaging.html#get_dicom_files
+;;;;Path.dcmread;https://docs.fast.ai/medical.imaging.html#Path.dcmread
+;;class TensorDicom;https://docs.fast.ai/medical.imaging.html#TensorDicom
+;;class PILDicom;https://docs.fast.ai/medical.imaging.html#PILDicom
+;;;;Path.png16read;https://docs.fast.ai/medical.imaging.html#Path.png16read
+;;;;None;https://docs.fast.ai/medical.imaging.html#None
+;;;;None;https://docs.fast.ai/medical.imaging.html#None
+;;;;array_freqhist_bins;https://docs.fast.ai/medical.imaging.html#array_freqhist_bins
+;;;;Tensor.freqhist_bins;https://docs.fast.ai/medical.imaging.html#Tensor.freqhist_bins
+;;;;Tensor.hist_scaled_pt;https://docs.fast.ai/medical.imaging.html#Tensor.hist_scaled_pt
+;;;;Tensor.hist_scaled;https://docs.fast.ai/medical.imaging.html#Tensor.hist_scaled
+;;;;Dataset.hist_scaled;https://docs.fast.ai/medical.imaging.html#Dataset.hist_scaled
+;;;;Tensor.windowed;https://docs.fast.ai/medical.imaging.html#Tensor.windowed
+;;;;Dataset.windowed;https://docs.fast.ai/medical.imaging.html#Dataset.windowed
+;;class TensorCTScan;https://docs.fast.ai/medical.imaging.html#TensorCTScan
+;;class PILCTScan;https://docs.fast.ai/medical.imaging.html#PILCTScan
+;;;;Dataset.show;https://docs.fast.ai/medical.imaging.html#Dataset.show
+;;;;Dataset.show;https://docs.fast.ai/medical.imaging.html#Dataset.show
+;;;;Dataset.pct_in_window;https://docs.fast.ai/medical.imaging.html#Dataset.pct_in_window
+;;;;uniform_blur2d;https://docs.fast.ai/medical.imaging.html#uniform_blur2d
+;;;;gauss_blur2d;https://docs.fast.ai/medical.imaging.html#gauss_blur2d
+;;;;Tensor.mask_from_blur;https://docs.fast.ai/medical.imaging.html#Tensor.mask_from_blur
+;;;;Dataset.mask_from_blur;https://docs.fast.ai/medical.imaging.html#Dataset.mask_from_blur
+;;;;mask2bbox;https://docs.fast.ai/medical.imaging.html#mask2bbox
+;;;;crop_resize;https://docs.fast.ai/medical.imaging.html#crop_resize
+;;;;Tensor.to_nchan;https://docs.fast.ai/medical.imaging.html#Tensor.to_nchan
+;;;;Dataset.to_nchan;https://docs.fast.ai/medical.imaging.html#Dataset.to_nchan
+;;;;Tensor.to_3chan;https://docs.fast.ai/medical.imaging.html#Tensor.to_3chan
+;;;;Dataset.to_3chan;https://docs.fast.ai/medical.imaging.html#Dataset.to_3chan
+;;;;Tensor.save_jpg;https://docs.fast.ai/medical.imaging.html#Tensor.save_jpg
+;;;;Dataset.save_jpg;https://docs.fast.ai/medical.imaging.html#Dataset.save_jpg
+;;;;Tensor.to_uint16;https://docs.fast.ai/medical.imaging.html#Tensor.to_uint16
+;;;;Dataset.to_uint16;https://docs.fast.ai/medical.imaging.html#Dataset.to_uint16
+;;;;Tensor.save_tif16;https://docs.fast.ai/medical.imaging.html#Tensor.save_tif16
+;;;;Dataset.save_tif16;https://docs.fast.ai/medical.imaging.html#Dataset.save_tif16
+;;;;Dataset.set_pixels;https://docs.fast.ai/medical.imaging.html#Dataset.set_pixels
+;;;;Dataset.zoom;https://docs.fast.ai/medical.imaging.html#Dataset.zoom
+;;;;Dataset.zoom_to;https://docs.fast.ai/medical.imaging.html#Dataset.zoom_to
+;;;;None;https://docs.fast.ai/medical.imaging.html#None
+;;;;Dataset.as_dict;https://docs.fast.ai/medical.imaging.html#Dataset.as_dict
+;;class DicomSegmentationDataLoaders;https://docs.fast.ai/medical.imaging.html#DicomSegmentationDataLoaders
+Medical;;Text;https://docs.fast.ai/medical.text.html
+Integrations;;Captum;https://docs.fast.ai/callback.captum.html
+Integrations;;Weights & Biases;https://docs.fast.ai/callback.wandb.html
+;;class WandbCallback;https://docs.fast.ai/callback.wandb.html#WandbCallback
+;;;;Learner.gather_args;https://docs.fast.ai/callback.wandb.html#Learner.gather_args
+;;;;log_dataset;https://docs.fast.ai/callback.wandb.html#log_dataset
+;;;;log_model;https://docs.fast.ai/callback.wandb.html#log_model
+;;Example of use:;https://docs.fast.ai/callback.wandb.html#Example-of-use:
+Integrations;;Neptune;https://docs.fast.ai/callback.neptune.html
+;;Registration;https://docs.fast.ai/callback.neptune.html#Registration
+;;Installation;https://docs.fast.ai/callback.neptune.html#Installation
+;;How to use?;https://docs.fast.ai/callback.neptune.html#How-to-use?
+;;class NeptuneCallback;https://docs.fast.ai/callback.neptune.html#NeptuneCallback
+Integrations;;TensorBoard;https://docs.fast.ai/callback.tensorboard.html
+;;Tensorboard Embedding Projector support;https://docs.fast.ai/callback.tensorboard.html#Tensorboard-Embedding-Projector-support
+;;;Export Image Features during Training;https://docs.fast.ai/callback.tensorboard.html#Export-Image-Features-during-Training
+;;;Export Image Features during Inference;https://docs.fast.ai/callback.tensorboard.html#Export-Image-Features-during-Inference
+;;;Export Word Embeddings from Language Models;https://docs.fast.ai/callback.tensorboard.html#Export-Word-Embeddings-from-Language-Models
+;;class TensorBoardBaseCallback;https://docs.fast.ai/callback.tensorboard.html#TensorBoardBaseCallback
+;;class TensorBoardCallback;https://docs.fast.ai/callback.tensorboard.html#TensorBoardCallback
+;;class TensorBoardProjectorCallback;https://docs.fast.ai/callback.tensorboard.html#TensorBoardProjectorCallback
+;;;;projector_word_embeddings;https://docs.fast.ai/callback.tensorboard.html#projector_word_embeddings
+;;TensorBoardCallback;https://docs.fast.ai/callback.tensorboard.html#TensorBoardCallback
+;;Projector;https://docs.fast.ai/callback.tensorboard.html#Projector
+;;;Projector in TensorBoardCallback;https://docs.fast.ai/callback.tensorboard.html#Projector-in-TensorBoardCallback
+;;;TensorBoardProjectorCallback;https://docs.fast.ai/callback.tensorboard.html#TensorBoardProjectorCallback
+;;projector_word_embeddings;https://docs.fast.ai/callback.tensorboard.html#projector_word_embeddings
+;;;fastai text or lm learner;https://docs.fast.ai/callback.tensorboard.html#fastai-text-or-lm-learner
+;;;transformers;https://docs.fast.ai/callback.tensorboard.html#transformers
+;;;;GPT2;https://docs.fast.ai/callback.tensorboard.html#GPT2
+;;;;BERT;https://docs.fast.ai/callback.tensorboard.html#BERT
+;;;Validate results in tensorboard;https://docs.fast.ai/callback.tensorboard.html#Validate-results-in-tensorboard
+fastai Development;;Developers Guide;https://docs.fast.ai/dev-setup.html
+;;One time only setup;https://docs.fast.ai/dev-setup.html#One-time-only-setup
+;;;Setting up access and gh;https://docs.fast.ai/dev-setup.html#Setting-up-access-and-gh
+;;;Set up fastcore;https://docs.fast.ai/dev-setup.html#Set-up-fastcore
+;;;Set up fastai;https://docs.fast.ai/dev-setup.html#Set-up-fastai
+;;Creating your PR;https://docs.fast.ai/dev-setup.html#Creating-your-PR
+;;Post-PR steps;https://docs.fast.ai/dev-setup.html#Post-PR-steps
+fastai Development;;Abbreviation Guide;https://docs.fast.ai/dev/abbr.html
+fastai Development;;Style Guide;https://docs.fast.ai/dev/style.html
+;;Jeremyâs notes on fastai coding style;https://docs.fast.ai/dev/style.html#jeremys-notes-on-fastai-coding-style
+;;Style guide;https://docs.fast.ai/dev/style.html#style-guide
+;;;Symbol naming;https://docs.fast.ai/dev/style.html#symbol-naming
+;;;Layout;https://docs.fast.ai/dev/style.html#layout
+;;;Algorithms;https://docs.fast.ai/dev/style.html#algorithms
+;;;Other stuff;https://docs.fast.ai/dev/style.html#other-stuff
+;;;Documentation;https://docs.fast.ai/dev/style.html#documentation
+;;FAQ;https://docs.fast.ai/dev/style.html#faq
+fastai Development;;GPU Notes;https://docs.fast.ai/dev/gpu.html
+;;GPU Monitoring;https://docs.fast.ai/dev/gpu.html#gpu-monitoring
+;;Accessing NVIDIA GPU Info Programmatically;https://docs.fast.ai/dev/gpu.html#accessing-nvidia-gpu-info-programmatically
+;;;pynvml;https://docs.fast.ai/dev/gpu.html#pynvml
+;;;py3nvml;https://docs.fast.ai/dev/gpu.html#py3nvml
+;;;GPUtil;https://docs.fast.ai/dev/gpu.html#gputil
+;;GPU Memory Notes;https://docs.fast.ai/dev/gpu.html#gpu-memory-notes
+;;;Unusable GPU RAM per process;https://docs.fast.ai/dev/gpu.html#unusable-gpu-ram-per-process
+;;;Cached Memory;https://docs.fast.ai/dev/gpu.html#cached-memory
+;;;Reusing GPU RAM;https://docs.fast.ai/dev/gpu.html#reusing-gpu-ram
+;;;GPU RAM Fragmentation;https://docs.fast.ai/dev/gpu.html#gpu-ram-fragmentation
+;;;Peak Memory Usage;https://docs.fast.ai/dev/gpu.html#peak-memory-usage
+;;;pytorch Tensor Memory Tracking;https://docs.fast.ai/dev/gpu.html#pytorch-tensor-memory-tracking
+;;;GPU Reset;https://docs.fast.ai/dev/gpu.html#gpu-reset
+;;Multi-GPU;https://docs.fast.ai/dev/gpu.html#multi-gpu
+;;;Order of GPUs;https://docs.fast.ai/dev/gpu.html#order-of-gpus
+fastai Development;;Git Notes;https://docs.fast.ai/dev/git.html
+;;How to Make a Pull Request (PR);https://docs.fast.ai/dev/git.html#how-to-make-a-pull-request-pr
+;;;Step 1. Start With a Synced Fork Checkout;https://docs.fast.ai/dev/git.html#step-1-start-with-a-synced-fork-checkout
+;;;;1a. First time;https://docs.fast.ai/dev/git.html#1a-first-time
+;;;;1b. Subsequent times;https://docs.fast.ai/dev/git.html#1b-subsequent-times
+;;;Step 2. Create a Branch;https://docs.fast.ai/dev/git.html#step-2-create-a-branch
+;;;Step 6. Push Your Changes;https://docs.fast.ai/dev/git.html#step-6-push-your-changes
+;;;Step 8. Passing CI Tests;https://docs.fast.ai/dev/git.html#step-8-passing-ci-tests
+;;;How to Keep Your Feature Branch Up-to-date;https://docs.fast.ai/dev/git.html#how-to-keep-your-feature-branch-up-to-date
+;;;How To Reset Your Forked Master Branch;https://docs.fast.ai/dev/git.html#how-to-reset-your-forked-master-branch
+;;;Where am I?;https://docs.fast.ai/dev/git.html#where-am-i
+;;;;bash-git-prompt;https://docs.fast.ai/dev/git.html#bash-git-prompt
+;;Github Shortcuts;https://docs.fast.ai/dev/git.html#github-shortcuts
+;;Revisions;https://docs.fast.ai/dev/git.html#revisions
+;;Operations;https://docs.fast.ai/dev/git.html#operations
+;;;add;https://docs.fast.ai/dev/git.html#add
+;;;remove;https://docs.fast.ai/dev/git.html#remove
+;;;status;https://docs.fast.ai/dev/git.html#status
+;;;push;https://docs.fast.ai/dev/git.html#push
+;;;commit;https://docs.fast.ai/dev/git.html#commit
+;;;authentication;https://docs.fast.ai/dev/git.html#authentication
+;;;update;https://docs.fast.ai/dev/git.html#update
+;;;search/replace;https://docs.fast.ai/dev/git.html#searchreplace
+;;;git GUI;https://docs.fast.ai/dev/git.html#git-gui
+;;;contributors;https://docs.fast.ai/dev/git.html#contributors
+;;;search git history;https://docs.fast.ai/dev/git.html#search-git-history
+;;;cherry picking;https://docs.fast.ai/dev/git.html#cherry-picking
+;;;checkout;https://docs.fast.ai/dev/git.html#checkout
+;;;overwrite local changes;https://docs.fast.ai/dev/git.html#overwrite-local-changes
+;;;branches;https://docs.fast.ai/dev/git.html#branches
+;;;reverting/resetting/undoing;https://docs.fast.ai/dev/git.html#revertingresettingundoing
+;;;;Reset branchâs HEAD to a given commit hash;https://docs.fast.ai/dev/git.html#reset-branchs-head-to-a-given-commit-hash
+;;;ignore;https://docs.fast.ai/dev/git.html#ignore
+;;;trace and debug;https://docs.fast.ai/dev/git.html#trace-and-debug
+;;;status and information;https://docs.fast.ai/dev/git.html#status-and-information
+;;;overriding git configuration;https://docs.fast.ai/dev/git.html#overriding-git-configuration
+;;fixing things;https://docs.fast.ai/dev/git.html#fixing-things
+;;merge strategies;https://docs.fast.ai/dev/git.html#merge-strategies
+;;workflows;https://docs.fast.ai/dev/git.html#workflows
+;;Aliases;https://docs.fast.ai/dev/git.html#aliases
+;;Miscellaneous Recipes;https://docs.fast.ai/dev/git.html#miscellaneous-recipes
+;;Useful Resources;https://docs.fast.ai/dev/git.html#useful-resources
+fastai Development;;Notes;https://docs.fast.ai/dev/develop.html
+;;Development Editable Install;https://docs.fast.ai/dev/develop.html#development-editable-install
+;;;Editable Install Explained;https://docs.fast.ai/dev/develop.html#editable-install-explained
+;;Switching Conda Environments in Jupyter;https://docs.fast.ai/dev/develop.html#switching-conda-environments-in-jupyter
+;;Some useful oneliners;https://docs.fast.ai/dev/develop.html#some-useful-oneliners

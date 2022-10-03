@@ -1,0 +1,28 @@
+Slide 4 : change cnn_learner to vision_learner + add a comment for TIMM models
+Slide 5 : add comment on the new default_cbs Learner parameter
+Slide 6 : learn.lr_find => update suggest_funcs=(SuggestionMethod.Valley) parameter
+Slide 8 : show_install => add import needed
+Slide 13 : update ClassificationInterpretation signature, add CaptumInterpretation
+Slide 17 : add after_backward event
+Slide 18 : add after_backward event
+Slide 19 : add ChannelsLast training callback
+Slide 21 : add Learner.distrib_ctx context manager
+Slide 27 : add DataBlock.weighted_dataloaders()
+Slide 29 : add comment on default_device supporting MPS
+Slide 28 : change cnn_learner to vision_learner
+Slide 30 : add  pin_memory_device parameter to DataLoader constructor
+Slide 31 : after_iter moved to be visible
+Slide 37 : add functions export() & load_pandas()
+Slide 43 : delete download_data, download_url, file_extract, updated URLs description, changed untar_data signature and description
+Slide 44 : changed config_path / config_file text, delete evything else, add fastai_cfg() and fastai_path() 
+Slide 47 : add EndSplitter and ColSplitter, fix RandomSubsetSplitter comment
+Slide 52 : RandomResizedCrop => add max_scale parameter
+Slide 53 : RandomResizedCropGPU => add max_scale parameter 
+Slide 62 : change create_cnn_model to create_vision_model, add cut_model, add add_head, change create_head signature, add create_timm_model, change create_body arch->model parameter
+Slide 63 : delete 2x arch = AWD_QRNN
+Slide 67 : add TimeDistributed
+Slide 68 : delete AWD_QRNN, QRNNLayer, QRNN modules
+Slide 71 : add DiceLoss loss function + doc
+Slide 75 : change cnn_learner to vision_learner
+Slide 76 : added a new slide Distributed Training with Huggingface Accelerate
+
