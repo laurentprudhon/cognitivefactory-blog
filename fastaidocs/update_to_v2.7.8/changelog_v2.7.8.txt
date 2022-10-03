@@ -25,4 +25,3 @@ Slide 68 : delete AWD_QRNN, QRNNLayer, QRNN modules
 Slide 71 : add DiceLoss loss function + doc
 Slide 75 : change cnn_learner to vision_learner
 Slide 76 : added a new slide Distributed Training with Huggingface Accelerate
-
