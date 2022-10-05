@@ -1,0 +1,278 @@
+
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172638611-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-172638611-1');
+</script>
+<style>
+/* The sidenav */
+.sidenav {
+  padding: 10px;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: #7F7F7F;
+  background-color: #F7F7F7;
+  overflow-x: hidden;
+  border-right: solid 1px;
+}
+
+ul {
+  padding-left: 10px;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: #7F7F7F;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+/* Page content */
+.main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+.main h2 {
+  color: #7F7F7F;
+  background-color: #F7F7F7;
+  font-size: 50px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+
+.main img {
+  width: 100%;
+  border: 1px solid #E7E7E7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidenav">
+
+<h1>fastai v2.7.8</h1>
+<a href="https://www.linkedin.com/in/laurent-prudhon"><ul><li><small>forums.fast.ai: @laurentprudhon</small></li><li><small>Twitter : @prudholu</small></li></ul></a>
+<h2>Concepts</h2>
+<ul><li><a href="#01">Concepts - Data loading</a></li>
+<li><a href="#02">Concepts - Model training</a></li>
+<li><a href="#03">Concepts - Learner lifecycle</a></li>
+</ul><h2>Learner</h2>
+<ul><li><a href="#04">Learner - Create an instance</a></li>
+<li><a href="#05">Learner - Init, Attributes</a></li>
+<li><a href="#06">Learner - Training methods</a></li>
+<li><a href="#07">Learner - Inference methods</a></li>
+</ul><h2>Visualize</h2>
+<ul><li><a href="#08">Diagnostics - How to debug</a></li>
+<li><a href="#09">Show - Inputs, targets, predictions</a></li>
+<li><a href="#10">Show - Images</a></li>
+<li><a href="#11">Show - Text, points, boxes, tables</a></li>
+<li><a href="#12">Plot - Training loop</a></li>
+</ul><h2>Evaluate</h2>
+<ul><li><a href="#13">Model evaluation - Interpretation</a></li>
+<li><a href="#14">Metrics - 1/2</a></li>
+<li><a href="#15">Metrics - 2/2</a></li>
+</ul><h2>Training</h2>
+<ul><li><a href="#16">Learner - Training loop 1/2</a></li>
+<li><a href="#17">Learner - Training loop 2/2</a></li>
+<li><a href="#18">Learner - Customize training loop</a></li>
+<li><a href="#19">Learner - Callbacks 1/2</a></li>
+<li><a href="#20">Learner - Callbacks 2/2</a></li>
+<li><a href="#21">Learner - Context managers</a></li>
+</ul><h2>Inference</h2>
+<ul><li><a href="#22">Learner - Public methods call tree</a></li>
+<li><a href="#23">Learner - validate and Recorder</a></li>
+<li><a href="#24">Learner - get_preds and Loss function</a></li>
+<li><a href="#25">Learner - predict and DataLoader</a></li>
+<li><a href="#26">Learner - show_results and DataLoader</a></li>
+</ul><h2>DataLoader</h2>
+<ul><li><a href="#27">DataLoaders - Create an instance</a></li>
+<li><a href="#28">DataLoaders - Interface</a></li>
+<li><a href="#29">DataLoader - Interface</a></li>
+<li><a href="#30">DataLoader - Init</a></li>
+<li><a href="#31">DataLoader - iter() and next()</a></li>
+<li><a href="#32">DataLoader - TfmdDL</a></li>
+<li><a href="#33">DataLoader - TfmdDL subclasses</a></li>
+</ul><h2>Dataset</h2>
+<ul><li><a href="#34">Dataset - Interface</a></li>
+<li><a href="#35">Dataset - TfmdLists</a></li>
+<li><a href="#36">Dataset - Datasets</a></li>
+<li><a href="#37">Dataset - Tabular datasets</a></li>
+</ul><h2>DataBlock</h2>
+<ul><li><a href="#38">DataBlock</a></li>
+<li><a href="#39">DataBlock - Init data pipeline</a></li>
+<li><a href="#40">TransformBlocks - Labels</a></li>
+<li><a href="#41">TransformBlocks - Vision</a></li>
+<li><a href="#42">TransformBlocks - Text</a></li>
+</ul><h2>Download</h2>
+<ul><li><a href="#43">Download datasets and models</a></li>
+<li><a href="#44">Download - Directories config</a></li>
+</ul><h2>Load</h2>
+<ul><li><a href="#45">Dataset, Model, Learner - Directories</a></li>
+<li><a href="#46">Get items</a></li>
+<li><a href="#47">Splitters</a></li>
+<li><a href="#48">Getters</a></li>
+</ul><h2>Transform</h2>
+<ul><li><a href="#49">Transforms for labels</a></li>
+</ul><h2>Vision</h2>
+<ul><li><a href="#50">Type Transforms - Vision</a></li>
+<li><a href="#51">Item Transforms - Vision</a></li>
+<li><a href="#52">Data augmentation - Vision 1/4</a></li>
+<li><a href="#53">Data augmentation - Vision 2/4</a></li>
+<li><a href="#54">Data augmentation - Vision 3/4</a></li>
+<li><a href="#55">Data augmentation - Vision 4/4</a></li>
+</ul><h2>Text</h2>
+<ul><li><a href="#56">Type Transforms - Text</a></li>
+<li><a href="#57">Item Transforms - Text</a></li>
+</ul><h2>Tabular</h2>
+<ul><li><a href="#58">Tabular datasets and transforms</a></li>
+</ul><h2>Optimizer</h2>
+<ul><li><a href="#59">Optimizer</a></li>
+<li><a href="#60">Optimizers</a></li>
+<li><a href="#61">Optimizer - Hyperparameters scheduling</a></li>
+</ul><h2>Model</h2>
+<ul><li><a href="#62">Create model - Vision</a></li>
+<li><a href="#63">Create Model - Text, GAN</a></li>
+</ul><h2>Pytorch</h2>
+<ul><li><a href="#64">Modules - Functions, Shapes, Pooling</a></li>
+<li><a href="#65">Modules - Combine layers, In Out</a></li>
+<li><a href="#66">Modules - Activations, Norms</a></li>
+<li><a href="#67">Modules - Convolutions, Attention</a></li>
+<li><a href="#68">Modules - Text sequences, Dropout</a></li>
+<li><a href="#69">Modules - Unet, GAN, Tabular</a></li>
+</ul><h2>Loss</h2>
+<ul><li><a href="#70">Loss function - Interface</a></li>
+<li><a href="#71">Loss functions - Classification, Regression</a></li>
+</ul><h2>Summary</h2>
+<ul><li><a href="#72">Summary - DataBlock</a></li>
+<li><a href="#73">Summary - DataLoaders</a></li>
+<li><a href="#74">Summary - Learner</a></li>
+<li><a href="#75">Implementation notes</a></li>
+<li><a href="#76">Distributed Training</a></li>
+</ul>
+</div>
+
+<div class="main">
+<h2>Concepts</h2>
+<p><object id="01" type="image/svg+xml" data="/images/fastaidocs/01_Concepts-Data_loading.svg"></object></p>
+<p><object id="02" type="image/svg+xml" data="/images/fastaidocs/02_Concepts-Model_training.svg"></object></p>
+<p><object id="03" type="image/svg+xml" data="/images/fastaidocs/03_Concepts-Learner_lifecycle.svg"></object></p>
+<h2>Learner</h2>
+<p><object id="04" type="image/svg+xml" data="/images/fastaidocs/04_Learner-Create_an_instance.svg"></object></p>
+<p><object id="05" type="image/svg+xml" data="/images/fastaidocs/05_Learner-Init_Attributes.svg"></object></p>
+<p><object id="06" type="image/svg+xml" data="/images/fastaidocs/06_Learner-Training_methods.svg"></object></p>
+<p><object id="07" type="image/svg+xml" data="/images/fastaidocs/07_Learner-Inference_methods.svg"></object></p>
+<h2>Visualize</h2>
+<p><object id="08" type="image/svg+xml" data="/images/fastaidocs/08_Diagnostics-How_to_debug.svg"></object></p>
+<p><object id="09" type="image/svg+xml" data="/images/fastaidocs/09_Show-Inputs_targets_predictions.svg"></object></p>
+<p><object id="10" type="image/svg+xml" data="/images/fastaidocs/10_Show-Images.svg"></object></p>
+<p><object id="11" type="image/svg+xml" data="/images/fastaidocs/11_Show-Text_points_boxes_tables.svg"></object></p>
+<p><object id="12" type="image/svg+xml" data="/images/fastaidocs/12_Plot-Training_loop.svg"></object></p>
+<h2>Evaluate</h2>
+<p><object id="13" type="image/svg+xml" data="/images/fastaidocs/13_Model_evaluation-Interpretation.svg"></object></p>
+<p><object id="14" type="image/svg+xml" data="/images/fastaidocs/14_Metrics-1_2.svg"></object></p>
+<p><object id="15" type="image/svg+xml" data="/images/fastaidocs/15_Metrics-2_2.svg"></object></p>
+<h2>Training</h2>
+<p><object id="16" type="image/svg+xml" data="/images/fastaidocs/16_Learner-Training_loop_1_2.svg"></object></p>
+<p><object id="17" type="image/svg+xml" data="/images/fastaidocs/17_Learner-Training_loop_2_2.svg"></object></p>
+<p><object id="18" type="image/svg+xml" data="/images/fastaidocs/18_Learner-Customize_training_loop.svg"></object></p>
+<p><object id="19" type="image/svg+xml" data="/images/fastaidocs/19_Learner-Callbacks_1_2.svg"></object></p>
+<p><object id="20" type="image/svg+xml" data="/images/fastaidocs/20_Learner-Callbacks_2_2.svg"></object></p>
+<p><object id="21" type="image/svg+xml" data="/images/fastaidocs/21_Learner-Context_managers.svg"></object></p>
+<h2>Inference</h2>
+<p><object id="22" type="image/svg+xml" data="/images/fastaidocs/22_Learner-Public_methods_call_tree.svg"></object></p>
+<p><object id="23" type="image/svg+xml" data="/images/fastaidocs/23_Learner-validate_and_Recorder.svg"></object></p>
+<p><object id="24" type="image/svg+xml" data="/images/fastaidocs/24_Learner-get_preds_and_Loss_function.svg"></object></p>
+<p><object id="25" type="image/svg+xml" data="/images/fastaidocs/25_Learner-predict_and_DataLoader.svg"></object></p>
+<p><object id="26" type="image/svg+xml" data="/images/fastaidocs/26_Learner-show_results_and_DataLoader.svg"></object></p>
+<h2>DataLoader</h2>
+<p><object id="27" type="image/svg+xml" data="/images/fastaidocs/27_DataLoaders-Create_an_instance.svg"></object></p>
+<p><object id="28" type="image/svg+xml" data="/images/fastaidocs/28_DataLoaders-Interface.svg"></object></p>
+<p><object id="29" type="image/svg+xml" data="/images/fastaidocs/29_DataLoader-Interface.svg"></object></p>
+<p><object id="30" type="image/svg+xml" data="/images/fastaidocs/30_DataLoader-Init.svg"></object></p>
+<p><object id="31" type="image/svg+xml" data="/images/fastaidocs/31_DataLoader-iter()_and_next().svg"></object></p>
+<p><object id="32" type="image/svg+xml" data="/images/fastaidocs/32_DataLoader-TfmdDL.svg"></object></p>
+<p><object id="33" type="image/svg+xml" data="/images/fastaidocs/33_DataLoader-TfmdDL_subclasses.svg"></object></p>
+<h2>Dataset</h2>
+<p><object id="34" type="image/svg+xml" data="/images/fastaidocs/34_Dataset-Interface.svg"></object></p>
+<p><object id="35" type="image/svg+xml" data="/images/fastaidocs/35_Dataset-TfmdLists.svg"></object></p>
+<p><object id="36" type="image/svg+xml" data="/images/fastaidocs/36_Dataset-Datasets.svg"></object></p>
+<p><object id="37" type="image/svg+xml" data="/images/fastaidocs/37_Dataset-Tabular_datasets.svg"></object></p>
+<h2>DataBlock</h2>
+<p><object id="38" type="image/svg+xml" data="/images/fastaidocs/38_DataBlock.svg"></object></p>
+<p><object id="39" type="image/svg+xml" data="/images/fastaidocs/39_DataBlock-Init_data_pipeline.svg"></object></p>
+<p><object id="40" type="image/svg+xml" data="/images/fastaidocs/40_TransformBlocks-Labels.svg"></object></p>
+<p><object id="41" type="image/svg+xml" data="/images/fastaidocs/41_TransformBlocks-Vision.svg"></object></p>
+<p><object id="42" type="image/svg+xml" data="/images/fastaidocs/42_TransformBlocks-Text.svg"></object></p>
+<h2>Download</h2>
+<p><object id="43" type="image/svg+xml" data="/images/fastaidocs/43_Download_datasets_and_models.svg"></object></p>
+<p><object id="44" type="image/svg+xml" data="/images/fastaidocs/44_Download-Directories_config.svg"></object></p>
+<h2>Load</h2>
+<p><object id="45" type="image/svg+xml" data="/images/fastaidocs/45_Dataset_Model_Learner-Directories.svg"></object></p>
+<p><object id="46" type="image/svg+xml" data="/images/fastaidocs/46_Get_items.svg"></object></p>
+<p><object id="47" type="image/svg+xml" data="/images/fastaidocs/47_Splitters.svg"></object></p>
+<p><object id="48" type="image/svg+xml" data="/images/fastaidocs/48_Getters.svg"></object></p>
+<h2>Transform</h2>
+<p><object id="49" type="image/svg+xml" data="/images/fastaidocs/49_Transforms_for_labels.svg"></object></p>
+<h2>Vision</h2>
+<p><object id="50" type="image/svg+xml" data="/images/fastaidocs/50_Type_Transforms-Vision.svg"></object></p>
+<p><object id="51" type="image/svg+xml" data="/images/fastaidocs/51_Item_Transforms-Vision.svg"></object></p>
+<p><object id="52" type="image/svg+xml" data="/images/fastaidocs/52_Data_augmentation-Vision_1_4.svg"></object></p>
+<p><object id="53" type="image/svg+xml" data="/images/fastaidocs/53_Data_augmentation-Vision_2_4.svg"></object></p>
+<p><object id="54" type="image/svg+xml" data="/images/fastaidocs/54_Data_augmentation-Vision_3_4.svg"></object></p>
+<p><object id="55" type="image/svg+xml" data="/images/fastaidocs/55_Data_augmentation-Vision_4_4.svg"></object></p>
+<h2>Text</h2>
+<p><object id="56" type="image/svg+xml" data="/images/fastaidocs/56_Type_Transforms-Text.svg"></object></p>
+<p><object id="57" type="image/svg+xml" data="/images/fastaidocs/57_Item_Transforms-Text.svg"></object></p>
+<h2>Tabular</h2>
+<p><object id="58" type="image/svg+xml" data="/images/fastaidocs/58_Tabular_datasets_and_transforms.svg"></object></p>
+<h2>Optimizer</h2>
+<p><object id="59" type="image/svg+xml" data="/images/fastaidocs/59_Optimizer.svg"></object></p>
+<p><object id="60" type="image/svg+xml" data="/images/fastaidocs/60_Optimizers.svg"></object></p>
+<p><object id="61" type="image/svg+xml" data="/images/fastaidocs/61_Optimizer-Hyperparameters_scheduling.svg"></object></p>
+<h2>Model</h2>
+<p><object id="62" type="image/svg+xml" data="/images/fastaidocs/62_Create_model-Vision.svg"></object></p>
+<p><object id="63" type="image/svg+xml" data="/images/fastaidocs/63_Create_Model-Text_GAN.svg"></object></p>
+<h2>Pytorch</h2>
+<p><object id="64" type="image/svg+xml" data="/images/fastaidocs/64_Modules-Functions_Shapes_Pooling.svg"></object></p>
+<p><object id="65" type="image/svg+xml" data="/images/fastaidocs/65_Modules-Combine_layers_In_Out.svg"></object></p>
+<p><object id="66" type="image/svg+xml" data="/images/fastaidocs/66_Modules-Activations_Norms.svg"></object></p>
+<p><object id="67" type="image/svg+xml" data="/images/fastaidocs/67_Modules-Convolutions_Attention.svg"></object></p>
+<p><object id="68" type="image/svg+xml" data="/images/fastaidocs/68_Modules-Text_sequences_Dropout.svg"></object></p>
+<p><object id="69" type="image/svg+xml" data="/images/fastaidocs/69_Modules-Unet_GAN_Tabular.svg"></object></p>
+<h2>Loss</h2>
+<p><object id="70" type="image/svg+xml" data="/images/fastaidocs/70_Loss_function-Interface.svg"></object></p>
+<p><object id="71" type="image/svg+xml" data="/images/fastaidocs/71_Loss_functions-Classification_Regression.svg"></object></p>
+<h2>Summary</h2>
+<p><object id="72" type="image/svg+xml" data="/images/fastaidocs/72_Summary-DataBlock.svg"></object></p>
+<p><object id="73" type="image/svg+xml" data="/images/fastaidocs/73_Summary-DataLoaders.svg"></object></p>
+<p><object id="74" type="image/svg+xml" data="/images/fastaidocs/74_Summary-Learner.svg"></object></p>
+<p><object id="75" type="image/svg+xml" data="/images/fastaidocs/75_Implementation_notes.svg"></object></p>
+<p><object id="76" type="image/svg+xml" data="/images/fastaidocs/76_Distributed_Training.svg"></object></p>
+
+</div>
+
+</body>
+
+</html>
