@@ -10,7 +10,8 @@
   gtag('config', 'UA-172638611-1');
 </script>
 <style>
-/* The sidenav */
+/* Side navigation */
+
 .sidenav {
   padding: 10px;
   height: 100%;
@@ -23,6 +24,8 @@
   background-color: #F7F7F7;
   overflow-x: hidden;
   border-right: solid 1px;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
 }
 
 ul {
@@ -46,9 +49,12 @@ a:hover {
 }
 
 /* Page content */
+
 .main {
   margin-left: 300px; /* Same as the width of the sidenav */
   padding: 0px 10px;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
 }
 
 .main h2 {
@@ -65,10 +71,50 @@ a:hover {
   border: 1px solid #E7E7E7;
 }
 
+/* Toggle button */
+
+input[type=checkbox] {
+  display: none;
+}
+
+input:checked ~ .sidenav { 
+  left: -350px;
+}
+
+input:checked ~ .main { 
+  margin-left: 0;
+}
+
+input:checked ~ label {
+  left: 0;
+}
+
+input ~ label:after {
+  content: '<<';
+}
+
+input:checked ~ label:after {
+  content: '>>';
+}
+
+label {
+  z-index: 2;
+  position: fixed;
+  top: 40;
+  left: 275px;
+  background-color: #7F7F7F;
+  color: #F7F7F7;
+  font-size: 20px;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
 </style>
 </head>
 
 <body>
+
+<input id="slide-sidenav" type="checkbox" role="button" />
+  <label for="slide-sidenav"></label>
 
 <div class="sidenav">
 
